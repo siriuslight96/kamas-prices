@@ -1,5 +1,5 @@
 {
-  "updated_at": "05/10/2026 23:11 UTC",
+  "updated_at": "05/10/2026 23:23 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,11 +127,11 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.82,
+        "price": 6.6,
         "open": true
       },
       "Orukam": {
-        "price": 4.07,
+        "price": 3.85,
         "open": true
       },
       "Tylezia": {
@@ -315,7 +315,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.72,
+        "price": 6.6,
         "open": true
       },
       "Orukam": {
@@ -359,7 +359,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 30.44,
+        "price": 29.62,
         "open": true
       },
       "Tiliwan": {
@@ -371,7 +371,7 @@
         "open": true
       },
       "Boune": {
-        "price": 25.56,
+        "price": 24.8,
         "open": true
       },
       "Allisteria": {
