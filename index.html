@@ -107,6 +107,15 @@ function render() {
   document.getElementById("meta").textContent = "Derniere mise a jour : " + STATE.updated_at;
 }
 
+const LAST_SERVER_KEY = "kamas-last-server";
+
+function getSavedServer() {
+  try { return localStorage.getItem(LAST_SERVER_KEY); } catch (e) { return null; }
+}
+function saveServer(name) {
+  try { localStorage.setItem(LAST_SERVER_KEY, name); } catch (e) {}
+}
+
 async function loadPrices() {
   try {
     const res = await fetch("prices.json?t=" + Date.now());
@@ -115,11 +124,14 @@ async function loadPrices() {
     if (!select.options.length) {
       const servers = new Set();
       Object.values(STATE.data).forEach((siteData) => Object.keys(siteData).forEach((s) => servers.add(s)));
-      [...servers].sort().forEach((s) => {
+      const sorted = [...servers].sort();
+      sorted.forEach((s) => {
         const opt = document.createElement("option");
         opt.value = s; opt.textContent = s;
         select.appendChild(opt);
       });
+      const saved = getSavedServer();
+      if (saved && sorted.includes(saved)) select.value = saved;
     }
     render();
   } catch (e) {
@@ -127,7 +139,10 @@ async function loadPrices() {
   }
 }
 
-document.getElementById("server-select").addEventListener("change", render);
+document.getElementById("server-select").addEventListener("change", (e) => {
+  saveServer(e.target.value);
+  render();
+});
 document.getElementById("refresh").addEventListener("click", loadPrices);
 
 loadPrices();
