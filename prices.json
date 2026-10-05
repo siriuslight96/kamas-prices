@@ -1,5 +1,5 @@
 {
-  "updated_at": "05/10/2026 22:18 UTC",
+  "updated_at": "05/10/2026 22:31 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -21,23 +21,23 @@
   "data": {
     "ibendouma": {
       "Dakal": {
-        "price": 6.702,
+        "price": 6.689,
         "open": true
       },
       "Rafal": {
-        "price": 3.561,
+        "price": 3.592,
         "open": true
       },
       "Brial": {
-        "price": 3.41,
+        "price": 3.42,
         "open": true
       },
       "Kourial": {
-        "price": 7.583,
+        "price": 7.6,
         "open": true
       },
       "Orukam": {
-        "price": 4.026,
+        "price": 4.027,
         "open": true
       },
       "Tylezia": {
@@ -45,7 +45,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.48,
+        "price": 7.491,
         "open": true
       },
       "Hell Mina": {
@@ -53,7 +53,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.969,
+        "price": 3.967,
         "open": true
       },
       "Talkasha": {
@@ -61,15 +61,15 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.246,
+        "price": 5.245,
         "open": true
       },
       "Mikhal": {
-        "price": 6.802,
+        "price": 6.817,
         "open": true
       },
       "Salar": {
-        "price": 3.511,
+        "price": 3.544,
         "open": true
       },
       "Blair": {
@@ -93,19 +93,19 @@
         "open": false
       },
       "Allisteria": {
-        "price": 8.48,
+        "price": 8.475,
         "open": false
       },
       "Fallanster": {
-        "price": 3.681,
+        "price": 3.691,
         "open": false
       },
       "Pandora": {
-        "price": 19.587,
+        "price": 19.6,
         "open": true
       },
       "Ogrest": {
-        "price": 41.275,
+        "price": 41.297,
         "open": true
       },
       "Rubilax": {
@@ -311,11 +311,11 @@
         "open": true
       },
       "Brial": {
-        "price": 3.55,
+        "price": 3.69,
         "open": true
       },
       "Kourial": {
-        "price": 7.32,
+        "price": 7.33,
         "open": true
       },
       "Orukam": {
@@ -359,7 +359,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 34.89,
+        "price": 32.04,
         "open": true
       },
       "Tiliwan": {
