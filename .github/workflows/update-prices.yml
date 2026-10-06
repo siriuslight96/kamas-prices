@@ -1,0 +1,38 @@
+name: Update kamas prices
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Fetch prices
+        run: python fetch_prices.py
+
+      - name: Save prices
+        run: |
+          git config user.name "kamas-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add prices.json
+          git diff --staged --quiet || git commit -m "Update prices"
+          git push
