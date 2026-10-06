@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 17:52 UTC",
+  "updated_at": "06/10/2026 18:00 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -135,15 +135,15 @@
         "open": true
       },
       "Tylezia": {
-        "price": 4.07,
+        "price": 4.18,
         "open": true
       },
       "Draconiros": {
-        "price": 7.59,
+        "price": 7.7,
         "open": true
       },
       "Hell Mina": {
-        "price": 5.522,
+        "price": 5.544,
         "open": true
       },
       "Imagiro": {
@@ -151,7 +151,7 @@
         "open": true
       },
       "Talkasha": {
-        "price": 4.125,
+        "price": 4.235,
         "open": true
       },
       "Ombre": {
@@ -167,7 +167,7 @@
         "open": true
       },
       "Blair": {
-        "price": 12.98,
+        "price": 12.65,
         "open": true
       },
       "Kelerog": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 23.716,
+        "price": 23.892,
         "open": true
       },
       "Allisteria": {
@@ -195,7 +195,7 @@
         "open": true
       },
       "Pandora": {
-        "price": 23.1,
+        "price": 22.0,
         "open": true
       },
       "Ogrest": {
