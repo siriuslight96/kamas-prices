@@ -20,15 +20,9 @@ OUT_DIR = Path(__file__).parent
 SITES = {
     "ibendouma": {"name": "iBendouma", "url": "https://www.ibendouma.com/vendre"},
     "leskamas": {"name": "LesKamas", "url": "https://www.leskamas.com/en-gb/sell-kamas.html"},
-}
-
-# VenteKamas and TryAndJudge inject their real prices client-side via
-# JavaScript after the page loads; a plain HTTP fetch (what this script does)
-# only ever sees a static placeholder value that never updates. They're kept
-# here as link-out-only entries (no price scraped) so the app still shows
-# them with a working link, without displaying numbers we know are wrong.
-LINK_ONLY_SITES = {
-    "ventekamas": {"name": "VenteKamas", "url": "https://ventekamas.com/vendre-des-kamas/"},
+    # Both sites currently expose their live seller table in the HTML returned
+    # to a normal HTTP client, so they can be scraped without a browser.
+    "ventekamas": {"name": "VenteKamas", "url": "https://ventekamas.com/eng/vendre-des-kamas/"},
     "tryandjudge": {"name": "TryAndJudge", "url": "https://vente.tryandjudge.com/dofuskamas.php"},
 }
 
@@ -73,8 +67,13 @@ def fetch_text(url):
 # Each scrapable site formats its price differently: period vs comma
 # decimals, and a different currency suffix right after the number.
 PRICE_PATTERNS = {
-    "ibendouma": r"([0-9]+\.[0-9]+)\s*Dhs?/M",
-    "leskamas": r"([0-9]+\.[0-9]+)\s*Dhs?/M",
+    "ibendouma": r"([0-9]+(?:[.,][0-9]+)?)\s*Dhs?/M",
+    "leskamas": r"([0-9]+(?:[.,][0-9]+)?)\s*Dhs?/M",
+    # VenteKamas lists several payment currencies in each row. We deliberately
+    # target the Morocco bank-transfer column, which is the same MAD/DH unit
+    # used by the other sites in this app.
+    "ventekamas": r"([0-9]+(?:[.,][0-9]+)?)\s*(?:DHS?|MAD)/M",
+    "tryandjudge": r"PRIX\s*/\s*M\s*([0-9]+(?:[.,][0-9]+)?)\s*MAD",
 }
 
 # status word -> True (still buying / open) or False (full / closed),
@@ -82,6 +81,8 @@ PRICE_PATTERNS = {
 STATUS_WORDS = {
     "ibendouma": [("Stock complet", False), ("Ouvert", True)],
     "leskamas": [("Sourcing", True), ("Full", False)],
+    "ventekamas": [("Stock complet", False), ("Incomplet", True)],
+    "tryandjudge": [("Fermé", False), ("Ferme", False), ("Complet", False), ("Ouvert", True)],
 }
 
 
@@ -94,11 +95,20 @@ def parse_site(site_id, text):
     for server in SERVERS:
         match = None
         for variant in variants_for(server):
-            # Status word must appear within a SHORT window right after the
-            # price (same cell/row), never searched across the whole page,
-            # so it can't pick up an unrelated server's status.
+            # Keep the match inside one rendered row. The source pages currently
+            # put the server name, its price and its stock label next to each
+            # other, so a bounded window avoids borrowing a status from another
+            # server. VenteKamas has several payment columns, hence the larger
+            # window there.
+            max_before_price = 360 if site_id == "ventekamas" else 180
+            max_after_price = 90
             pattern = re.compile(
-                re.escape(variant) + r".{0,150}?" + price_pattern + r".{0,80}?(" + status_alt + r")",
+                re.escape(variant)
+                + rf".{{0,{max_before_price}}}?"
+                + price_pattern
+                + rf".{{0,{max_after_price}}}?("
+                + status_alt
+                + r")",
                 re.IGNORECASE | re.DOTALL,
             )
             match = pattern.search(text)
@@ -158,7 +168,7 @@ def main():
             errors[site_id] = err or "unknown error"
             stale.append(site_id)
 
-    all_sites = {**SITES, **LINK_ONLY_SITES}
+    all_sites = SITES
     updated_at = datetime.datetime.utcnow().strftime("%d/%m/%Y %H:%M UTC")
     payload = {
         "updated_at": updated_at,
@@ -166,7 +176,7 @@ def main():
         "data": data,  # only contains entries for sites in SITES (the scrapable ones)
         "errors": errors,
         "stale_sites": stale,
-        "link_only_sites": list(LINK_ONLY_SITES.keys()),
+        "link_only_sites": [],
     }
     (OUT_DIR / "prices.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"

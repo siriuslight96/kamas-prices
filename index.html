@@ -43,6 +43,11 @@
   .badge.closed { background: rgba(165,71,58,0.18); color: #E8A79B; }
   .price { font-family: system-ui, sans-serif; font-weight: 600; font-size: 19px; min-width: 90px; text-align: right; }
   .price.best { color: var(--brass-bright); }
+  .calculator { background: var(--ink-soft); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 20px; }
+  .calculator label { display:block; font-family:system-ui,sans-serif; font-size:13px; color:var(--paper-dim); margin-bottom:8px; }
+  .calculator input { width:100%; background:var(--ink); color:var(--paper); border:1px solid var(--line); border-radius:8px; padding:12px 14px; font-size:18px; font-family:system-ui,sans-serif; }
+  .calc-summary { margin-top:10px; font-family:system-ui,sans-serif; font-size:13px; color:var(--paper-dim); }
+  .total { font-family:system-ui,sans-serif; font-weight:700; font-size:18px; color:var(--brass-bright); white-space:nowrap; }
   .meta { font-family: system-ui, sans-serif; font-size: 12px; color: var(--paper-dim); opacity: 0.55; margin-top: 18px; line-height: 1.6; }
   .pull { text-align: center; font-family: system-ui, sans-serif; font-size: 12px; color: var(--teal-bright); margin-bottom: 12px; }
   button#refresh {
@@ -59,10 +64,35 @@
 <main>
   <button id="refresh">Rafraichir maintenant</button>
   <select id="server-select"></select>
+  <div class="calculator">
+    <label for="kamas-amount">Quantite de Kamas a vendre (en M)</label>
+    <input id="kamas-amount" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Ex. 100">
+    <div class="calc-summary" id="calc-summary">Entrez une quantite pour voir combien chaque site vous paierait.</div>
+  </div>
   <div id="rows"></div>
   <div class="meta" id="meta">Chargement...</div>
 </main>
 <script>
+function fmtDh(v) {
+  if (v === null || v === undefined || !Number.isFinite(Number(v))) return "-";
+  return Number(v).toFixed(2) + " DH";
+}
+
+function getKamasAmount() {
+  const n = Number(document.getElementById("kamas-amount").value);
+  return Number.isFinite(n) && n > 0 ? n : 0;
+}
+
+function updateCalculatorSummary(entries) {
+  const amount = getKamasAmount();
+  const el = document.getElementById("calc-summary");
+  if (!amount) { el.textContent = "Entrez le nombre de M de Kamas (ex. 100 pour 100M)."; return; }
+  const available = entries.filter(e => e.open && Number.isFinite(Number(e.price)));
+  if (!available.length) { el.textContent = "Aucun site ouvert avec un prix disponible pour ce serveur."; return; }
+  const best = available.reduce((a,b) => a.price > b.price ? a : b);
+  el.textContent = `Pour ${amount.toLocaleString("fr-FR")}M Kamas, le meilleur paiement actuel est ${fmtDh(best.price * amount)} chez ${best.name}.`;
+}
+
 function fmt(v) {
   if (v === null || v === undefined || isNaN(v)) return "-";
   return Number(v).toFixed(3) + " DH/M";
@@ -83,6 +113,7 @@ function render() {
     return {
       id, name: STATE.sites[id].name, url: STATE.sites[id].url,
       price: entry ? entry.price : null, open: entry ? entry.open : null,
+      total: entry ? entry.total : null,
     };
   });
   const openPrices = entries.filter((e) => e.open).map((e) => e.price);
@@ -101,7 +132,9 @@ function render() {
       : "";
     let priceHtml;
     if (hasData) {
-      priceHtml = `${badge}<span class="price${isBest ? " best" : ""}">${fmt(e.price)}</span>`;
+      const amount = getKamasAmount();
+      const total = amount > 0 ? (e.price * amount) : null;
+      priceHtml = `${badge}<span style="text-align:right"><span class="price${isBest ? " best" : ""}">${fmt(e.price)}</span>${total !== null ? `<br><span class="total">${fmtDh(total)}</span>` : ""}</span>`;
     } else if (linkOnly.has(e.id)) {
       priceHtml = `<span style="font-family:system-ui,sans-serif;font-size:13px;color:var(--paper-dim);opacity:.55">voir prix sur le site</span>`;
     } else {
@@ -110,6 +143,8 @@ function render() {
     a.innerHTML = `<span class="site-name">${e.name} \u2197</span><span style="display:flex;align-items:center;gap:10px">${priceHtml}</span>`;
     rowsEl.appendChild(a);
   });
+
+  updateCalculatorSummary(entries);
 
   const metaEl = document.getElementById("meta");
   let metaText = "Derniere mise a jour : " + STATE.updated_at;
@@ -158,6 +193,7 @@ document.getElementById("server-select").addEventListener("change", (e) => {
   render();
 });
 document.getElementById("refresh").addEventListener("click", loadPrices);
+document.getElementById("kamas-amount").addEventListener("input", render);
 
 loadPrices();
 setInterval(loadPrices, 120000); // re-read prices.json every 2 min while the app is open

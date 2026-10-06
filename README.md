@@ -51,6 +51,10 @@ git push -u origin main
 3. Confirme. Une icone "Kamas" apparait sur ton telephone, s'ouvre en
    plein ecran comme une vraie app.
 
+## Données suivies
+
+Le robot récupère maintenant les prix en MAD/DH par million et le statut de stock pour quatre sites : iBendouma, LesKamas, VenteKamas et TryAndJudge. Pour VenteKamas, le prix utilisé est celui du virement bancaire au Maroc.
+
 ## Limites a connaitre
 
 - GitHub Actions ne garantit pas exactement 5 minutes — selon la charge
