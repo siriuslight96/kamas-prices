@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 08:34 UTC",
+  "updated_at": "06/10/2026 08:50 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -179,12 +179,12 @@
         "open": false
       },
       "Talok": {
-        "price": 16.17,
+        "price": 16.83,
         "open": true
       },
       "Boune": {
-        "price": 23.1,
-        "open": false
+        "price": 23.111,
+        "open": true
       },
       "Allisteria": {
         "price": 8.36,
@@ -367,7 +367,7 @@
         "open": true
       },
       "Talok": {
-        "price": 14.11,
+        "price": 14.5,
         "open": true
       },
       "Boune": {
