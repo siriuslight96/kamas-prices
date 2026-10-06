@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 21:31 UTC",
+  "updated_at": "06/10/2026 21:39 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -123,7 +123,7 @@
         "open": true
       },
       "Brial": {
-        "price": 3.3,
+        "price": 3.63,
         "open": true
       },
       "Kourial": {
@@ -147,7 +147,7 @@
         "open": false
       },
       "Imagiro": {
-        "price": 4.125,
+        "price": 3.63,
         "open": true
       },
       "Talkasha": {
