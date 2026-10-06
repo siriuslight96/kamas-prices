@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 10:54 UTC",
+  "updated_at": "06/10/2026 11:02 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -29,7 +29,7 @@
         "open": true
       },
       "Brial": {
-        "price": 3.534,
+        "price": 3.523,
         "open": true
       },
       "Kourial": {
@@ -37,7 +37,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.09,
+        "price": 4.21,
         "open": true
       },
       "Tylezia": {
@@ -45,7 +45,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.067,
+        "price": 7.054,
         "open": true
       },
       "Hell Mina": {
@@ -61,7 +61,7 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.243,
+        "price": 5.256,
         "open": true
       },
       "Mikhal": {
@@ -69,7 +69,7 @@
         "open": true
       },
       "Salar": {
-        "price": 3.638,
+        "price": 3.64,
         "open": true
       },
       "Blair": {
@@ -89,7 +89,7 @@
         "open": true
       },
       "Boune": {
-        "price": 21.521,
+        "price": 23.047,
         "open": true
       },
       "Allisteria": {
@@ -101,15 +101,15 @@
         "open": true
       },
       "Pandora": {
-        "price": 19.536,
+        "price": 19.576,
         "open": true
       },
       "Ogrest": {
-        "price": 41.363,
+        "price": 41.403,
         "open": true
       },
       "Rubilax": {
-        "price": 9.516,
+        "price": 9.499,
         "open": true
       }
     },
@@ -131,7 +131,7 @@
         "open": false
       },
       "Orukam": {
-        "price": 3.96,
+        "price": 4.07,
         "open": true
       },
       "Tylezia": {
@@ -151,7 +151,7 @@
         "open": true
       },
       "Talkasha": {
-        "price": 3.74,
+        "price": 3.85,
         "open": true
       },
       "Ombre": {
@@ -171,7 +171,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 30.25,
+        "price": 29.7,
         "open": true
       },
       "Tiliwan": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 23.111,
+        "price": 24.75,
         "open": true
       },
       "Allisteria": {
