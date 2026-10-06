@@ -104,7 +104,14 @@ function render() {
     rowsEl.appendChild(a);
   });
 
-  document.getElementById("meta").textContent = "Derniere mise a jour : " + STATE.updated_at;
+  const metaEl = document.getElementById("meta");
+  let metaText = "Derniere mise a jour : " + STATE.updated_at;
+  const stale = STATE.stale_sites || [];
+  if (stale.length) {
+    const names = stale.map((id) => (STATE.sites[id] || {}).name || id).join(", ");
+    metaText += ` — Attention : ${names} n'a pas pu etre verifie au dernier passage, prix precedent affiche.`;
+  }
+  metaEl.textContent = metaText;
 }
 
 const LAST_SERVER_KEY = "kamas-last-server";
