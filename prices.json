@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 03:38 UTC",
+  "updated_at": "06/10/2026 03:52 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -113,7 +113,100 @@
         "open": false
       }
     },
-    "leskamas": {},
+    "leskamas": {
+      "Dakal": {
+        "price": 6.93,
+        "open": true
+      },
+      "Rafal": {
+        "price": 3.74,
+        "open": true
+      },
+      "Brial": {
+        "price": 3.41,
+        "open": true
+      },
+      "Kourial": {
+        "price": 8.371,
+        "open": true
+      },
+      "Orukam": {
+        "price": 3.96,
+        "open": true
+      },
+      "Tylezia": {
+        "price": 3.85,
+        "open": true
+      },
+      "Draconiros": {
+        "price": 7.15,
+        "open": true
+      },
+      "Hell Mina": {
+        "price": 6.853,
+        "open": true
+      },
+      "Imagiro": {
+        "price": 3.74,
+        "open": true
+      },
+      "Talkasha": {
+        "price": 3.74,
+        "open": true
+      },
+      "Ombre": {
+        "price": 5.17,
+        "open": true
+      },
+      "Mikhal": {
+        "price": 6.71,
+        "open": true
+      },
+      "Salar": {
+        "price": 3.52,
+        "open": true
+      },
+      "Blair": {
+        "price": 14.52,
+        "open": true
+      },
+      "Kelerog": {
+        "price": 30.03,
+        "open": true
+      },
+      "Tiliwan": {
+        "price": 23.716,
+        "open": true
+      },
+      "Talok": {
+        "price": 15.4,
+        "open": true
+      },
+      "Boune": {
+        "price": 27.709,
+        "open": true
+      },
+      "Allisteria": {
+        "price": 8.36,
+        "open": true
+      },
+      "Fallanster": {
+        "price": 4.29,
+        "open": true
+      },
+      "Pandora": {
+        "price": 18.92,
+        "open": true
+      },
+      "Ogrest": {
+        "price": 40.7,
+        "open": true
+      },
+      "Rubilax": {
+        "price": 9.35,
+        "open": true
+      }
+    },
     "ventekamas": {
       "Dakal": {
         "price": 7.362,
@@ -222,7 +315,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.78,
+        "price": 7.11,
         "open": true
       },
       "Orukam": {
@@ -291,7 +384,5 @@
       }
     }
   },
-  "errors": {
-    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html"
-  }
+  "errors": {}
 }
