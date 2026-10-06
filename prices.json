@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 18:50 UTC",
+  "updated_at": "06/10/2026 19:00 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,7 +127,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.963,
+        "price": 6.853,
         "open": true
       },
       "Orukam": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 24.09,
+        "price": 24.354,
         "open": true
       },
       "Allisteria": {
@@ -311,11 +311,11 @@
         "open": true
       },
       "Brial": {
-        "price": 3.69,
+        "price": 3.51,
         "open": true
       },
       "Kourial": {
-        "price": 7.03,
+        "price": 6.92,
         "open": true
       },
       "Orukam": {
@@ -335,7 +335,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.83,
+        "price": 4.02,
         "open": true
       },
       "Talkasha": {
