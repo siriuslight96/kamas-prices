@@ -90,6 +90,9 @@ def parse_site(site_id, text):
     for server in SERVERS:
         match = None
         for variant in variants_for(server):
+            # Status word must appear within a SHORT window right after the
+            # price (same cell/row), never searched across the whole page,
+            # so it can't pick up an unrelated server's status.
             pattern = re.compile(
                 re.escape(variant) + r".{0,150}?" + price_pattern + r".{0,80}?(" + status_alt + r")",
                 re.IGNORECASE | re.DOTALL,
@@ -115,3 +118,59 @@ def fetch_site_with_retry(site_id, cfg, attempts=2):
             text = fetch_text(cfg["url"])
             parsed = parse_site(site_id, text)
             if parsed:
+                return parsed, None
+            last_exc = "page fetched but no prices matched (site layout may have changed)"
+        except Exception as exc:  # noqa: BLE001
+            last_exc = str(exc)
+        if attempt < attempts:
+            time.sleep(3)
+    return None, last_exc
+
+
+def load_previous():
+    path = OUT_DIR / "prices.json"
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("data", {})
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+def main():
+    previous = load_previous()
+    data = {}
+    errors = {}
+    stale = []
+
+    for site_id, cfg in SITES.items():
+        parsed, err = fetch_site_with_retry(site_id, cfg)
+        if parsed:
+            data[site_id] = parsed
+        else:
+            # Keep last known good data instead of wiping it to empty, so a
+            # transient block/anti-bot response doesn't blank the site out.
+            data[site_id] = previous.get(site_id, {})
+            errors[site_id] = err or "unknown error"
+            stale.append(site_id)
+
+    updated_at = datetime.datetime.utcnow().strftime("%d/%m/%Y %H:%M UTC")
+    payload = {
+        "updated_at": updated_at,
+        "sites": {sid: {"name": cfg["name"], "url": cfg["url"]} for sid, cfg in SITES.items()},
+        "data": data,
+        "errors": errors,
+        "stale_sites": stale,
+    }
+    (OUT_DIR / "prices.json").write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    total = sum(len(v) for v in data.values())
+    print(f"[{updated_at}] Wrote {total} price points across {len(data)} sites.")
+    for site_id, err in errors.items():
+        print(f"  ! {site_id}: FAILED this run ({err}) - kept previous data")
+
+
+if __name__ == "__main__":
+    main()
