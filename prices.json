@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 21:40 UTC",
+  "updated_at": "06/10/2026 21:43 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -123,7 +123,7 @@
         "open": true
       },
       "Brial": {
-        "price": 3.63,
+        "price": 3.3,
         "open": true
       },
       "Kourial": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 23.606,
+        "price": 24.651,
         "open": true
       },
       "Allisteria": {
