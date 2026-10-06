@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 18:00 UTC",
+  "updated_at": "06/10/2026 18:13 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,15 +127,15 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.952,
+        "price": 6.963,
         "open": true
       },
       "Orukam": {
-        "price": 3.74,
+        "price": 4.07,
         "open": true
       },
       "Tylezia": {
-        "price": 4.18,
+        "price": 4.07,
         "open": true
       },
       "Draconiros": {
@@ -143,11 +143,11 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 5.544,
-        "open": true
+        "price": 6.798,
+        "open": false
       },
       "Imagiro": {
-        "price": 4.29,
+        "price": 4.4,
         "open": true
       },
       "Talkasha": {
@@ -159,7 +159,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 7.535,
+        "price": 7.59,
         "open": true
       },
       "Salar": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 23.892,
+        "price": 24.057,
         "open": true
       },
       "Allisteria": {
@@ -311,7 +311,7 @@
         "open": true
       },
       "Brial": {
-        "price": 3.73,
+        "price": 3.78,
         "open": true
       },
       "Kourial": {
@@ -327,23 +327,23 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.44,
+        "price": 7.45,
         "open": true
       },
       "Hell Mina": {
-        "price": 5.47,
+        "price": 5.49,
         "open": true
       },
       "Imagiro": {
-        "price": 3.81,
+        "price": 3.83,
         "open": true
       },
       "Talkasha": {
-        "price": 3.85,
+        "price": 3.86,
         "open": true
       },
       "Ombre": {
-        "price": 5.34,
+        "price": 5.43,
         "open": true
       },
       "Mikhal": {
@@ -359,7 +359,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 31.04,
+        "price": 31.76,
         "open": true
       },
       "Tiliwan": {
@@ -367,7 +367,7 @@
         "open": true
       },
       "Talok": {
-        "price": 16.23,
+        "price": 16.54,
         "open": true
       },
       "Boune": {
