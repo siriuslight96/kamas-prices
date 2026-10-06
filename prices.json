@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 13:20 UTC",
+  "updated_at": "06/10/2026 13:37 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -25,7 +25,7 @@
         "open": true
       },
       "Rafal": {
-        "price": 3.862,
+        "price": 3.87,
         "open": true
       },
       "Brial": {
@@ -37,7 +37,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.196,
+        "price": 4.21,
         "open": true
       },
       "Tylezia": {
@@ -45,7 +45,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.048,
+        "price": 7.07,
         "open": true
       },
       "Hell Mina": {
@@ -53,15 +53,15 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.87,
+        "price": 3.873,
         "open": true
       },
       "Talkasha": {
-        "price": 3.973,
+        "price": 3.971,
         "open": true
       },
       "Ombre": {
-        "price": 5.4,
+        "price": 5.257,
         "open": true
       },
       "Mikhal": {
@@ -69,7 +69,7 @@
         "open": true
       },
       "Salar": {
-        "price": 3.653,
+        "price": 3.652,
         "open": true
       },
       "Blair": {
@@ -93,7 +93,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 8.725,
+        "price": 8.726,
         "open": true
       },
       "Fallanster": {
@@ -101,15 +101,15 @@
         "open": true
       },
       "Pandora": {
-        "price": 22.732,
+        "price": 22.791,
         "open": true
       },
       "Ogrest": {
-        "price": 41.265,
+        "price": 41.419,
         "open": true
       },
       "Rubilax": {
-        "price": 9.501,
+        "price": 9.477,
         "open": true
       }
     },
@@ -195,7 +195,7 @@
         "open": true
       },
       "Pandora": {
-        "price": 22.0,
+        "price": 20.02,
         "open": true
       },
       "Ogrest": {
