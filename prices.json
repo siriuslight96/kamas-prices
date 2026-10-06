@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 19:52 UTC",
+  "updated_at": "06/10/2026 19:59 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -183,8 +183,8 @@
         "open": true
       },
       "Boune": {
-        "price": 23.1,
-        "open": true
+        "price": 27.698,
+        "open": false
       },
       "Allisteria": {
         "price": 8.69,
