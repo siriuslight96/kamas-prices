@@ -64,6 +64,14 @@ def fetch_text(url):
     return soup.get_text(" ", strip=True)
 
 
+def fetch_html(url):
+    """Return the raw HTML so server-specific status can be read from its card/row."""
+    bust_url = url + ("&" if "?" in url else "?") + f"_ts={int(datetime.datetime.utcnow().timestamp())}"
+    resp = requests.get(bust_url, headers=HEADERS, timeout=20)
+    resp.raise_for_status()
+    return resp.text
+
+
 # Each scrapable site formats its price differently: period vs comma
 # decimals, and a different currency suffix right after the number.
 PRICE_PATTERNS = {
@@ -93,25 +101,51 @@ def parse_site(site_id, text):
     status_alt = "|".join(re.escape(word) for word, _ in STATUS_WORDS[site_id])
     status_lookup = dict(STATUS_WORDS[site_id])
 
-    # TryAndJudge's public server list exposes a price and a generic
-    # "Ouvert" label. Their seller guide says stock is checked by support
-    # during the sale, so "Ouvert" must NOT be treated as per-server stock.
-    # We therefore collect the price and leave open=None; the UI will show
-    # "Stock à vérifier" rather than making a false availability claim.
     if site_id == "tryandjudge":
+        # IMPORTANT: TryAndJudge can contain generic "Ouvert" text elsewhere
+        # on the page. Never infer a server's stock from that global text.
+        # Instead, find the smallest DOM container that contains THIS server,
+        # its price and its own status label.
+        soup = BeautifulSoup(text, "html.parser")
+        price_re = re.compile(price_pattern, re.IGNORECASE)
+        status_re = re.compile(r"\b(Stock\s+complet|Complet|Fermé|Ferme|Ouvert)\b", re.IGNORECASE)
+
         for server in SERVERS:
+            found = None
             for variant in variants_for(server):
-                pattern = re.compile(
-                    re.escape(variant)
-                    + r".{0,120}?" + price_pattern,
-                    re.IGNORECASE | re.DOTALL,
-                )
-                match = pattern.search(text)
-                if not match:
-                    continue
-                price = float(match.group(1).replace(",", "."))
-                results[server] = {"price": price, "open": None}
-                break
+                name_re = re.compile(r"^\s*" + re.escape(variant) + r"\s*$", re.IGNORECASE)
+                # Start from elements whose visible text is exactly the server name.
+                name_nodes = soup.find_all(string=name_re)
+                for name_node in name_nodes:
+                    node = name_node.parent
+                    ancestor = node
+                    for _ in range(8):
+                        if ancestor is None:
+                            break
+                        container_text = ancestor.get_text(" ", strip=True)
+                        if len(container_text) <= 1600 and price_re.search(container_text) and status_re.search(container_text):
+                            pm = price_re.search(container_text)
+                            sm = status_re.search(container_text)
+                            if pm and sm:
+                                found = (float(pm.group(1).replace(",", ".")), sm.group(1))
+                                break
+                        ancestor = ancestor.parent
+                    if found:
+                        break
+                if found:
+                    break
+
+            if found:
+                price, status_word = found
+                normalized = re.sub(r"\s+", " ", status_word.strip().lower())
+                if normalized in {"stock complet", "complet", "fermé", "ferme"}:
+                    open_status = False
+                elif normalized == "ouvert":
+                    open_status = True
+                else:
+                    open_status = None
+                results[server] = {"price": price, "open": open_status}
+
         return results
 
     for server in SERVERS:
@@ -150,7 +184,7 @@ def fetch_site_with_retry(site_id, cfg, attempts=2):
     last_exc = None
     for attempt in range(1, attempts + 1):
         try:
-            text = fetch_text(cfg["url"])
+            text = fetch_html(cfg["url"]) if site_id == "tryandjudge" else fetch_text(cfg["url"])
             parsed = parse_site(site_id, text)
             if parsed:
                 return parsed, None
