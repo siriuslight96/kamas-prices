@@ -93,43 +93,24 @@ def parse_site(site_id, text):
     status_alt = "|".join(re.escape(word) for word, _ in STATUS_WORDS[site_id])
     status_lookup = dict(STATUS_WORDS[site_id])
 
-    # TryAndJudge's live seller page is the authoritative source for seller
-    # availability.  Do not scan the whole page for a status word: that can
-    # accidentally pick up unrelated text such as "Support vendeur - Ouvert
-    # maintenant".  Instead, bound the match to the current server's row.
+    # TryAndJudge's public server list exposes a price and a generic
+    # "Ouvert" label. Their seller guide says stock is checked by support
+    # during the sale, so "Ouvert" must NOT be treated as per-server stock.
+    # We therefore collect the price and leave open=None; the UI will show
+    # "Stock à vérifier" rather than making a false availability claim.
     if site_id == "tryandjudge":
         for server in SERVERS:
             for variant in variants_for(server):
-                # Stop before the next server card/name.  The live page is
-                # rendered as one text stream after scripts are stripped, so
-                # using the server name as the anchor is safer than a global
-                # price/status search.
-                next_server_alt = "|".join(
-                    re.escape(v) for s in SERVERS if s != server for v in variants_for(s)
-                )
                 pattern = re.compile(
                     re.escape(variant)
-                    + r".{0,100}?" + price_pattern
-                    + r".{0,55}?(" + status_alt + r")",
+                    + r".{0,120}?" + price_pattern,
                     re.IGNORECASE | re.DOTALL,
                 )
                 match = pattern.search(text)
                 if not match:
                     continue
-                # Reject a match if another known server appears between the
-                # requested server and its price/status. This prevents status
-                # leakage from a neighbouring server.
-                segment_start = match.start()
-                segment_end = match.end()
-                between = text[segment_start:segment_end]
-                if next_server_alt and re.search(r"(?:" + next_server_alt + r")", between, re.IGNORECASE):
-                    continue
                 price = float(match.group(1).replace(",", "."))
-                status_word = match.group(2)
-                open_status = next(
-                    (v for k, v in status_lookup.items() if k.lower() == status_word.lower()), None
-                )
-                results[server] = {"price": price, "open": open_status}
+                results[server] = {"price": price, "open": None}
                 break
         return results
 
@@ -164,7 +145,6 @@ def parse_site(site_id, text):
         )
         results[server] = {"price": price, "open": open_status}
     return results
-
 
 def fetch_site_with_retry(site_id, cfg, attempts=2):
     last_exc = None

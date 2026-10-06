@@ -41,6 +41,7 @@
   .badge { font-family: system-ui, sans-serif; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px; }
   .badge.open { background: rgba(90,150,145,0.18); color: var(--teal-bright); }
   .badge.closed { background: rgba(165,71,58,0.18); color: #E8A79B; }
+  .badge.unknown { background: rgba(180,150,80,0.16); color: #a56b00; }
   .price { font-family: system-ui, sans-serif; font-weight: 600; font-size: 19px; min-width: 90px; text-align: right; }
   .price.best { color: var(--brass-bright); }
   .calculator { background: var(--ink-soft); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 20px; }
@@ -87,7 +88,7 @@ function updateCalculatorSummary(entries) {
   const amount = getKamasAmount();
   const el = document.getElementById("calc-summary");
   if (!amount) { el.textContent = "Entrez le nombre de M de Kamas (ex. 100 pour 100M)."; return; }
-  const available = entries.filter(e => e.open && Number.isFinite(Number(e.price)));
+  const available = entries.filter(e => e.open === true && Number.isFinite(Number(e.price)));
   if (!available.length) { el.textContent = "Aucun site ouvert avec un prix disponible pour ce serveur."; return; }
   const best = available.reduce((a,b) => a.price > b.price ? a : b);
   el.textContent = `Pour ${amount.toLocaleString("fr-FR")}M Kamas, le meilleur paiement actuel est ${fmtDh(best.price * amount)} chez ${best.name}.`;
@@ -116,19 +117,19 @@ function render() {
       total: entry ? entry.total : null,
     };
   });
-  const openPrices = entries.filter((e) => e.open).map((e) => e.price);
+  const openPrices = entries.filter((e) => e.open === true).map((e) => e.price);
   const maxOpen = openPrices.length ? Math.max(...openPrices) : null;
 
   const linkOnly = new Set(STATE.link_only_sites || []);
 
   entries.forEach((e) => {
     const hasData = e.price !== null && e.price !== undefined;
-    const isBest = hasData && e.open && e.price === maxOpen;
+    const isBest = hasData && e.open === true && e.price === maxOpen;
     const a = document.createElement("a");
     a.href = e.url; a.target = "_blank"; a.rel = "noopener noreferrer";
-    a.className = "row" + (isBest ? " best" : "") + (hasData && !e.open ? " closed" : "");
+    a.className = "row" + (isBest ? " best" : "") + (hasData && e.open === false ? " closed" : "");
     const badge = hasData
-      ? `<span class="badge ${e.open ? "open" : "closed"}">${e.open ? "Ouvert" : "Stock complet"}</span>`
+      ? `<span class="badge ${e.open === true ? "open" : e.open === false ? "closed" : "unknown"}">${e.open === true ? "Ouvert" : e.open === false ? "Stock complet" : "Stock à vérifier"}</span>`
       : "";
     let priceHtml;
     if (hasData) {
