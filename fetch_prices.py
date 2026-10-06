@@ -8,6 +8,7 @@ the published site current without any server of your own.
 
 import json
 import re
+import time
 import datetime
 from pathlib import Path
 
@@ -43,12 +44,19 @@ def variants_for(server):
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                  "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
+                  "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
 }
 
 
 def fetch_flat_text(url):
-    resp = requests.get(url, headers=HEADERS, timeout=20)
+    # A timestamped query param defeats most CDN/page caching that would
+    # otherwise serve the same snapshot to every automated request.
+    bust_url = url + ("&" if "?" in url else "?") + f"_ts={int(datetime.datetime.utcnow().timestamp())}"
+    resp = requests.get(bust_url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
     for tag in soup(["script", "style", "noscript"]):
@@ -111,16 +119,48 @@ def parse_site(site_id, text):
     return results
 
 
-def main():
-    data = {}
-    errors = {}
-    for site_id, cfg in SITES.items():
+def fetch_site_with_retry(site_id, cfg, attempts=2):
+    last_exc = None
+    for attempt in range(1, attempts + 1):
         try:
             text = fetch_flat_text(cfg["url"])
-            data[site_id] = parse_site(site_id, text)
+            parsed = parse_site(site_id, text)
+            if parsed:
+                return parsed, None
+            last_exc = "page fetched but no prices matched (site layout may have changed)"
         except Exception as exc:  # noqa: BLE001
-            data[site_id] = {}
-            errors[site_id] = str(exc)
+            last_exc = str(exc)
+        if attempt < attempts:
+            time.sleep(3)
+    return None, last_exc
+
+
+def load_previous():
+    path = OUT_DIR / "prices.json"
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("data", {})
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+def main():
+    previous = load_previous()
+    data = {}
+    errors = {}
+    stale = []
+
+    for site_id, cfg in SITES.items():
+        parsed, err = fetch_site_with_retry(site_id, cfg)
+        if parsed:
+            data[site_id] = parsed
+        else:
+            # Keep last known good data instead of wiping it to empty, so a
+            # transient block/anti-bot response doesn't blank the site out.
+            data[site_id] = previous.get(site_id, {})
+            errors[site_id] = err or "unknown error"
+            stale.append(site_id)
 
     updated_at = datetime.datetime.utcnow().strftime("%d/%m/%Y %H:%M UTC")
     payload = {
@@ -128,6 +168,7 @@ def main():
         "sites": {sid: {"name": cfg["name"], "url": cfg["url"]} for sid, cfg in SITES.items()},
         "data": data,
         "errors": errors,
+        "stale_sites": stale,
     }
     (OUT_DIR / "prices.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
@@ -136,7 +177,7 @@ def main():
     total = sum(len(v) for v in data.values())
     print(f"[{updated_at}] Wrote {total} price points across {len(data)} sites.")
     for site_id, err in errors.items():
-        print(f"  ! {site_id}: {err}")
+        print(f"  ! {site_id}: FAILED this run ({err}) - kept previous data")
 
 
 if __name__ == "__main__":
