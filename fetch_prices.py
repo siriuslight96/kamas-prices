@@ -23,7 +23,7 @@ SITES = {
     # Both sites currently expose their live seller table in the HTML returned
     # to a normal HTTP client, so they can be scraped without a browser.
     "ventekamas": {"name": "VenteKamas", "url": "https://ventekamas.com/eng/vendre-des-kamas/"},
-    "tryandjudge": {"name": "TryAndJudge", "url": "https://vente.tryandjudge.com/dofuskamas.php"},
+    "tryandjudge": {"name": "TryAndJudge", "url": "https://vente.tryandjudge.com/index.php"},
 }
 
 SERVERS = [
@@ -73,7 +73,8 @@ PRICE_PATTERNS = {
     # target the Morocco bank-transfer column, which is the same MAD/DH unit
     # used by the other sites in this app.
     "ventekamas": r"([0-9]+(?:[.,][0-9]+)?)\s*(?:DHS?|MAD)/M",
-    "tryandjudge": r"PRIX\s*/\s*M\s*([0-9]+(?:[.,][0-9]+)?)\s*MAD",
+    # The live seller page lists each server as: server ... PRICE MAD / M STATUS.
+    "tryandjudge": r"([0-9]+(?:[.,][0-9]+)?)\s*MAD\s*/\s*M",
 }
 
 # status word -> True (still buying / open) or False (full / closed),
@@ -82,7 +83,7 @@ STATUS_WORDS = {
     "ibendouma": [("Stock complet", False), ("Ouvert", True)],
     "leskamas": [("Sourcing", True), ("Full", False)],
     "ventekamas": [("Stock complet", False), ("Incomplet", True)],
-    "tryandjudge": [("Fermé", False), ("Ferme", False), ("Complet", False), ("Ouvert", True)],
+    "tryandjudge": [("Stock complet", False), ("Fermé", False), ("Ferme", False), ("Complet", False), ("Ouvert", True)],
 }
 
 
@@ -91,6 +92,46 @@ def parse_site(site_id, text):
     price_pattern = PRICE_PATTERNS[site_id]
     status_alt = "|".join(re.escape(word) for word, _ in STATUS_WORDS[site_id])
     status_lookup = dict(STATUS_WORDS[site_id])
+
+    # TryAndJudge's live seller page is the authoritative source for seller
+    # availability.  Do not scan the whole page for a status word: that can
+    # accidentally pick up unrelated text such as "Support vendeur - Ouvert
+    # maintenant".  Instead, bound the match to the current server's row.
+    if site_id == "tryandjudge":
+        for server in SERVERS:
+            for variant in variants_for(server):
+                # Stop before the next server card/name.  The live page is
+                # rendered as one text stream after scripts are stripped, so
+                # using the server name as the anchor is safer than a global
+                # price/status search.
+                next_server_alt = "|".join(
+                    re.escape(v) for s in SERVERS if s != server for v in variants_for(s)
+                )
+                pattern = re.compile(
+                    re.escape(variant)
+                    + r".{0,100}?" + price_pattern
+                    + r".{0,55}?(" + status_alt + r")",
+                    re.IGNORECASE | re.DOTALL,
+                )
+                match = pattern.search(text)
+                if not match:
+                    continue
+                # Reject a match if another known server appears between the
+                # requested server and its price/status. This prevents status
+                # leakage from a neighbouring server.
+                segment_start = match.start()
+                segment_end = match.end()
+                between = text[segment_start:segment_end]
+                if next_server_alt and re.search(r"(?:" + next_server_alt + r")", between, re.IGNORECASE):
+                    continue
+                price = float(match.group(1).replace(",", "."))
+                status_word = match.group(2)
+                open_status = next(
+                    (v for k, v in status_lookup.items() if k.lower() == status_word.lower()), None
+                )
+                results[server] = {"price": price, "open": open_status}
+                break
+        return results
 
     for server in SERVERS:
         match = None
