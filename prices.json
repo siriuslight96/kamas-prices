@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 15:34 UTC",
+  "updated_at": "06/10/2026 15:49 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -25,11 +25,11 @@
         "open": true
       },
       "Rafal": {
-        "price": 3.796,
+        "price": 3.797,
         "open": true
       },
       "Brial": {
-        "price": 3.524,
+        "price": 3.535,
         "open": true
       },
       "Kourial": {
@@ -37,7 +37,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.138,
+        "price": 4.15,
         "open": true
       },
       "Tylezia": {
@@ -45,27 +45,27 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.11,
+        "price": 7.047,
         "open": true
       },
       "Hell Mina": {
-        "price": 5.375,
+        "price": 5.605,
         "open": true
       },
       "Imagiro": {
-        "price": 3.8,
+        "price": 3.846,
         "open": true
       },
       "Talkasha": {
-        "price": 3.984,
+        "price": 3.983,
         "open": true
       },
       "Ombre": {
-        "price": 5.254,
+        "price": 5.24,
         "open": true
       },
       "Mikhal": {
-        "price": 6.571,
+        "price": 6.619,
         "open": true
       },
       "Salar": {
@@ -89,7 +89,7 @@
         "open": false
       },
       "Boune": {
-        "price": 21.866,
+        "price": 23.321,
         "open": true
       },
       "Allisteria": {
@@ -101,15 +101,15 @@
         "open": true
       },
       "Pandora": {
-        "price": 22.719,
+        "price": 22.767,
         "open": true
       },
       "Ogrest": {
-        "price": 41.313,
+        "price": 41.401,
         "open": true
       },
       "Rubilax": {
-        "price": 9.49,
+        "price": 9.51,
         "open": true
       }
     },
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 27.775,
+        "price": 27.742,
         "open": false
       },
       "Allisteria": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 7.11,
+        "price": 7.25,
         "open": true
       },
       "Rafal": {
@@ -371,7 +371,7 @@
         "open": true
       },
       "Boune": {
-        "price": 26.25,
+        "price": 27.0,
         "open": true
       },
       "Allisteria": {
