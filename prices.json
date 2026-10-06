@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 14:36 UTC",
+  "updated_at": "06/10/2026 14:51 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -25,19 +25,19 @@
         "open": true
       },
       "Rafal": {
-        "price": 3.868,
+        "price": 3.864,
         "open": true
       },
       "Brial": {
-        "price": 3.524,
+        "price": 3.535,
         "open": true
       },
       "Kourial": {
-        "price": 6.687,
+        "price": 6.696,
         "open": true
       },
       "Orukam": {
-        "price": 4.214,
+        "price": 4.203,
         "open": true
       },
       "Tylezia": {
@@ -45,7 +45,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.036,
+        "price": 7.11,
         "open": true
       },
       "Hell Mina": {
@@ -53,15 +53,15 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.87,
+        "price": 3.872,
         "open": true
       },
       "Talkasha": {
-        "price": 3.982,
+        "price": 3.983,
         "open": true
       },
       "Ombre": {
-        "price": 5.257,
+        "price": 5.254,
         "open": true
       },
       "Mikhal": {
@@ -101,15 +101,15 @@
         "open": true
       },
       "Pandora": {
-        "price": 22.73,
+        "price": 22.728,
         "open": true
       },
       "Ogrest": {
-        "price": 41.3,
+        "price": 41.229,
         "open": true
       },
       "Rubilax": {
-        "price": 9.507,
+        "price": 9.478,
         "open": true
       }
     },
@@ -171,7 +171,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 29.7,
+        "price": 30.25,
         "open": true
       },
       "Tiliwan": {
@@ -307,7 +307,7 @@
         "open": true
       },
       "Rafal": {
-        "price": 3.76,
+        "price": 3.69,
         "open": true
       },
       "Brial": {
@@ -323,7 +323,7 @@
         "open": true
       },
       "Tylezia": {
-        "price": 4.44,
+        "price": 4.31,
         "open": true
       },
       "Draconiros": {
@@ -359,7 +359,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 29.4,
+        "price": 29.95,
         "open": true
       },
       "Tiliwan": {
@@ -367,7 +367,7 @@
         "open": true
       },
       "Talok": {
-        "price": 14.41,
+        "price": 14.73,
         "open": true
       },
       "Boune": {
