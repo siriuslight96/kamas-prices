@@ -52,16 +52,22 @@ HEADERS = {
 }
 
 
-def fetch_flat_text(url):
-    # A timestamped query param defeats most CDN/page caching that would
-    # otherwise serve the same snapshot to every automated request.
+def fetch_rows(url):
+    """Return the page as a list of row-texts (one per <tr>), so a price and
+    its status always come from the same table row and can't leak into a
+    neighboring server's data. Falls back to one big flattened blob if the
+    page has no <tr> elements at all."""
     bust_url = url + ("&" if "?" in url else "?") + f"_ts={int(datetime.datetime.utcnow().timestamp())}"
     resp = requests.get(bust_url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
     for tag in soup(["script", "style", "noscript"]):
         tag.decompose()
-    return soup.get_text("\n")
+    rows = soup.find_all("tr")
+    row_texts = [r.get_text(" ", strip=True) for r in rows]
+    if not row_texts:
+        row_texts = [soup.get_text(" ", strip=True)]
+    return row_texts
 
 
 def status_from_window(site_id, window):
@@ -98,24 +104,31 @@ PRICE_PATTERNS = {
 }
 
 
-def parse_site(site_id, text):
+def parse_site(site_id, row_texts):
     results = {}
     price_pattern = PRICE_PATTERNS[site_id]
     for server in SERVERS:
-        match = None
-        for variant in variants_for(server):
-            pattern = re.compile(
-                re.escape(variant) + r".{0,400}?" + price_pattern,
-                re.IGNORECASE | re.DOTALL,
-            )
-            match = pattern.search(text)
-            if match:
+        found = None
+        for row_text in row_texts:
+            variant_hit = any(v.lower() in row_text.lower() for v in variants_for(server))
+            if not variant_hit:
+                continue
+            for variant in variants_for(server):
+                pattern = re.compile(
+                    re.escape(variant) + r".{0,150}?" + price_pattern,
+                    re.IGNORECASE | re.DOTALL,
+                )
+                m = pattern.search(row_text)
+                if m:
+                    price = float(m.group(1).replace(",", "."))
+                    # Status is read from this same row only, so it can
+                    # never be the neighboring server's status.
+                    found = {"price": price, "open": status_from_window(site_id, row_text)}
+                    break
+            if found:
                 break
-        if not match:
-            continue
-        price = float(match.group(1).replace(",", "."))
-        window = text[match.start():match.start() + 600]
-        results[server] = {"price": price, "open": status_from_window(site_id, window)}
+        if found:
+            results[server] = found
     return results
 
 
@@ -123,8 +136,8 @@ def fetch_site_with_retry(site_id, cfg, attempts=2):
     last_exc = None
     for attempt in range(1, attempts + 1):
         try:
-            text = fetch_flat_text(cfg["url"])
-            parsed = parse_site(site_id, text)
+            row_texts = fetch_rows(cfg["url"])
+            parsed = parse_site(site_id, row_texts)
             if parsed:
                 return parsed, None
             last_exc = "page fetched but no prices matched (site layout may have changed)"
