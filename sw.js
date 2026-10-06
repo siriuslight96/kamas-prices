@@ -1,4 +1,4 @@
-const CACHE = "kamas-shell-v1";
+const CACHE = "kamas-shell-v2";
 const SHELL_FILES = ["./index.html", "./manifest.json", "./icons/icon-192.png", "./icons/icon-512.png"];
 
 self.addEventListener("install", (event) => {

@@ -15,6 +15,11 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+try:
+    from playwright.sync_api import sync_playwright
+except ImportError:
+    sync_playwright = None
+
 OUT_DIR = Path(__file__).parent
 
 SITES = {
@@ -65,11 +70,31 @@ def fetch_text(url):
 
 
 def fetch_html(url):
-    """Return the raw HTML so server-specific status can be read from its card/row."""
-    bust_url = url + ("&" if "?" in url else "?") + f"_ts={int(datetime.datetime.utcnow().timestamp())}"
-    resp = requests.get(bust_url, headers=HEADERS, timeout=20)
-    resp.raise_for_status()
-    return resp.text
+    """Return rendered HTML for TryAndJudge.
+
+    TryAndJudge builds/updates its market rows in the browser, so a plain
+    requests.get() can return HTML that does not contain the current
+    .market-row / .market-status values visible in the user's browser.
+    Playwright is therefore the authoritative fetch path for this site.
+    """
+    if sync_playwright is None:
+        raise RuntimeError("Playwright is required for TryAndJudge rendering")
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page(
+            user_agent=HEADERS["User-Agent"],
+            locale="fr-FR",
+        )
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            # The market table is client-rendered. Give its JS/API calls time
+            # to populate the rows, then require the actual row elements.
+            page.wait_for_selector("button.market-row", timeout=20000)
+            page.wait_for_timeout(1500)
+            return page.content()
+        finally:
+            browser.close()
 
 
 # Each scrapable site formats its price differently: period vs comma
