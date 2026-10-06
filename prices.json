@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 16:49 UTC",
+  "updated_at": "06/10/2026 17:01 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 7.161,
+        "price": 7.26,
         "open": true
       },
       "Rafal": {
@@ -131,7 +131,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.125,
+        "price": 4.18,
         "open": true
       },
       "Tylezia": {
@@ -139,12 +139,12 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.04,
+        "price": 7.26,
         "open": true
       },
       "Hell Mina": {
-        "price": 5.533,
-        "open": true
+        "price": 6.82,
+        "open": false
       },
       "Imagiro": {
         "price": 4.07,
@@ -159,7 +159,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 7.205,
+        "price": 7.37,
         "open": true
       },
       "Salar": {
@@ -167,7 +167,7 @@
         "open": true
       },
       "Blair": {
-        "price": 12.54,
+        "price": 12.98,
         "open": true
       },
       "Kelerog": {
@@ -179,12 +179,12 @@
         "open": true
       },
       "Talok": {
-        "price": 17.38,
+        "price": 17.6,
         "open": true
       },
       "Boune": {
-        "price": 27.742,
-        "open": false
+        "price": 23.287,
+        "open": true
       },
       "Allisteria": {
         "price": 8.58,
@@ -195,7 +195,7 @@
         "open": true
       },
       "Pandora": {
-        "price": 22.0,
+        "price": 23.1,
         "open": true
       },
       "Ogrest": {
@@ -331,7 +331,7 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 5.94,
+        "price": 5.65,
         "open": true
       },
       "Imagiro": {
@@ -347,7 +347,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.87,
+        "price": 7.11,
         "open": true
       },
       "Salar": {
@@ -359,7 +359,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 31.44,
+        "price": 29.95,
         "open": true
       },
       "Tiliwan": {
