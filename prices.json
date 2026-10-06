@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 05:38 UTC",
+  "updated_at": "06/10/2026 05:44 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -116,7 +116,7 @@
     "leskamas": {
       "Dakal": {
         "price": 8.261,
-        "open": true
+        "open": false
       },
       "Rafal": {
         "price": 3.74,
@@ -128,7 +128,7 @@
       },
       "Kourial": {
         "price": 8.36,
-        "open": true
+        "open": false
       },
       "Orukam": {
         "price": 3.96,
@@ -139,12 +139,12 @@
         "open": true
       },
       "Draconiros": {
-        "price": 8.426,
+        "price": 6.908,
         "open": true
       },
       "Hell Mina": {
         "price": 6.853,
-        "open": true
+        "open": false
       },
       "Imagiro": {
         "price": 3.74,
@@ -160,7 +160,7 @@
       },
       "Mikhal": {
         "price": 8.151,
-        "open": true
+        "open": false
       },
       "Salar": {
         "price": 3.52,
@@ -176,7 +176,7 @@
       },
       "Tiliwan": {
         "price": 23.683,
-        "open": true
+        "open": false
       },
       "Talok": {
         "price": 16.17,
@@ -184,7 +184,7 @@
       },
       "Boune": {
         "price": 27.709,
-        "open": true
+        "open": false
       },
       "Allisteria": {
         "price": 8.36,
@@ -230,7 +230,7 @@
       },
       "Tylezia": {
         "price": 4.734,
-        "open": true
+        "open": false
       },
       "Draconiros": {
         "price": 8.604,
@@ -250,7 +250,7 @@
       },
       "Ombre": {
         "price": 7.779,
-        "open": true
+        "open": false
       },
       "Mikhal": {
         "price": 8.07,
@@ -258,7 +258,7 @@
       },
       "Salar": {
         "price": 4.375,
-        "open": true
+        "open": false
       },
       "Blair": {
         "price": 12.047,
@@ -266,7 +266,7 @@
       },
       "Kelerog": {
         "price": 34.542,
-        "open": true
+        "open": false
       },
       "Tiliwan": {
         "price": 22.873,
@@ -274,7 +274,7 @@
       },
       "Talok": {
         "price": 11.0,
-        "open": true
+        "open": false
       },
       "Boune": {
         "price": 24.551,
