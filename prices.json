@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/10/2026 05:25 UTC",
+  "updated_at": "06/10/2026 05:36 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -315,7 +315,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 7.09,
+        "price": 7.44,
         "open": true
       },
       "Orukam": {
@@ -363,11 +363,11 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 21.46,
+        "price": 22.53,
         "open": true
       },
       "Talok": {
-        "price": 13.71,
+        "price": 14.18,
         "open": true
       },
       "Boune": {
@@ -384,5 +384,6 @@
       }
     }
   },
-  "errors": {}
+  "errors": {},
+  "stale_sites": []
 }
