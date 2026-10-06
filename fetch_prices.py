@@ -102,49 +102,90 @@ def parse_site(site_id, text):
     status_lookup = dict(STATUS_WORDS[site_id])
 
     if site_id == "tryandjudge":
-        # IMPORTANT: TryAndJudge can contain generic "Ouvert" text elsewhere
-        # on the page. Never infer a server's stock from that global text.
-        # Instead, find the smallest DOM container that contains THIS server,
-        # its price and its own status label.
+        # TryAndJudge exposes the authoritative status in each individual
+        # .market-row. Example from the page DOM:
+        #   <button class="market-row ...">
+        #     <span class="market-name">Dakal</span>
+        #     <span class="market-price">7,29</span>
+        #     <span class="market-status full">Complet</span>
+        #   </button>
+        # IMPORTANT: only read .market-status INSIDE THE SAME .market-row as
+        # the selected server. Never search the whole page for "Ouvert".
         soup = BeautifulSoup(text, "html.parser")
-        price_re = re.compile(price_pattern, re.IGNORECASE)
-        status_re = re.compile(r"\b(Stock\s+complet|Complet|Fermé|Ferme|Ouvert)\b", re.IGNORECASE)
+        results = {}
 
+        def norm_name(value):
+            value = re.sub(r"\s+", " ", value or "").strip().lower()
+            value = value.replace("(shadow)", "").replace("-", " ")
+            return re.sub(r"\s+", " ", value).strip()
+
+        wanted = {}
         for server in SERVERS:
-            found = None
             for variant in variants_for(server):
-                name_re = re.compile(r"^\s*" + re.escape(variant) + r"\s*$", re.IGNORECASE)
-                # Start from elements whose visible text is exactly the server name.
-                name_nodes = soup.find_all(string=name_re)
-                for name_node in name_nodes:
-                    node = name_node.parent
-                    ancestor = node
-                    for _ in range(8):
-                        if ancestor is None:
-                            break
-                        container_text = ancestor.get_text(" ", strip=True)
-                        if len(container_text) <= 1600 and price_re.search(container_text) and status_re.search(container_text):
-                            pm = price_re.search(container_text)
-                            sm = status_re.search(container_text)
-                            if pm and sm:
-                                found = (float(pm.group(1).replace(",", ".")), sm.group(1))
-                                break
-                        ancestor = ancestor.parent
-                    if found:
-                        break
-                if found:
-                    break
+                wanted[norm_name(variant)] = server
 
-            if found:
-                price, status_word = found
-                normalized = re.sub(r"\s+", " ", status_word.strip().lower())
-                if normalized in {"stock complet", "complet", "fermé", "ferme"}:
-                    open_status = False
-                elif normalized == "ouvert":
-                    open_status = True
-                else:
-                    open_status = None
-                results[server] = {"price": price, "open": open_status}
+        # Primary parser: exact DOM structure shown by TryAndJudge.
+        rows = soup.select("button.market-row")
+        for row in rows:
+            name_el = row.select_one(".market-name")
+            price_el = row.select_one(".market-price")
+            status_el = row.select_one(".market-status")
+            if not name_el or not price_el or not status_el:
+                continue
+
+            server_name = name_el.get_text(" ", strip=True)
+            canonical = wanted.get(norm_name(server_name))
+            if not canonical:
+                continue
+
+            price_text = price_el.get_text(" ", strip=True)
+            pm = re.search(r"([0-9]+(?:[.,][0-9]+)?)", price_text)
+            if not pm:
+                continue
+            price = float(pm.group(1).replace(",", "."))
+
+            status_text = re.sub(r"\s+", " ", status_el.get_text(" ", strip=True)).strip().lower()
+            status_classes = {c.lower() for c in status_el.get("class", [])}
+
+            # The class is authoritative when present: the screenshot shows
+            # market-status full + text "Complet" for Dakal.
+            if "full" in status_classes or "complet" in status_text or "stock complet" in status_text:
+                open_status = False
+            elif "open" in status_classes or "ouvert" in status_text:
+                open_status = True
+            elif "closed" in status_classes or "fermé" in status_text or "ferme" in status_text:
+                open_status = False
+            else:
+                # Do not borrow a status from another row.
+                open_status = None
+
+            results[canonical] = {"price": price, "open": open_status}
+
+        # Fallback for minor markup changes: still require one row/container
+        # containing the server, price and status. This is deliberately bounded
+        # to the row and never scans the global page text.
+        if not results:
+            price_re = re.compile(price_pattern, re.IGNORECASE)
+            status_re = re.compile(r"\b(Stock\s+complet|Complet|Fermé|Ferme|Ouvert)\b", re.IGNORECASE)
+            for server in SERVERS:
+                for variant in variants_for(server):
+                    name_re = re.compile(re.escape(variant), re.IGNORECASE)
+                    for row in soup.select("button.market-row, .market-row"):
+                        row_text = row.get_text(" ", strip=True)
+                        if not name_re.search(row_text):
+                            continue
+                        pm = price_re.search(row_text)
+                        sm = status_re.search(row_text)
+                        if not pm or not sm:
+                            continue
+                        status_word = re.sub(r"\s+", " ", sm.group(1).lower())
+                        open_status = status_word == "ouvert"
+                        if status_word in {"stock complet", "complet", "fermé", "ferme"}:
+                            open_status = False
+                        results[server] = {"price": float(pm.group(1).replace(",", ".")), "open": open_status}
+                        break
+                    if server in results:
+                        break
 
         return results
 
