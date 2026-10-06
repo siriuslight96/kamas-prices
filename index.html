@@ -88,6 +88,8 @@ function render() {
   const openPrices = entries.filter((e) => e.open).map((e) => e.price);
   const maxOpen = openPrices.length ? Math.max(...openPrices) : null;
 
+  const linkOnly = new Set(STATE.link_only_sites || []);
+
   entries.forEach((e) => {
     const hasData = e.price !== null && e.price !== undefined;
     const isBest = hasData && e.open && e.price === maxOpen;
@@ -97,9 +99,14 @@ function render() {
     const badge = hasData
       ? `<span class="badge ${e.open ? "open" : "closed"}">${e.open ? "Ouvert" : "Stock complet"}</span>`
       : "";
-    const priceHtml = hasData
-      ? `${badge}<span class="price${isBest ? " best" : ""}">${fmt(e.price)}</span>`
-      : `<span style="font-family:system-ui,sans-serif;font-size:13px;color:var(--paper-dim);opacity:.55">pas de donnee</span>`;
+    let priceHtml;
+    if (hasData) {
+      priceHtml = `${badge}<span class="price${isBest ? " best" : ""}">${fmt(e.price)}</span>`;
+    } else if (linkOnly.has(e.id)) {
+      priceHtml = `<span style="font-family:system-ui,sans-serif;font-size:13px;color:var(--paper-dim);opacity:.55">voir prix sur le site</span>`;
+    } else {
+      priceHtml = `<span style="font-family:system-ui,sans-serif;font-size:13px;color:var(--paper-dim);opacity:.55">pas de donnee</span>`;
+    }
     a.innerHTML = `<span class="site-name">${e.name} \u2197</span><span style="display:flex;align-items:center;gap:10px">${priceHtml}</span>`;
     rowsEl.appendChild(a);
   });

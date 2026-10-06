@@ -20,6 +20,14 @@ OUT_DIR = Path(__file__).parent
 SITES = {
     "ibendouma": {"name": "iBendouma", "url": "https://www.ibendouma.com/vendre"},
     "leskamas": {"name": "LesKamas", "url": "https://www.leskamas.com/en-gb/sell-kamas.html"},
+}
+
+# VenteKamas and TryAndJudge inject their real prices client-side via
+# JavaScript after the page loads; a plain HTTP fetch (what this script does)
+# only ever sees a static placeholder value that never updates. They're kept
+# here as link-out-only entries (no price scraped) so the app still shows
+# them with a working link, without displaying numbers we know are wrong.
+LINK_ONLY_SITES = {
     "ventekamas": {"name": "VenteKamas", "url": "https://ventekamas.com/vendre-des-kamas/"},
     "tryandjudge": {"name": "TryAndJudge", "url": "https://vente.tryandjudge.com/dofuskamas.php"},
 }
@@ -62,13 +70,11 @@ def fetch_text(url):
     return soup.get_text(" ", strip=True)
 
 
-# Each site formats its price differently: period vs comma decimals, and a
-# different currency suffix right after the number.
+# Each scrapable site formats its price differently: period vs comma
+# decimals, and a different currency suffix right after the number.
 PRICE_PATTERNS = {
     "ibendouma": r"([0-9]+\.[0-9]+)\s*Dhs?/M",
     "leskamas": r"([0-9]+\.[0-9]+)\s*Dhs?/M",
-    "ventekamas": r"([0-9]+\.[0-9]+)\s*Dhs?/M",
-    "tryandjudge": r"([0-9]+,[0-9]+)\s*\*?MAD",
 }
 
 # status word -> True (still buying / open) or False (full / closed),
@@ -76,8 +82,6 @@ PRICE_PATTERNS = {
 STATUS_WORDS = {
     "ibendouma": [("Stock complet", False), ("Ouvert", True)],
     "leskamas": [("Sourcing", True), ("Full", False)],
-    "ventekamas": [("Incomplet", True), ("Stock complet", False)],
-    "tryandjudge": [("Stock complet", False), ("Ferme", False), ("Ferm", False), ("Ouvert", True)],
 }
 
 
@@ -154,13 +158,15 @@ def main():
             errors[site_id] = err or "unknown error"
             stale.append(site_id)
 
+    all_sites = {**SITES, **LINK_ONLY_SITES}
     updated_at = datetime.datetime.utcnow().strftime("%d/%m/%Y %H:%M UTC")
     payload = {
         "updated_at": updated_at,
-        "sites": {sid: {"name": cfg["name"], "url": cfg["url"]} for sid, cfg in SITES.items()},
-        "data": data,
+        "sites": {sid: {"name": cfg["name"], "url": cfg["url"]} for sid, cfg in all_sites.items()},
+        "data": data,  # only contains entries for sites in SITES (the scrapable ones)
         "errors": errors,
         "stale_sites": stale,
+        "link_only_sites": list(LINK_ONLY_SITES.keys()),
     }
     (OUT_DIR / "prices.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
