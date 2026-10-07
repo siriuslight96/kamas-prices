@@ -1,5 +1,5 @@
 {
-  "updated_at": "07/10/2026 19:41 UTC",
+  "updated_at": "07/10/2026 19:53 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -187,7 +187,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 8.8,
+        "price": 9.02,
         "open": true
       },
       "Fallanster": {
@@ -199,7 +199,7 @@
         "open": true
       },
       "Ogrest": {
-        "price": 44.0,
+        "price": 42.68,
         "open": true
       },
       "Rubilax": {
@@ -360,7 +360,7 @@
       },
       "Allisteria": {
         "price": 8.7,
-        "open": false
+        "open": true
       },
       "Fallanster": {
         "price": 3.8,
