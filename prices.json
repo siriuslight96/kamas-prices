@@ -1,5 +1,5 @@
 {
-  "updated_at": "07/10/2026 20:47 UTC",
+  "updated_at": "07/10/2026 21:01 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,8 +127,8 @@
         "open": true
       },
       "Kourial": {
-        "price": 7.15,
-        "open": true
+        "price": 8.085,
+        "open": false
       },
       "Orukam": {
         "price": 4.07,
@@ -187,7 +187,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 9.35,
+        "price": 8.8,
         "open": true
       },
       "Fallanster": {
