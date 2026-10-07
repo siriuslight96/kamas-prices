@@ -1,5 +1,5 @@
 {
-  "updated_at": "07/10/2026 11:42 UTC",
+  "updated_at": "07/10/2026 11:59 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -25,23 +25,23 @@
         "open": true
       },
       "Rafal": {
-        "price": 3.648,
+        "price": 3.652,
         "open": true
       },
       "Brial": {
-        "price": 3.621,
+        "price": 3.649,
         "open": true
       },
       "Kourial": {
-        "price": 7.04,
+        "price": 7.049,
         "open": true
       },
       "Orukam": {
-        "price": 4.028,
+        "price": 4.016,
         "open": true
       },
       "Tylezia": {
-        "price": 4.125,
+        "price": 4.141,
         "open": true
       },
       "Draconiros": {
@@ -49,27 +49,27 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 6.038,
+        "price": 6.06,
         "open": true
       },
       "Imagiro": {
-        "price": 3.981,
+        "price": 3.978,
         "open": true
       },
       "Talkasha": {
-        "price": 3.905,
+        "price": 3.918,
         "open": true
       },
       "Ombre": {
-        "price": 6.199,
+        "price": 6.213,
         "open": true
       },
       "Mikhal": {
-        "price": 7.58,
+        "price": 7.414,
         "open": true
       },
       "Salar": {
-        "price": 3.647,
+        "price": 3.693,
         "open": true
       },
       "Blair": {
@@ -89,27 +89,27 @@
         "open": false
       },
       "Boune": {
-        "price": 25.183,
+        "price": 25.195,
         "open": true
       },
       "Allisteria": {
-        "price": 8.748,
+        "price": 8.712,
         "open": true
       },
       "Fallanster": {
-        "price": 3.912,
+        "price": 3.909,
         "open": true
       },
       "Pandora": {
-        "price": 22.73,
+        "price": 22.714,
         "open": true
       },
       "Ogrest": {
-        "price": 44.584,
+        "price": 44.786,
         "open": true
       },
       "Rubilax": {
-        "price": 9.492,
+        "price": 9.49,
         "open": true
       }
     },
@@ -139,7 +139,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 6.886,
+        "price": 7.15,
         "open": true
       },
       "Hell Mina": {
@@ -343,11 +343,11 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.82,
+        "price": 5.8,
         "open": false
       },
       "Mikhal": {
-        "price": 7.31,
+        "price": 7.24,
         "open": false
       },
       "Salar": {
