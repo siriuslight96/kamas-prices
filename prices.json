@@ -1,5 +1,5 @@
 {
-  "updated_at": "07/10/2026 07:52 UTC",
+  "updated_at": "07/10/2026 08:08 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.732,
+        "price": 6.93,
         "open": true
       },
       "Rafal": {
@@ -135,7 +135,7 @@
         "open": true
       },
       "Tylezia": {
-        "price": 4.235,
+        "price": 4.29,
         "open": true
       },
       "Draconiros": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.93,
+        "price": 7.27,
         "open": false
       },
       "Rafal": {
