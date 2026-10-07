@@ -51,6 +51,12 @@
   .total { font-family:system-ui,sans-serif; font-weight:700; font-size:18px; color:var(--brass-bright); white-space:nowrap; }
   .meta { font-family: system-ui, sans-serif; font-size: 12px; color: var(--paper-dim); opacity: 0.55; margin-top: 18px; line-height: 1.6; }
   .pull { text-align: center; font-family: system-ui, sans-serif; font-size: 12px; color: var(--teal-bright); margin-bottom: 12px; }
+  .alert-box { background: var(--ink-soft); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 20px; }
+  .alert-title { font-family: system-ui,sans-serif; font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .alert-help { font-family: system-ui,sans-serif; font-size: 12px; color: var(--paper-dim); line-height: 1.5; margin-bottom: 12px; }
+  .alert-input { width:100%; background:var(--ink); color:var(--paper); border:1px solid var(--line); border-radius:8px; padding:11px 12px; font-size:16px; font-family:system-ui,sans-serif; margin-top:6px; margin-bottom:10px; }
+  .alert-button { width:100%; background:var(--teal); border:0; color:var(--paper); padding:11px; border-radius:8px; font-size:13px; font-family:system-ui,sans-serif; cursor:pointer; }
+  .alert-status { font-family:system-ui,sans-serif; font-size:12px; color:var(--teal-bright); margin-top:10px; line-height:1.5; }
   button#refresh {
     width: 100%; background: transparent; border: 1px solid var(--teal); color: var(--teal-bright);
     padding: 10px; border-radius: 8px; font-size: 13px; font-family: system-ui, sans-serif; margin-bottom: 16px;
@@ -65,6 +71,14 @@
 <main>
   <button id="refresh">Rafraichir maintenant</button>
   <select id="server-select"></select>
+  <div class="alert-box">
+    <div class="alert-title">🔔 Alerte prix Telegram</div>
+    <div class="alert-help">Configure une alerte dans GitHub Actions. Quand un vendeur <strong>ouvert</strong> atteint ou depasse ton prix cible, Telegram t'envoie une notification.</div>
+    <label style="font-family:system-ui,sans-serif;font-size:12px;color:var(--paper-dim)">Prix cible (DH/M)</label>
+    <input id="alert-target" class="alert-input" type="number" min="0" step="0.01" value="8" placeholder="Ex. 8">
+    <button id="alert-configure" class="alert-button">Configurer l'alerte dans GitHub Actions</button>
+    <div id="alert-status" class="alert-status"></div>
+  </div>
   <div class="calculator">
     <label for="kamas-amount">Quantite de Kamas a vendre (en M)</label>
     <input id="kamas-amount" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Ex. 100">
@@ -188,6 +202,22 @@ async function loadPrices() {
     document.getElementById("meta").textContent = "Impossible de charger prices.json pour le moment.";
   }
 }
+
+document.getElementById("alert-configure").addEventListener("click", () => {
+  const target = Number(document.getElementById("alert-target").value);
+  const server = document.getElementById("server-select").value;
+  const status = document.getElementById("alert-status");
+  if (!Number.isFinite(target) || target <= 0 || !server) {
+    status.textContent = "Entre un prix cible valide.";
+    return;
+  }
+  try { localStorage.setItem("kamas-alert-target", String(target)); } catch (e) {}
+  status.textContent = `Alerte preparee: ${server} a ${target.toFixed(2)} DH/M ou plus. Ouvre Actions → Configure Kamas Telegram alert et utilise ces valeurs.`;
+});
+try {
+  const savedTarget = localStorage.getItem("kamas-alert-target");
+  if (savedTarget) document.getElementById("alert-target").value = savedTarget;
+} catch (e) {}
 
 document.getElementById("server-select").addEventListener("change", (e) => {
   saveServer(e.target.value);
