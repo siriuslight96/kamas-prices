@@ -1,5 +1,5 @@
 {
-  "updated_at": "07/10/2026 06:28 UTC",
+  "updated_at": "07/10/2026 06:53 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -123,12 +123,12 @@
         "open": true
       },
       "Brial": {
-        "price": 3.575,
+        "price": 3.52,
         "open": true
       },
       "Kourial": {
-        "price": 8.096,
-        "open": false
+        "price": 6.6,
+        "open": true
       },
       "Orukam": {
         "price": 3.74,
@@ -315,7 +315,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 7.35,
+        "price": 6.99,
         "open": true
       },
       "Orukam": {
