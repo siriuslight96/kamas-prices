@@ -1,5 +1,5 @@
 {
-  "updated_at": "07/10/2026 23:03 UTC",
+  "updated_at": "07/10/2026 23:20 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -123,7 +123,7 @@
         "open": true
       },
       "Brial": {
-        "price": 3.96,
+        "price": 3.63,
         "open": true
       },
       "Kourial": {
@@ -187,7 +187,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 8.8,
+        "price": 9.9,
         "open": true
       },
       "Fallanster": {
@@ -311,7 +311,7 @@
         "open": true
       },
       "Brial": {
-        "price": 3.64,
+        "price": 3.65,
         "open": true
       },
       "Kourial": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 7.33,
+        "price": 7.35,
         "open": true
       },
       "Salar": {
@@ -356,7 +356,7 @@
       },
       "Boune": {
         "price": 24.43,
-        "open": true
+        "open": false
       },
       "Allisteria": {
         "price": 8.73,
