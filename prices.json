@@ -1,5 +1,5 @@
 {
-  "updated_at": "07/10/2026 05:50 UTC",
+  "updated_at": "07/10/2026 06:02 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,8 +115,8 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.82,
-        "open": true
+        "price": 8.14,
+        "open": false
       },
       "Rafal": {
         "price": 3.52,
@@ -175,7 +175,7 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 18.7,
+        "price": 18.92,
         "open": true
       },
       "Talok": {
@@ -199,7 +199,7 @@
         "open": true
       },
       "Ogrest": {
-        "price": 43.34,
+        "price": 44.0,
         "open": true
       },
       "Rubilax": {
@@ -303,8 +303,8 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.78,
-        "open": true
+        "price": 7.11,
+        "open": false
       },
       "Rafal": {
         "price": 3.71,
