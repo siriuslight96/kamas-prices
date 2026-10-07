@@ -1,5 +1,5 @@
 {
-  "updated_at": "07/10/2026 06:02 UTC",
+  "updated_at": "07/10/2026 06:28 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,8 +127,8 @@
         "open": true
       },
       "Kourial": {
-        "price": 7.15,
-        "open": true
+        "price": 8.096,
+        "open": false
       },
       "Orukam": {
         "price": 3.74,
@@ -143,7 +143,7 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 5.61,
+        "price": 5.72,
         "open": true
       },
       "Imagiro": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 7.11,
+        "price": 7.29,
         "open": false
       },
       "Rafal": {
@@ -315,7 +315,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 7.22,
+        "price": 7.35,
         "open": true
       },
       "Orukam": {
@@ -331,7 +331,7 @@
         "open": false
       },
       "Hell Mina": {
-        "price": 5.91,
+        "price": 5.94,
         "open": true
       },
       "Imagiro": {
