@@ -1,7 +1,0 @@
-{
-  "enabled": false,
-  "server": "Dakal",
-  "target_price": 8.0,
-  "notify_once": true,
-  "triggered": false
-}
