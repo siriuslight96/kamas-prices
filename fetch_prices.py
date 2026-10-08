@@ -70,12 +70,11 @@ def fetch_text(url):
 
 
 def fetch_html(url):
-    """Return rendered HTML for TryAndJudge.
+    """Return rendered HTML for browser-rendered seller tables.
 
-    TryAndJudge builds/updates its market rows in the browser, so a plain
-    requests.get() can return HTML that does not contain the current
-    .market-row / .market-status values visible in the user's browser.
-    Playwright is therefore the authoritative fetch path for this site.
+    TryAndJudge and VenteKamas can render/update their live market table in
+    the browser. Using Playwright for both avoids stale/partial HTML from a
+    plain HTTP request and lets the parser read the same table the user sees.
     """
     if sync_playwright is None:
         raise RuntimeError("Playwright is required for TryAndJudge rendering")
@@ -88,9 +87,10 @@ def fetch_html(url):
         )
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            # The market table is client-rendered. Give its JS/API calls time
-            # to populate the rows, then require the actual row elements.
-            page.wait_for_selector("button.market-row", timeout=20000)
+            # Wait for the rendered market table. TryAndJudge uses button.market-row;
+            # VenteKamas exposes the live rates as table rows.
+            selector = "button.market-row" if "tryandjudge" in url else "table tr"
+            page.wait_for_selector(selector, timeout=20000)
             page.wait_for_timeout(1500)
             return page.content()
         finally:
@@ -125,6 +125,66 @@ def parse_site(site_id, text):
     price_pattern = PRICE_PATTERNS[site_id]
     status_alt = "|".join(re.escape(word) for word, _ in STATUS_WORDS[site_id])
     status_lookup = dict(STATUS_WORDS[site_id])
+
+    if site_id == "ventekamas":
+        # VenteKamas has several payment columns in each table row. Read the
+        # exact table row and specifically take the Morocco bank-transfer
+        # value (DHS/M) plus the stock cell from that same row. This avoids
+        # accidentally picking the EUR/USDT value or a status from another
+        # server, and Playwright gives us the current rendered table.
+        soup = BeautifulSoup(text, "html.parser")
+        results = {}
+
+        def norm_name(value):
+            value = re.sub(r"\s+", " ", value or "").strip().lower()
+            value = value.replace("-", " ")
+            return re.sub(r"\s+", " ", value).strip()
+
+        wanted = {}
+        for server in SERVERS:
+            for variant in variants_for(server):
+                wanted[norm_name(variant)] = server
+
+        for row in soup.select("tr"):
+            cells = row.find_all(["td", "th"])
+            if len(cells) < 5:
+                continue
+
+            cell_texts = [re.sub(r"\s+", " ", c.get_text(" ", strip=True)).strip() for c in cells]
+            canonical = wanted.get(norm_name(cell_texts[0]))
+            if not canonical:
+                # Some markup can wrap the server name in extra text. Try an
+                # exact normalized match against every known alias.
+                first_cell = norm_name(cell_texts[0])
+                for variant, server in wanted.items():
+                    if first_cell == variant:
+                        canonical = server
+                        break
+            if not canonical:
+                continue
+
+            # Prefer the cell containing DHS/M or MAD/M. Current VenteKamas
+            # rows use DHS/M for the Morocco bank-transfer column.
+            price = None
+            for cell in cell_texts:
+                pm = re.search(r"([0-9]+(?:[.,][0-9]+)?)\s*(?:DHS?|MAD)\s*/\s*M", cell, re.IGNORECASE)
+                if pm:
+                    price = float(pm.group(1).replace(",", "."))
+                    break
+            if price is None:
+                continue
+
+            status_text = cell_texts[-1].lower() if cell_texts else ""
+            if "stock complet" in status_text or "complet" == status_text:
+                open_status = False
+            elif "incomplet" in status_text or "ouvert" in status_text:
+                open_status = True
+            else:
+                open_status = None
+
+            results[canonical] = {"price": price, "open": open_status}
+
+        return results
 
     if site_id == "tryandjudge":
         # TryAndJudge exposes the authoritative status in each individual
@@ -250,7 +310,7 @@ def fetch_site_with_retry(site_id, cfg, attempts=2):
     last_exc = None
     for attempt in range(1, attempts + 1):
         try:
-            text = fetch_html(cfg["url"]) if site_id == "tryandjudge" else fetch_text(cfg["url"])
+            text = fetch_html(cfg["url"]) if site_id in {"tryandjudge", "ventekamas"} else fetch_text(cfg["url"])
             parsed = parse_site(site_id, text)
             if parsed:
                 return parsed, None
