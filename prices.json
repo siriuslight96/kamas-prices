@@ -1,5 +1,5 @@
 {
-  "updated_at": "08/10/2026 09:10 UTC",
+  "updated_at": "08/10/2026 09:32 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -139,12 +139,12 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.59,
+        "price": 7.7,
         "open": true
       },
       "Hell Mina": {
-        "price": 6.754,
-        "open": false
+        "price": 5.478,
+        "open": true
       },
       "Imagiro": {
         "price": 4.07,
@@ -159,7 +159,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.666,
+        "price": 6.655,
         "open": true
       },
       "Salar": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 24.2,
+        "price": 24.75,
         "open": true
       },
       "Allisteria": {
@@ -307,7 +307,7 @@
         "open": false
       },
       "Rafal": {
-        "price": 3.69,
+        "price": 3.75,
         "open": true
       },
       "Brial": {
@@ -327,12 +327,12 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.86,
-        "open": false
+        "price": 8.23,
+        "open": true
       },
       "Hell Mina": {
-        "price": 5.94,
-        "open": false
+        "price": 5.65,
+        "open": true
       },
       "Imagiro": {
         "price": 4.11,
@@ -351,12 +351,12 @@
         "open": true
       },
       "Salar": {
-        "price": 3.64,
+        "price": 3.75,
         "open": false
       },
       "Boune": {
-        "price": 23.96,
-        "open": false
+        "price": 24.31,
+        "open": true
       },
       "Allisteria": {
         "price": 8.89,
