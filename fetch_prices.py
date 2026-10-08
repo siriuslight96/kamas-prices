@@ -25,8 +25,8 @@ OUT_DIR = Path(__file__).parent
 SITES = {
     "ibendouma": {"name": "iBendouma", "url": "https://www.ibendouma.com/vendre"},
     "leskamas": {"name": "LesKamas", "url": "https://www.leskamas.com/en-gb/sell-kamas.html"},
-    # Both sites currently expose their live seller table in the HTML returned
-    # to a normal HTTP client, so they can be scraped without a browser.
+    # VenteKamas is rendered/updated in the browser, so use Playwright and
+    # read the exact Virement Maroc (DHS/M) table column.
     "ventekamas": {"name": "VenteKamas", "url": "https://ventekamas.com/eng/vendre-des-kamas/"},
     "tryandjudge": {"name": "TryAndJudge", "url": "https://vente.tryandjudge.com/index.php"},
 }
@@ -70,12 +70,7 @@ def fetch_text(url):
 
 
 def fetch_html(url):
-    """Return rendered HTML for browser-rendered seller tables.
-
-    TryAndJudge and VenteKamas can render/update their live market table in
-    the browser. Using Playwright for both avoids stale/partial HTML from a
-    plain HTTP request and lets the parser read the same table the user sees.
-    """
+    """Return browser-rendered HTML for sites whose live tables are dynamic."""
     if sync_playwright is None:
         raise RuntimeError("Playwright is required for TryAndJudge rendering")
 
@@ -87,11 +82,12 @@ def fetch_html(url):
         )
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            # Wait for the rendered market table. TryAndJudge uses button.market-row;
-            # VenteKamas exposes the live rates as table rows.
-            selector = "button.market-row" if "tryandjudge" in url else "table tr"
+            # Both dynamic seller tables are rendered/updated in the browser.
+            # Wait for a real table (VenteKamas) or market row (TryAndJudge).
+            selector = "button.market-row" if "tryandjudge" in url.lower() else "table tr"
             page.wait_for_selector(selector, timeout=20000)
-            page.wait_for_timeout(1500)
+            # Allow the page's own JS/API calls to finish updating the prices.
+            page.wait_for_timeout(2500)
             return page.content()
         finally:
             browser.close()
@@ -127,11 +123,10 @@ def parse_site(site_id, text):
     status_lookup = dict(STATUS_WORDS[site_id])
 
     if site_id == "ventekamas":
-        # VenteKamas has several payment columns in each table row. Read the
-        # exact table row and specifically take the Morocco bank-transfer
-        # value (DHS/M) plus the stock cell from that same row. This avoids
-        # accidentally picking the EUR/USDT value or a status from another
-        # server, and Playwright gives us the current rendered table.
+        # VenteKamas has several prices in every row (EUR, USDT, and Morocco
+        # bank transfer). Never regex the whole row for a DHS price: that can
+        # accidentally select stale/hidden markup. Instead, locate the exact
+        # table column from the header, then read that same cell for each row.
         soup = BeautifulSoup(text, "html.parser")
         results = {}
 
@@ -145,57 +140,78 @@ def parse_site(site_id, text):
             for variant in variants_for(server):
                 wanted[norm_name(variant)] = server
 
-        for row in soup.select("tr"):
-            cells = row.find_all(["td", "th"])
-            if len(cells) < 5:
+        for table in soup.select("table"):
+            header_rows = table.select("thead tr") or table.select("tr")[:1]
+            if not header_rows:
                 continue
 
-            cell_texts = [re.sub(r"\s+", " ", c.get_text(" ", strip=True)).strip() for c in cells]
-            canonical = wanted.get(norm_name(cell_texts[0]))
-            if not canonical:
-                # Some markup can wrap the server name in extra text. Try an
-                # exact normalized match against every known alias.
-                first_cell = norm_name(cell_texts[0])
-                for variant, server in wanted.items():
-                    if first_cell == variant:
-                        canonical = server
-                        break
-            if not canonical:
+            header_cells = header_rows[0].find_all(["th", "td"])
+            headers = [norm_name(c.get_text(" ", strip=True)) for c in header_cells]
+
+            # Current VenteKamas header is: Serveur, PayPal, Skrill, Bitcoin,
+            # USDT / USDC, Virement Maroc, Stock. We find the column by name so
+            # a future insertion/removal of another payment column won't break it.
+            price_col = next(
+                (i for i, h in enumerate(headers) if "virement maroc" in h or "maroc" in h and "dhs" in h),
+                None,
+            )
+            stock_col = next(
+                (i for i, h in enumerate(headers) if h == "stock" or "stock" in h),
+                None,
+            )
+            if price_col is None:
+                # Fallback for markup where the header text is split but the
+                # column is still identifiable as a DHS/M column.
+                price_col = next((
+                    i for i, h in enumerate(headers)
+                    if "dhs" in h or "mad" in h
+                ), None)
+            if price_col is None:
                 continue
 
-            # Prefer the cell containing DHS/M or MAD/M. Current VenteKamas
-            # rows use DHS/M for the Morocco bank-transfer column.
-            price = None
-            for cell in cell_texts:
-                pm = re.search(r"([0-9]+(?:[.,][0-9]+)?)\s*(?:DHS?|MAD)\s*/\s*M", cell, re.IGNORECASE)
-                if pm:
-                    price = float(pm.group(1).replace(",", "."))
-                    break
-            if price is None:
-                continue
+            rows = table.select("tbody tr") or table.select("tr")[1:]
+            for row in rows:
+                cells = row.find_all(["td", "th"])
+                if len(cells) <= price_col:
+                    continue
 
-            status_text = cell_texts[-1].lower() if cell_texts else ""
-            if "stock complet" in status_text or "complet" == status_text:
-                open_status = False
-            elif "incomplet" in status_text or "ouvert" in status_text:
-                open_status = True
-            else:
-                open_status = None
+                cell_texts = [re.sub(r"\s+", " ", c.get_text(" ", strip=True)).strip() for c in cells]
+                canonical = wanted.get(norm_name(cell_texts[0]))
+                if not canonical:
+                    continue
 
-            results[canonical] = {"price": price, "open": open_status}
+                # The screenshot/DOM shows the authoritative value as a span
+                # inside this exact cell, e.g. 6.654 + DHS/M.
+                price_text = cell_texts[price_col]
+                pm = re.search(r"([0-9]+(?:[.,][0-9]+)?)\s*(?:DHS?|MAD)\s*/\s*M", price_text, re.IGNORECASE)
+                if not pm:
+                    continue
+                price = float(pm.group(1).replace(",", "."))
+
+                status_text = ""
+                if stock_col is not None and len(cells) > stock_col:
+                    status_text = norm_name(cell_texts[stock_col])
+                else:
+                    status_text = norm_name(cell_texts[-1])
+
+                if "stock complet" in status_text or status_text == "complet":
+                    open_status = False
+                elif "incomplet" in status_text or "ouvert" in status_text:
+                    open_status = True
+                else:
+                    open_status = None
+
+                results[canonical] = {"price": price, "open": open_status}
+
+            if results:
+                return results
 
         return results
 
     if site_id == "tryandjudge":
         # TryAndJudge exposes the authoritative status in each individual
-        # .market-row. Example from the page DOM:
-        #   <button class="market-row ...">
-        #     <span class="market-name">Dakal</span>
-        #     <span class="market-price">7,29</span>
-        #     <span class="market-status full">Complet</span>
-        #   </button>
-        # IMPORTANT: only read .market-status INSIDE THE SAME .market-row as
-        # the selected server. Never search the whole page for "Ouvert".
+        # .market-row. Only read the price/status from the same row as the
+        # selected server.
         soup = BeautifulSoup(text, "html.parser")
         results = {}
 
@@ -209,7 +225,6 @@ def parse_site(site_id, text):
             for variant in variants_for(server):
                 wanted[norm_name(variant)] = server
 
-        # Primary parser: exact DOM structure shown by TryAndJudge.
         rows = soup.select("button.market-row")
         for row in rows:
             name_el = row.select_one(".market-name")
@@ -218,22 +233,17 @@ def parse_site(site_id, text):
             if not name_el or not price_el or not status_el:
                 continue
 
-            server_name = name_el.get_text(" ", strip=True)
-            canonical = wanted.get(norm_name(server_name))
+            canonical = wanted.get(norm_name(name_el.get_text(" ", strip=True)))
             if not canonical:
                 continue
 
-            price_text = price_el.get_text(" ", strip=True)
-            pm = re.search(r"([0-9]+(?:[.,][0-9]+)?)", price_text)
+            pm = re.search(r"([0-9]+(?:[.,][0-9]+)?)", price_el.get_text(" ", strip=True))
             if not pm:
                 continue
             price = float(pm.group(1).replace(",", "."))
 
             status_text = re.sub(r"\s+", " ", status_el.get_text(" ", strip=True)).strip().lower()
             status_classes = {c.lower() for c in status_el.get("class", [])}
-
-            # The class is authoritative when present: the screenshot shows
-            # market-status full + text "Complet" for Dakal.
             if "full" in status_classes or "complet" in status_text or "stock complet" in status_text:
                 open_status = False
             elif "open" in status_classes or "ouvert" in status_text:
@@ -241,36 +251,9 @@ def parse_site(site_id, text):
             elif "closed" in status_classes or "fermé" in status_text or "ferme" in status_text:
                 open_status = False
             else:
-                # Do not borrow a status from another row.
                 open_status = None
 
             results[canonical] = {"price": price, "open": open_status}
-
-        # Fallback for minor markup changes: still require one row/container
-        # containing the server, price and status. This is deliberately bounded
-        # to the row and never scans the global page text.
-        if not results:
-            price_re = re.compile(price_pattern, re.IGNORECASE)
-            status_re = re.compile(r"\b(Stock\s+complet|Complet|Fermé|Ferme|Ouvert)\b", re.IGNORECASE)
-            for server in SERVERS:
-                for variant in variants_for(server):
-                    name_re = re.compile(re.escape(variant), re.IGNORECASE)
-                    for row in soup.select("button.market-row, .market-row"):
-                        row_text = row.get_text(" ", strip=True)
-                        if not name_re.search(row_text):
-                            continue
-                        pm = price_re.search(row_text)
-                        sm = status_re.search(row_text)
-                        if not pm or not sm:
-                            continue
-                        status_word = re.sub(r"\s+", " ", sm.group(1).lower())
-                        open_status = status_word == "ouvert"
-                        if status_word in {"stock complet", "complet", "fermé", "ferme"}:
-                            open_status = False
-                        results[server] = {"price": float(pm.group(1).replace(",", ".")), "open": open_status}
-                        break
-                    if server in results:
-                        break
 
         return results
 
