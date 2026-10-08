@@ -1,5 +1,5 @@
 {
-  "updated_at": "08/10/2026 06:24 UTC",
+  "updated_at": "08/10/2026 06:50 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -147,7 +147,7 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.63,
+        "price": 3.74,
         "open": true
       },
       "Talkasha": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 25.3,
+        "price": 24.75,
         "open": true
       },
       "Allisteria": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 7.02,
+        "price": 7.37,
         "open": true
       },
       "Salar": {
