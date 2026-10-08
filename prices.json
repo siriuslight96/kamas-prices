@@ -1,5 +1,5 @@
 {
-  "updated_at": "08/10/2026 03:25 UTC",
+  "updated_at": "08/10/2026 03:45 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -131,7 +131,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.18,
+        "price": 4.235,
         "open": true
       },
       "Tylezia": {
@@ -147,11 +147,11 @@
         "open": true
       },
       "Imagiro": {
-        "price": 4.18,
+        "price": 4.29,
         "open": true
       },
       "Talkasha": {
-        "price": 4.18,
+        "price": 4.235,
         "open": true
       },
       "Ombre": {
@@ -187,7 +187,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 8.58,
+        "price": 8.8,
         "open": true
       },
       "Fallanster": {
@@ -319,7 +319,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.22,
+        "price": 4.28,
         "open": true
       },
       "Tylezia": {
@@ -335,7 +335,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 4.22,
+        "price": 4.33,
         "open": false
       },
       "Talkasha": {
@@ -359,7 +359,7 @@
         "open": false
       },
       "Allisteria": {
-        "price": 8.66,
+        "price": 8.89,
         "open": true
       },
       "Fallanster": {
