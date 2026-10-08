@@ -1,5 +1,5 @@
 {
-  "updated_at": "08/10/2026 14:49 UTC",
+  "updated_at": "08/10/2026 15:04 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -25,23 +25,23 @@
         "open": true
       },
       "Rafal": {
-        "price": 3.422,
+        "price": 3.418,
         "open": true
       },
       "Brial": {
-        "price": 3.862,
+        "price": 3.877,
         "open": true
       },
       "Kourial": {
-        "price": 7.292,
+        "price": 7.262,
         "open": true
       },
       "Orukam": {
-        "price": 3.792,
+        "price": 3.704,
         "open": true
       },
       "Tylezia": {
-        "price": 4.189,
+        "price": 4.188,
         "open": true
       },
       "Draconiros": {
@@ -49,23 +49,23 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 5.583,
+        "price": 5.664,
         "open": true
       },
       "Imagiro": {
-        "price": 3.804,
+        "price": 3.83,
         "open": true
       },
       "Talkasha": {
-        "price": 3.983,
+        "price": 3.972,
         "open": true
       },
       "Ombre": {
-        "price": 6.69,
+        "price": 6.702,
         "open": true
       },
       "Mikhal": {
-        "price": 7.138,
+        "price": 7.189,
         "open": true
       },
       "Salar": {
@@ -89,11 +89,11 @@
         "open": false
       },
       "Boune": {
-        "price": 23.484,
+        "price": 23.466,
         "open": true
       },
       "Allisteria": {
-        "price": 9.175,
+        "price": 9.169,
         "open": true
       },
       "Fallanster": {
@@ -101,11 +101,11 @@
         "open": true
       },
       "Pandora": {
-        "price": 23.863,
+        "price": 23.917,
         "open": true
       },
       "Ogrest": {
-        "price": 42.35,
+        "price": 42.53,
         "open": true
       },
       "Rubilax": {
@@ -147,7 +147,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.751,
+        "price": 3.762,
         "open": true
       },
       "Talkasha": {
@@ -348,7 +348,7 @@
       },
       "Mikhal": {
         "price": 7.12,
-        "open": false
+        "open": true
       },
       "Salar": {
         "price": 3.4,
