@@ -1,5 +1,5 @@
 {
-  "updated_at": "08/10/2026 02:33 UTC",
+  "updated_at": "08/10/2026 02:50 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -139,7 +139,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.535,
+        "price": 7.59,
         "open": true
       },
       "Hell Mina": {
@@ -159,7 +159,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 7.15,
+        "price": 7.26,
         "open": true
       },
       "Salar": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 7.39,
+        "price": 7.41,
         "open": true
       },
       "Salar": {
