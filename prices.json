@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/10/2026 23:03 UTC",
+  "updated_at": "09/10/2026 23:22 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -131,7 +131,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.07,
+        "price": 4.18,
         "open": true
       },
       "Tylezia": {
@@ -187,7 +187,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 10.12,
+        "price": 10.23,
         "open": true
       },
       "Fallanster": {
@@ -315,7 +315,7 @@
         "open": false
       },
       "Kourial": {
-        "price": 7.08,
+        "price": 7.07,
         "open": true
       },
       "Orukam": {
@@ -328,7 +328,7 @@
       },
       "Draconiros": {
         "price": 7.08,
-        "open": true
+        "open": false
       },
       "Hell Mina": {
         "price": 5.88,
@@ -343,7 +343,7 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.12,
+        "price": 5.09,
         "open": false
       },
       "Mikhal": {
