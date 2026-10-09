@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/10/2026 13:53 UTC",
+  "updated_at": "09/10/2026 14:11 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,8 +115,8 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 7.964,
-        "open": false
+        "price": 6.93,
+        "open": true
       },
       "Rafal": {
         "price": 3.85,
@@ -139,7 +139,7 @@
         "open": false
       },
       "Draconiros": {
-        "price": 7.117,
+        "price": 7.139,
         "open": true
       },
       "Hell Mina": {
@@ -187,7 +187,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 9.24,
+        "price": 9.35,
         "open": true
       },
       "Fallanster": {
@@ -307,7 +307,7 @@
         "open": false
       },
       "Rafal": {
-        "price": 3.84,
+        "price": 3.88,
         "open": true
       },
       "Brial": {
@@ -327,7 +327,7 @@
         "open": false
       },
       "Draconiros": {
-        "price": 7.05,
+        "price": 7.07,
         "open": true
       },
       "Hell Mina": {
