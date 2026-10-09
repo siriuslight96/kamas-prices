@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/10/2026 04:41 UTC",
+  "updated_at": "09/10/2026 04:59 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -135,7 +135,7 @@
         "open": false
       },
       "Tylezia": {
-        "price": 4.07,
+        "price": 3.85,
         "open": true
       },
       "Draconiros": {
