@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/10/2026 03:18 UTC",
+  "updated_at": "09/10/2026 03:40 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -183,8 +183,8 @@
         "open": true
       },
       "Boune": {
-        "price": 24.75,
-        "open": true
+        "price": 27.687,
+        "open": false
       },
       "Allisteria": {
         "price": 9.35,
@@ -331,7 +331,7 @@
         "open": false
       },
       "Hell Mina": {
-        "price": 5.7,
+        "price": 5.92,
         "open": false
       },
       "Imagiro": {
@@ -355,7 +355,7 @@
         "open": true
       },
       "Boune": {
-        "price": 25.89,
+        "price": 26.25,
         "open": true
       },
       "Allisteria": {
