@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/10/2026 00:38 UTC",
+  "updated_at": "09/10/2026 01:04 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -315,11 +315,11 @@
         "open": false
       },
       "Kourial": {
-        "price": 6.91,
+        "price": 6.94,
         "open": true
       },
       "Orukam": {
-        "price": 4.01,
+        "price": 4.0,
         "open": true
       },
       "Tylezia": {
@@ -335,7 +335,7 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.99,
+        "price": 3.8,
         "open": false
       },
       "Talkasha": {
@@ -368,7 +368,11 @@
       }
     }
   },
-  "errors": {},
-  "stale_sites": [],
+  "errors": {
+    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html?_ts=1791507884"
+  },
+  "stale_sites": [
+    "leskamas"
+  ],
   "link_only_sites": []
 }
