@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/10/2026 20:01 UTC",
+  "updated_at": "09/10/2026 20:21 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -135,7 +135,7 @@
         "open": true
       },
       "Tylezia": {
-        "price": 4.29,
+        "price": 3.85,
         "open": true
       },
       "Draconiros": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.54,
+        "price": 6.58,
         "open": true
       },
       "Rafal": {
@@ -315,16 +315,16 @@
         "open": false
       },
       "Kourial": {
-        "price": 6.66,
-        "open": false
+        "price": 6.79,
+        "open": true
       },
       "Orukam": {
         "price": 4.22,
         "open": true
       },
       "Tylezia": {
-        "price": 4.18,
-        "open": true
+        "price": 4.15,
+        "open": false
       },
       "Draconiros": {
         "price": 6.86,
@@ -335,7 +335,7 @@
         "open": false
       },
       "Imagiro": {
-        "price": 4.01,
+        "price": 3.98,
         "open": true
       },
       "Talkasha": {
@@ -343,7 +343,7 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.09,
+        "price": 5.12,
         "open": false
       },
       "Mikhal": {
@@ -359,7 +359,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 9.35,
+        "price": 9.39,
         "open": true
       },
       "Fallanster": {
