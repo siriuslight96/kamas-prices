@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/10/2026 05:40 UTC",
+  "updated_at": "09/10/2026 05:57 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -139,7 +139,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.172,
+        "price": 7.26,
         "open": true
       },
       "Hell Mina": {
@@ -151,7 +151,7 @@
         "open": false
       },
       "Talkasha": {
-        "price": 3.85,
+        "price": 3.63,
         "open": true
       },
       "Ombre": {
@@ -327,7 +327,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.37,
+        "price": 7.19,
         "open": false
       },
       "Hell Mina": {
@@ -355,7 +355,7 @@
         "open": true
       },
       "Boune": {
-        "price": 25.25,
+        "price": 25.0,
         "open": true
       },
       "Allisteria": {
