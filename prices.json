@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/10/2026 04:21 UTC",
+  "updated_at": "09/10/2026 04:41 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.85,
+        "price": 6.86,
         "open": false
       },
       "Rafal": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 7.2,
+        "price": 7.17,
         "open": true
       },
       "Salar": {
