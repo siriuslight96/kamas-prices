@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/10/2026 23:00 UTC",
+  "updated_at": "10/10/2026 23:19 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 7.205,
+        "price": 6.93,
         "open": true
       },
       "Rafal": {
@@ -127,23 +127,23 @@
         "open": true
       },
       "Kourial": {
-        "price": 7.15,
-        "open": true
+        "price": 7.986,
+        "open": false
       },
       "Orukam": {
         "price": 4.07,
         "open": true
       },
       "Tylezia": {
-        "price": 3.993,
+        "price": 4.125,
         "open": true
       },
       "Draconiros": {
-        "price": 7.26,
+        "price": 6.93,
         "open": true
       },
       "Hell Mina": {
-        "price": 6.215,
+        "price": 6.38,
         "open": true
       },
       "Imagiro": {
@@ -159,7 +159,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 7.26,
+        "price": 7.04,
         "open": true
       },
       "Salar": {
@@ -175,7 +175,7 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 21.12,
+        "price": 21.45,
         "open": true
       },
       "Talok": {
@@ -187,7 +187,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 10.56,
+        "price": 10.78,
         "open": true
       },
       "Fallanster": {
@@ -348,7 +348,7 @@
       },
       "Mikhal": {
         "price": 7.06,
-        "open": false
+        "open": true
       },
       "Salar": {
         "price": 3.72,
