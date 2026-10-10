@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/10/2026 03:15 UTC",
+  "updated_at": "10/10/2026 03:37 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -135,7 +135,7 @@
         "open": true
       },
       "Tylezia": {
-        "price": 4.026,
+        "price": 4.048,
         "open": true
       },
       "Draconiros": {
@@ -191,7 +191,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 4.18,
+        "price": 4.29,
         "open": true
       },
       "Pandora": {
@@ -323,7 +323,7 @@
         "open": false
       },
       "Tylezia": {
-        "price": 3.99,
+        "price": 4.01,
         "open": false
       },
       "Draconiros": {
@@ -343,7 +343,7 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.12,
+        "price": 5.09,
         "open": false
       },
       "Mikhal": {
