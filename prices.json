@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/10/2026 05:05 UTC",
+  "updated_at": "10/10/2026 05:24 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -343,7 +343,7 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.12,
+        "price": 5.09,
         "open": false
       },
       "Mikhal": {
