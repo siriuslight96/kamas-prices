@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/10/2026 11:36 UTC",
+  "updated_at": "10/10/2026 11:52 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -21,7 +21,7 @@
   "data": {
     "ibendouma": {
       "Dakal": {
-        "price": 6.519,
+        "price": 6.561,
         "open": true
       },
       "Rafal": {
@@ -33,7 +33,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.756,
+        "price": 6.797,
         "open": true
       },
       "Orukam": {
@@ -45,27 +45,27 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.536,
+        "price": 7.558,
         "open": true
       },
       "Hell Mina": {
-        "price": 6.43,
+        "price": 6.141,
         "open": true
       },
       "Imagiro": {
-        "price": 4.073,
+        "price": 4.083,
         "open": true
       },
       "Talkasha": {
-        "price": 4.189,
+        "price": 4.175,
         "open": true
       },
       "Ombre": {
-        "price": 5.026,
+        "price": 5.039,
         "open": true
       },
       "Mikhal": {
-        "price": 7.156,
+        "price": 7.451,
         "open": true
       },
       "Salar": {
@@ -89,11 +89,11 @@
         "open": false
       },
       "Boune": {
-        "price": 26.679,
+        "price": 26.809,
         "open": true
       },
       "Allisteria": {
-        "price": 10.449,
+        "price": 10.507,
         "open": true
       },
       "Fallanster": {
@@ -101,15 +101,15 @@
         "open": true
       },
       "Pandora": {
-        "price": 20.297,
+        "price": 20.374,
         "open": true
       },
       "Ogrest": {
-        "price": 44.668,
+        "price": 44.686,
         "open": true
       },
       "Rubilax": {
-        "price": 10.522,
+        "price": 10.519,
         "open": true
       }
     },
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 8.151,
-        "open": false
+        "price": 7.073,
+        "open": true
       },
       "Salar": {
         "price": 4.213,
@@ -191,7 +191,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 4.4,
+        "price": 4.235,
         "open": true
       },
       "Pandora": {
@@ -316,7 +316,7 @@
       },
       "Kourial": {
         "price": 7.94,
-        "open": true
+        "open": false
       },
       "Orukam": {
         "price": 4.17,
@@ -327,7 +327,7 @@
         "open": false
       },
       "Draconiros": {
-        "price": 7.37,
+        "price": 7.19,
         "open": false
       },
       "Hell Mina": {
