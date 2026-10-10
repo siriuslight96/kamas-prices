@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/10/2026 20:01 UTC",
+  "updated_at": "10/10/2026 20:20 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.798,
+        "price": 7.007,
         "open": true
       },
       "Rafal": {
@@ -131,7 +131,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.861,
+        "price": 3.872,
         "open": true
       },
       "Tylezia": {
@@ -139,7 +139,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.139,
+        "price": 7.216,
         "open": true
       },
       "Hell Mina": {
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 7.018,
-        "open": false
+        "price": 7.062,
+        "open": true
       },
       "Salar": {
         "price": 4.213,
@@ -315,7 +315,7 @@
         "open": false
       },
       "Kourial": {
-        "price": 6.87,
+        "price": 6.88,
         "open": true
       },
       "Orukam": {
@@ -327,7 +327,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.06,
+        "price": 7.14,
         "open": false
       },
       "Hell Mina": {
@@ -347,7 +347,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.95,
+        "price": 6.99,
         "open": false
       },
       "Salar": {
