@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/10/2026 00:15 UTC",
+  "updated_at": "10/10/2026 00:47 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,8 +127,8 @@
         "open": true
       },
       "Kourial": {
-        "price": 7.15,
-        "open": true
+        "price": 8.008,
+        "open": false
       },
       "Orukam": {
         "price": 3.74,
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 25.63,
+        "price": 25.85,
         "open": true
       },
       "Allisteria": {
@@ -191,7 +191,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 4.125,
+        "price": 4.18,
         "open": true
       },
       "Pandora": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.89,
+        "price": 6.87,
         "open": true
       },
       "Rafal": {
@@ -315,12 +315,12 @@
         "open": false
       },
       "Kourial": {
-        "price": 6.89,
+        "price": 7.19,
         "open": true
       },
       "Orukam": {
-        "price": 4.08,
-        "open": true
+        "price": 3.88,
+        "open": false
       },
       "Tylezia": {
         "price": 4.14,
@@ -355,12 +355,12 @@
         "open": false
       },
       "Boune": {
-        "price": 25.89,
+        "price": 26.11,
         "open": true
       },
       "Allisteria": {
-        "price": 8.53,
-        "open": false
+        "price": 8.95,
+        "open": true
       },
       "Fallanster": {
         "price": 3.85,
