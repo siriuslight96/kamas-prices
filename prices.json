@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/10/2026 11:18 UTC",
+  "updated_at": "10/10/2026 11:36 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -25,19 +25,19 @@
         "open": true
       },
       "Rafal": {
-        "price": 4.063,
+        "price": 3.697,
         "open": true
       },
       "Brial": {
-        "price": 3.964,
+        "price": 3.68,
         "open": true
       },
       "Kourial": {
-        "price": 6.551,
+        "price": 6.756,
         "open": true
       },
       "Orukam": {
-        "price": 4.297,
+        "price": 3.987,
         "open": true
       },
       "Tylezia": {
@@ -45,11 +45,11 @@
         "open": true
       },
       "Draconiros": {
-        "price": 6.776,
+        "price": 7.536,
         "open": true
       },
       "Hell Mina": {
-        "price": 6.277,
+        "price": 6.43,
         "open": true
       },
       "Imagiro": {
@@ -57,11 +57,11 @@
         "open": true
       },
       "Talkasha": {
-        "price": 4.194,
+        "price": 4.189,
         "open": true
       },
       "Ombre": {
-        "price": 5.036,
+        "price": 5.026,
         "open": true
       },
       "Mikhal": {
@@ -89,11 +89,11 @@
         "open": false
       },
       "Boune": {
-        "price": 26.287,
+        "price": 26.679,
         "open": true
       },
       "Allisteria": {
-        "price": 10.451,
+        "price": 10.449,
         "open": true
       },
       "Fallanster": {
@@ -101,15 +101,15 @@
         "open": true
       },
       "Pandora": {
-        "price": 20.302,
+        "price": 20.297,
         "open": true
       },
       "Ogrest": {
-        "price": 44.607,
+        "price": 44.668,
         "open": true
       },
       "Rubilax": {
-        "price": 10.535,
+        "price": 10.522,
         "open": true
       }
     },
@@ -119,12 +119,12 @@
         "open": false
       },
       "Rafal": {
-        "price": 3.74,
+        "price": 3.85,
         "open": true
       },
       "Brial": {
-        "price": 3.905,
-        "open": true
+        "price": 4.323,
+        "open": false
       },
       "Kourial": {
         "price": 7.997,
@@ -139,8 +139,8 @@
         "open": true
       },
       "Draconiros": {
-        "price": 8.272,
-        "open": false
+        "price": 7.26,
+        "open": true
       },
       "Hell Mina": {
         "price": 6.05,
@@ -179,11 +179,11 @@
         "open": true
       },
       "Talok": {
-        "price": 20.35,
+        "price": 18.7,
         "open": true
       },
       "Boune": {
-        "price": 24.75,
+        "price": 25.08,
         "open": true
       },
       "Allisteria": {
@@ -307,7 +307,7 @@
         "open": false
       },
       "Rafal": {
-        "price": 3.7,
+        "price": 3.71,
         "open": false
       },
       "Brial": {
@@ -328,7 +328,7 @@
       },
       "Draconiros": {
         "price": 7.37,
-        "open": true
+        "open": false
       },
       "Hell Mina": {
         "price": 5.94,
@@ -355,7 +355,7 @@
         "open": true
       },
       "Boune": {
-        "price": 25.0,
+        "price": 25.33,
         "open": true
       },
       "Allisteria": {
