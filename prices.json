@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/10/2026 21:57 UTC",
+  "updated_at": "10/10/2026 22:14 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -123,23 +123,23 @@
         "open": true
       },
       "Brial": {
-        "price": 3.828,
+        "price": 3.905,
         "open": true
       },
       "Kourial": {
-        "price": 7.04,
+        "price": 7.051,
         "open": true
       },
       "Orukam": {
-        "price": 3.916,
+        "price": 3.905,
         "open": true
       },
       "Tylezia": {
-        "price": 4.708,
+        "price": 4.697,
         "open": false
       },
       "Draconiros": {
-        "price": 7.216,
+        "price": 7.15,
         "open": true
       },
       "Hell Mina": {
@@ -147,11 +147,11 @@
         "open": true
       },
       "Imagiro": {
-        "price": 4.092,
+        "price": 4.18,
         "open": true
       },
       "Talkasha": {
-        "price": 3.762,
+        "price": 3.817,
         "open": true
       },
       "Ombre": {
@@ -159,12 +159,12 @@
         "open": true
       },
       "Mikhal": {
-        "price": 7.051,
+        "price": 7.15,
         "open": true
       },
       "Salar": {
-        "price": 4.213,
-        "open": false
+        "price": 3.366,
+        "open": true
       },
       "Blair": {
         "price": 12.98,
@@ -175,19 +175,19 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 20.9,
+        "price": 21.12,
         "open": true
       },
       "Talok": {
-        "price": 21.296,
-        "open": false
+        "price": 15.202,
+        "open": true
       },
       "Boune": {
         "price": 26.4,
         "open": true
       },
       "Allisteria": {
-        "price": 10.395,
+        "price": 10.45,
         "open": true
       },
       "Fallanster": {
@@ -324,7 +324,7 @@
       },
       "Tylezia": {
         "price": 3.97,
-        "open": false
+        "open": true
       },
       "Draconiros": {
         "price": 7.39,
@@ -348,7 +348,7 @@
       },
       "Mikhal": {
         "price": 7.06,
-        "open": true
+        "open": false
       },
       "Salar": {
         "price": 3.72,
