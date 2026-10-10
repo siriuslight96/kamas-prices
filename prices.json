@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/10/2026 11:00 UTC",
+  "updated_at": "10/10/2026 11:18 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -21,27 +21,27 @@
   "data": {
     "ibendouma": {
       "Dakal": {
-        "price": 6.397,
+        "price": 6.519,
         "open": true
       },
       "Rafal": {
-        "price": 4.062,
+        "price": 4.063,
         "open": true
       },
       "Brial": {
-        "price": 3.976,
+        "price": 3.964,
         "open": true
       },
       "Kourial": {
-        "price": 6.499,
+        "price": 6.551,
         "open": true
       },
       "Orukam": {
-        "price": 3.791,
+        "price": 4.297,
         "open": true
       },
       "Tylezia": {
-        "price": 4.308,
+        "price": 4.38,
         "open": true
       },
       "Draconiros": {
@@ -49,7 +49,7 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 6.336,
+        "price": 6.277,
         "open": true
       },
       "Imagiro": {
@@ -57,15 +57,15 @@
         "open": true
       },
       "Talkasha": {
-        "price": 4.175,
+        "price": 4.194,
         "open": true
       },
       "Ombre": {
-        "price": 5.028,
+        "price": 5.036,
         "open": true
       },
       "Mikhal": {
-        "price": 7.134,
+        "price": 7.156,
         "open": true
       },
       "Salar": {
@@ -89,11 +89,11 @@
         "open": false
       },
       "Boune": {
-        "price": 26.162,
+        "price": 26.287,
         "open": true
       },
       "Allisteria": {
-        "price": 10.637,
+        "price": 10.451,
         "open": true
       },
       "Fallanster": {
@@ -101,15 +101,15 @@
         "open": true
       },
       "Pandora": {
-        "price": 20.316,
+        "price": 20.302,
         "open": true
       },
       "Ogrest": {
-        "price": 44.634,
+        "price": 44.607,
         "open": true
       },
       "Rubilax": {
-        "price": 10.533,
+        "price": 10.535,
         "open": true
       }
     },
@@ -315,7 +315,7 @@
         "open": false
       },
       "Kourial": {
-        "price": 7.71,
+        "price": 7.94,
         "open": true
       },
       "Orukam": {
