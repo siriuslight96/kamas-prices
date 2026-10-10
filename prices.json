@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/10/2026 04:52 UTC",
+  "updated_at": "10/10/2026 05:05 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,7 +127,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.996,
+        "price": 7.018,
         "open": true
       },
       "Orukam": {
@@ -147,7 +147,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.96,
+        "price": 4.07,
         "open": true
       },
       "Talkasha": {
@@ -171,7 +171,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 30.25,
+        "price": 30.8,
         "open": true
       },
       "Tiliwan": {
@@ -183,15 +183,15 @@
         "open": true
       },
       "Boune": {
-        "price": 25.85,
+        "price": 25.52,
         "open": true
       },
       "Allisteria": {
-        "price": 9.57,
+        "price": 9.68,
         "open": true
       },
       "Fallanster": {
-        "price": 4.29,
+        "price": 4.4,
         "open": true
       },
       "Pandora": {
@@ -315,7 +315,7 @@
         "open": false
       },
       "Kourial": {
-        "price": 6.82,
+        "price": 6.83,
         "open": true
       },
       "Orukam": {
@@ -335,7 +335,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.93,
+        "price": 3.97,
         "open": true
       },
       "Talkasha": {
@@ -343,7 +343,7 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.09,
+        "price": 5.12,
         "open": false
       },
       "Mikhal": {
@@ -359,7 +359,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 9.39,
+        "price": 9.48,
         "open": true
       },
       "Fallanster": {
@@ -368,11 +368,7 @@
       }
     }
   },
-  "errors": {
-    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html?_ts=1791607929"
-  },
-  "stale_sites": [
-    "leskamas"
-  ],
+  "errors": {},
+  "stale_sites": [],
   "link_only_sites": []
 }
