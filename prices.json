@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 05:36 UTC",
+  "updated_at": "11/10/2026 05:53 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,7 +127,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.941,
+        "price": 6.963,
         "open": true
       },
       "Orukam": {
@@ -167,7 +167,7 @@
         "open": true
       },
       "Blair": {
-        "price": 13.42,
+        "price": 13.75,
         "open": true
       },
       "Kelerog": {
@@ -195,7 +195,7 @@
         "open": true
       },
       "Pandora": {
-        "price": 18.7,
+        "price": 20.9,
         "open": true
       },
       "Ogrest": {
