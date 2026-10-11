@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 22:10 UTC",
+  "updated_at": "11/10/2026 22:29 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -123,7 +123,7 @@
         "open": true
       },
       "Brial": {
-        "price": 4.367,
+        "price": 4.323,
         "open": false
       },
       "Kourial": {
@@ -131,11 +131,11 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.565,
+        "price": 4.554,
         "open": false
       },
       "Tylezia": {
-        "price": 3.982,
+        "price": 4.125,
         "open": true
       },
       "Draconiros": {
@@ -143,12 +143,12 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 5.764,
+        "price": 5.841,
         "open": true
       },
       "Imagiro": {
-        "price": 3.85,
-        "open": true
+        "price": 4.576,
+        "open": false
       },
       "Talkasha": {
         "price": 3.74,
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.82,
-        "open": true
+        "price": 8.019,
+        "open": false
       },
       "Salar": {
         "price": 3.52,
@@ -175,11 +175,11 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 19.778,
-        "open": false
+        "price": 20.064,
+        "open": true
       },
       "Talok": {
-        "price": 19.657,
+        "price": 20.13,
         "open": true
       },
       "Boune": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 7.4,
+        "price": 6.68,
         "open": false
       },
       "Rafal": {
@@ -323,11 +323,11 @@
         "open": false
       },
       "Tylezia": {
-        "price": 3.8,
+        "price": 3.94,
         "open": true
       },
       "Draconiros": {
-        "price": 7.28,
+        "price": 7.26,
         "open": false
       },
       "Hell Mina": {
@@ -335,11 +335,11 @@
         "open": false
       },
       "Imagiro": {
-        "price": 4.01,
-        "open": false
+        "price": 3.98,
+        "open": true
       },
       "Talkasha": {
-        "price": 3.89,
+        "price": 3.88,
         "open": true
       },
       "Ombre": {
