@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 19:01 UTC",
+  "updated_at": "11/10/2026 19:20 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -135,15 +135,15 @@
         "open": true
       },
       "Tylezia": {
-        "price": 4.125,
+        "price": 4.235,
         "open": true
       },
       "Draconiros": {
-        "price": 7.084,
-        "open": true
+        "price": 8.184,
+        "open": false
       },
       "Hell Mina": {
-        "price": 6.545,
+        "price": 6.215,
         "open": true
       },
       "Imagiro": {
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 8.019,
-        "open": false
+        "price": 7.172,
+        "open": true
       },
       "Salar": {
         "price": 3.63,
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 7.44,
+        "price": 7.25,
         "open": false
       },
       "Rafal": {
@@ -327,16 +327,16 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.43,
-        "open": true
+        "price": 7.06,
+        "open": false
       },
       "Hell Mina": {
         "price": 5.94,
         "open": false
       },
       "Imagiro": {
-        "price": 3.85,
-        "open": true
+        "price": 3.8,
+        "open": false
       },
       "Talkasha": {
         "price": 3.9,
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 7.03,
+        "price": 7.07,
         "open": false
       },
       "Salar": {
@@ -368,11 +368,7 @@
       }
     }
   },
-  "errors": {
-    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html?_ts=1791745268"
-  },
-  "stale_sites": [
-    "leskamas"
-  ],
+  "errors": {},
+  "stale_sites": [],
   "link_only_sites": []
 }
