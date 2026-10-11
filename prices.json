@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 05:53 UTC",
+  "updated_at": "11/10/2026 06:10 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 8.074,
-        "open": false
+        "price": 6.985,
+        "open": true
       },
       "Salar": {
         "price": 3.63,
@@ -183,11 +183,11 @@
         "open": true
       },
       "Boune": {
-        "price": 24.497,
+        "price": 24.552,
         "open": true
       },
       "Allisteria": {
-        "price": 10.56,
+        "price": 9.9,
         "open": true
       },
       "Fallanster": {
@@ -315,7 +315,7 @@
         "open": false
       },
       "Kourial": {
-        "price": 6.77,
+        "price": 6.79,
         "open": true
       },
       "Orukam": {
@@ -359,7 +359,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 10.67,
+        "price": 10.0,
         "open": true
       },
       "Fallanster": {
