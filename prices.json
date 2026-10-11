@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 01:54 UTC",
+  "updated_at": "11/10/2026 02:09 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -175,7 +175,7 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 21.78,
+        "price": 22.0,
         "open": true
       },
       "Talok": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 25.85,
+        "price": 25.3,
         "open": true
       },
       "Allisteria": {
@@ -311,7 +311,7 @@
         "open": true
       },
       "Brial": {
-        "price": 3.82,
+        "price": 3.81,
         "open": false
       },
       "Kourial": {
@@ -327,7 +327,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.74,
+        "price": 7.36,
         "open": true
       },
       "Hell Mina": {
@@ -347,7 +347,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 7.12,
+        "price": 7.15,
         "open": true
       },
       "Salar": {
@@ -363,7 +363,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 4.02,
+        "price": 4.05,
         "open": true
       }
     }
