@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 16:54 UTC",
+  "updated_at": "11/10/2026 17:08 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -327,7 +327,7 @@
         "open": false
       },
       "Draconiros": {
-        "price": 7.23,
+        "price": 7.24,
         "open": true
       },
       "Hell Mina": {
@@ -355,11 +355,11 @@
         "open": false
       },
       "Boune": {
-        "price": 25.89,
+        "price": 26.33,
         "open": true
       },
       "Allisteria": {
-        "price": 10.0,
+        "price": 9.5,
         "open": false
       },
       "Fallanster": {
@@ -368,7 +368,11 @@
       }
     }
   },
-  "errors": {},
-  "stale_sites": [],
+  "errors": {
+    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html?_ts=1791738528"
+  },
+  "stale_sites": [
+    "leskamas"
+  ],
   "link_only_sites": []
 }
