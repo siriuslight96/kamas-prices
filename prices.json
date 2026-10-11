@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 14:16 UTC",
+  "updated_at": "11/10/2026 14:35 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -119,11 +119,11 @@
         "open": true
       },
       "Rafal": {
-        "price": 3.905,
+        "price": 3.85,
         "open": true
       },
       "Brial": {
-        "price": 4.389,
+        "price": 3.696,
         "open": false
       },
       "Kourial": {
@@ -179,8 +179,8 @@
         "open": true
       },
       "Talok": {
-        "price": 21.373,
-        "open": false
+        "price": 14.927,
+        "open": true
       },
       "Boune": {
         "price": 26.95,
@@ -303,11 +303,11 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.98,
+        "price": 7.44,
         "open": true
       },
       "Rafal": {
-        "price": 3.77,
+        "price": 3.7,
         "open": true
       },
       "Brial": {
@@ -327,19 +327,19 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.44,
-        "open": true
+        "price": 7.18,
+        "open": false
       },
       "Hell Mina": {
         "price": 5.94,
-        "open": false
+        "open": true
       },
       "Imagiro": {
         "price": 3.72,
         "open": false
       },
       "Talkasha": {
-        "price": 3.95,
+        "price": 3.9,
         "open": true
       },
       "Ombre": {
@@ -359,7 +359,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 10.0,
+        "price": 9.73,
         "open": true
       },
       "Fallanster": {
@@ -368,11 +368,7 @@
       }
     }
   },
-  "errors": {
-    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html?_ts=1791728172"
-  },
-  "stale_sites": [
-    "leskamas"
-  ],
+  "errors": {},
+  "stale_sites": [],
   "link_only_sites": []
 }
