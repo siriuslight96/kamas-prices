@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 17:08 UTC",
+  "updated_at": "11/10/2026 17:27 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -131,23 +131,23 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.85,
+        "price": 4.07,
         "open": true
       },
       "Tylezia": {
-        "price": 4.697,
-        "open": false
+        "price": 4.015,
+        "open": true
       },
       "Draconiros": {
-        "price": 7.139,
+        "price": 6.93,
         "open": true
       },
       "Hell Mina": {
-        "price": 6.38,
+        "price": 6.49,
         "open": true
       },
       "Imagiro": {
-        "price": 3.96,
+        "price": 4.07,
         "open": true
       },
       "Talkasha": {
@@ -179,15 +179,15 @@
         "open": true
       },
       "Talok": {
-        "price": 16.412,
+        "price": 17.061,
         "open": true
       },
       "Boune": {
-        "price": 25.63,
+        "price": 26.07,
         "open": true
       },
       "Allisteria": {
-        "price": 9.9,
+        "price": 9.24,
         "open": true
       },
       "Fallanster": {
@@ -324,7 +324,7 @@
       },
       "Tylezia": {
         "price": 4.45,
-        "open": false
+        "open": true
       },
       "Draconiros": {
         "price": 7.24,
@@ -332,11 +332,11 @@
       },
       "Hell Mina": {
         "price": 5.94,
-        "open": false
+        "open": true
       },
       "Imagiro": {
-        "price": 3.72,
-        "open": false
+        "price": 3.94,
+        "open": true
       },
       "Talkasha": {
         "price": 3.9,
@@ -359,7 +359,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 9.5,
+        "price": 8.87,
         "open": false
       },
       "Fallanster": {
@@ -368,11 +368,7 @@
       }
     }
   },
-  "errors": {
-    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html?_ts=1791738528"
-  },
-  "stale_sites": [
-    "leskamas"
-  ],
+  "errors": {},
+  "stale_sites": [],
   "link_only_sites": []
 }
