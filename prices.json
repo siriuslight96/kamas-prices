@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 18:44 UTC",
+  "updated_at": "11/10/2026 19:01 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -327,7 +327,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.4,
+        "price": 7.43,
         "open": true
       },
       "Hell Mina": {
@@ -335,7 +335,7 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.96,
+        "price": 3.85,
         "open": true
       },
       "Talkasha": {
@@ -343,11 +343,11 @@
         "open": true
       },
       "Ombre": {
-        "price": 6.54,
+        "price": 6.57,
         "open": false
       },
       "Mikhal": {
-        "price": 6.83,
+        "price": 7.03,
         "open": false
       },
       "Salar": {
@@ -368,7 +368,11 @@
       }
     }
   },
-  "errors": {},
-  "stale_sites": [],
+  "errors": {
+    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html?_ts=1791745268"
+  },
+  "stale_sites": [
+    "leskamas"
+  ],
   "link_only_sites": []
 }
