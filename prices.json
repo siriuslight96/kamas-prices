@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 09:23 UTC",
+  "updated_at": "11/10/2026 09:42 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,12 +127,12 @@
         "open": true
       },
       "Kourial": {
-        "price": 7.04,
-        "open": true
+        "price": 7.964,
+        "open": false
       },
       "Orukam": {
-        "price": 4.565,
-        "open": false
+        "price": 4.015,
+        "open": true
       },
       "Tylezia": {
         "price": 4.697,
@@ -315,11 +315,11 @@
         "open": false
       },
       "Kourial": {
-        "price": 6.79,
+        "price": 7.17,
         "open": true
       },
       "Orukam": {
-        "price": 4.45,
+        "price": 4.08,
         "open": false
       },
       "Tylezia": {
@@ -335,7 +335,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.85,
+        "price": 3.72,
         "open": false
       },
       "Talkasha": {
@@ -347,7 +347,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 7.14,
+        "price": 7.15,
         "open": true
       },
       "Salar": {
@@ -355,7 +355,7 @@
         "open": true
       },
       "Boune": {
-        "price": 25.89,
+        "price": 26.11,
         "open": true
       },
       "Allisteria": {
