@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 21:19 UTC",
+  "updated_at": "11/10/2026 21:37 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -179,7 +179,7 @@
         "open": false
       },
       "Talok": {
-        "price": 17.061,
+        "price": 19.327,
         "open": true
       },
       "Boune": {
@@ -319,27 +319,27 @@
         "open": false
       },
       "Orukam": {
-        "price": 4.44,
-        "open": false
+        "price": 4.45,
+        "open": true
       },
       "Tylezia": {
-        "price": 3.87,
+        "price": 3.94,
         "open": true
       },
       "Draconiros": {
-        "price": 7.23,
+        "price": 7.26,
         "open": false
       },
       "Hell Mina": {
-        "price": 5.94,
+        "price": 5.63,
         "open": false
       },
       "Imagiro": {
-        "price": 4.0,
+        "price": 4.05,
         "open": true
       },
       "Talkasha": {
-        "price": 3.85,
+        "price": 3.88,
         "open": true
       },
       "Ombre": {
