@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/10/2026 15:43 UTC",
+  "updated_at": "11/10/2026 15:57 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -123,11 +123,11 @@
         "open": true
       },
       "Brial": {
-        "price": 3.718,
+        "price": 3.74,
         "open": true
       },
       "Kourial": {
-        "price": 6.985,
+        "price": 6.996,
         "open": true
       },
       "Orukam": {
@@ -159,7 +159,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.996,
+        "price": 7.018,
         "open": true
       },
       "Salar": {
@@ -179,7 +179,7 @@
         "open": true
       },
       "Talok": {
-        "price": 16.225,
+        "price": 16.412,
         "open": true
       },
       "Boune": {
@@ -311,7 +311,7 @@
         "open": false
       },
       "Brial": {
-        "price": 3.71,
+        "price": 3.72,
         "open": true
       },
       "Kourial": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.89,
+        "price": 6.83,
         "open": false
       },
       "Salar": {
