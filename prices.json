@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/10/2026 18:59 UTC",
+  "updated_at": "12/10/2026 19:19 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,16 +115,16 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.6,
-        "open": true
+        "price": 7.711,
+        "open": false
       },
       "Rafal": {
         "price": 3.52,
         "open": true
       },
       "Brial": {
-        "price": 4.312,
-        "open": false
+        "price": 3.674,
+        "open": true
       },
       "Kourial": {
         "price": 7.04,
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.58,
+        "price": 6.53,
         "open": false
       },
       "Rafal": {
