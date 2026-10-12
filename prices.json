@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/10/2026 05:05 UTC",
+  "updated_at": "12/10/2026 05:28 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -175,7 +175,7 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 20.9,
+        "price": 21.45,
         "open": true
       },
       "Talok": {
@@ -183,15 +183,15 @@
         "open": true
       },
       "Boune": {
-        "price": 25.63,
+        "price": 25.85,
         "open": true
       },
       "Allisteria": {
-        "price": 10.12,
+        "price": 10.23,
         "open": true
       },
       "Fallanster": {
-        "price": 4.125,
+        "price": 4.18,
         "open": true
       },
       "Pandora": {
@@ -355,15 +355,15 @@
         "open": true
       },
       "Boune": {
-        "price": 25.89,
+        "price": 26.11,
         "open": true
       },
       "Allisteria": {
-        "price": 9.43,
+        "price": 9.49,
         "open": true
       },
       "Fallanster": {
-        "price": 4.17,
+        "price": 4.22,
         "open": true
       }
     }
