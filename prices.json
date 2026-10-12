@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/10/2026 00:14 UTC",
+  "updated_at": "12/10/2026 00:49 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -135,7 +135,7 @@
         "open": true
       },
       "Tylezia": {
-        "price": 4.158,
+        "price": 4.18,
         "open": true
       },
       "Draconiros": {
@@ -143,7 +143,7 @@
         "open": false
       },
       "Hell Mina": {
-        "price": 5.94,
+        "price": 5.995,
         "open": true
       },
       "Imagiro": {
@@ -175,7 +175,7 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 20.273,
+        "price": 20.9,
         "open": true
       },
       "Talok": {
@@ -183,15 +183,15 @@
         "open": true
       },
       "Boune": {
-        "price": 28.655,
-        "open": false
+        "price": 23.958,
+        "open": true
       },
       "Allisteria": {
         "price": 8.8,
         "open": true
       },
       "Fallanster": {
-        "price": 4.07,
+        "price": 4.125,
         "open": true
       },
       "Pandora": {
@@ -323,15 +323,15 @@
         "open": false
       },
       "Tylezia": {
-        "price": 3.71,
+        "price": 3.7,
         "open": true
       },
       "Draconiros": {
-        "price": 6.77,
-        "open": false
+        "price": 8.21,
+        "open": true
       },
       "Hell Mina": {
-        "price": 5.58,
+        "price": 5.84,
         "open": false
       },
       "Imagiro": {
@@ -340,14 +340,14 @@
       },
       "Talkasha": {
         "price": 3.8,
-        "open": true
+        "open": false
       },
       "Ombre": {
-        "price": 5.91,
+        "price": 5.66,
         "open": false
       },
       "Mikhal": {
-        "price": 7.11,
+        "price": 7.08,
         "open": false
       },
       "Salar": {
@@ -355,7 +355,7 @@
         "open": true
       },
       "Boune": {
-        "price": 28.94,
+        "price": 27.5,
         "open": true
       },
       "Allisteria": {
@@ -363,7 +363,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 4.11,
+        "price": 4.17,
         "open": true
       }
     }
