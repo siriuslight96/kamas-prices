@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/10/2026 20:39 UTC",
+  "updated_at": "12/10/2026 21:00 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -135,7 +135,7 @@
         "open": true
       },
       "Tylezia": {
-        "price": 3.85,
+        "price": 4.07,
         "open": true
       },
       "Draconiros": {
@@ -143,7 +143,7 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 6.27,
+        "price": 5.94,
         "open": true
       },
       "Imagiro": {
@@ -163,7 +163,7 @@
         "open": true
       },
       "Salar": {
-        "price": 3.63,
+        "price": 3.74,
         "open": true
       },
       "Blair": {
@@ -323,7 +323,7 @@
         "open": false
       },
       "Tylezia": {
-        "price": 4.07,
+        "price": 4.1,
         "open": true
       },
       "Draconiros": {
@@ -359,7 +359,7 @@
         "open": true
       },
       "Allisteria": {
-        "price": 9.7,
+        "price": 10.0,
         "open": true
       },
       "Fallanster": {
