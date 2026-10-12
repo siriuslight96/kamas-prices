@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/10/2026 05:28 UTC",
+  "updated_at": "12/10/2026 05:51 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -135,7 +135,7 @@
         "open": true
       },
       "Tylezia": {
-        "price": 3.927,
+        "price": 3.938,
         "open": true
       },
       "Draconiros": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 25.85,
+        "price": 25.52,
         "open": true
       },
       "Allisteria": {
@@ -323,7 +323,7 @@
         "open": false
       },
       "Tylezia": {
-        "price": 3.7,
+        "price": 3.71,
         "open": true
       },
       "Draconiros": {
@@ -355,11 +355,11 @@
         "open": true
       },
       "Boune": {
-        "price": 26.11,
+        "price": 25.78,
         "open": true
       },
       "Allisteria": {
-        "price": 9.49,
+        "price": 9.47,
         "open": true
       },
       "Fallanster": {
