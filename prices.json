@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/10/2026 01:10 UTC",
+  "updated_at": "12/10/2026 01:34 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -159,7 +159,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.941,
+        "price": 6.963,
         "open": true
       },
       "Salar": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 24.002,
+        "price": 24.09,
         "open": true
       },
       "Allisteria": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.87,
+        "price": 6.89,
         "open": false
       },
       "Salar": {
