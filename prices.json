@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/10/2026 07:08 UTC",
+  "updated_at": "12/10/2026 07:35 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -151,7 +151,7 @@
         "open": true
       },
       "Talkasha": {
-        "price": 3.85,
+        "price": 3.96,
         "open": true
       },
       "Ombre": {
@@ -323,7 +323,7 @@
         "open": false
       },
       "Tylezia": {
-        "price": 3.7,
+        "price": 3.8,
         "open": true
       },
       "Draconiros": {
@@ -335,15 +335,15 @@
         "open": false
       },
       "Imagiro": {
-        "price": 4.03,
+        "price": 4.15,
         "open": true
       },
       "Talkasha": {
-        "price": 3.59,
+        "price": 3.72,
         "open": false
       },
       "Ombre": {
-        "price": 5.94,
+        "price": 6.1,
         "open": false
       },
       "Mikhal": {
