@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/10/2026 06:08 UTC",
+  "updated_at": "12/10/2026 06:38 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -171,7 +171,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 30.8,
+        "price": 29.7,
         "open": true
       },
       "Tiliwan": {
@@ -323,7 +323,7 @@
         "open": false
       },
       "Tylezia": {
-        "price": 3.7,
+        "price": 3.71,
         "open": true
       },
       "Draconiros": {
