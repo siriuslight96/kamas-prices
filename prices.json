@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/10/2026 22:34 UTC",
+  "updated_at": "12/10/2026 22:53 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.677,
+        "price": 6.765,
         "open": true
       },
       "Rafal": {
@@ -127,19 +127,19 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.82,
+        "price": 6.853,
         "open": true
       },
       "Orukam": {
-        "price": 4.565,
-        "open": false
+        "price": 3.883,
+        "open": true
       },
       "Tylezia": {
-        "price": 4.631,
-        "open": false
+        "price": 4.048,
+        "open": true
       },
       "Draconiros": {
-        "price": 7.15,
+        "price": 7.205,
         "open": true
       },
       "Hell Mina": {
@@ -147,7 +147,7 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.85,
+        "price": 3.96,
         "open": true
       },
       "Talkasha": {
@@ -183,8 +183,8 @@
         "open": true
       },
       "Boune": {
-        "price": 28.908,
-        "open": false
+        "price": 26.4,
+        "open": true
       },
       "Allisteria": {
         "price": 9.24,
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.65,
+        "price": 6.68,
         "open": false
       },
       "Rafal": {
@@ -319,11 +319,11 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.5,
+        "price": 4.08,
         "open": false
       },
       "Tylezia": {
-        "price": 4.02,
+        "price": 3.99,
         "open": true
       },
       "Draconiros": {
@@ -355,15 +355,15 @@
         "open": false
       },
       "Boune": {
-        "price": 26.44,
+        "price": 26.37,
         "open": true
       },
       "Allisteria": {
-        "price": 8.87,
+        "price": 8.77,
         "open": true
       },
       "Fallanster": {
-        "price": 4.0,
+        "price": 3.93,
         "open": true
       }
     }
