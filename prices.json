@@ -1,5 +1,5 @@
 {
-  "updated_at": "13/10/2026 16:30 UTC",
+  "updated_at": "13/10/2026 16:54 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -21,23 +21,23 @@
   "data": {
     "ibendouma": {
       "Dakal": {
-        "price": 7.042,
+        "price": 7.053,
         "open": true
       },
       "Rafal": {
-        "price": 3.584,
+        "price": 3.881,
         "open": true
       },
       "Brial": {
-        "price": 3.669,
+        "price": 3.548,
         "open": true
       },
       "Kourial": {
-        "price": 7.069,
+        "price": 6.872,
         "open": true
       },
       "Orukam": {
-        "price": 4.012,
+        "price": 4.03,
         "open": true
       },
       "Tylezia": {
@@ -45,7 +45,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 6.689,
+        "price": 6.702,
         "open": true
       },
       "Hell Mina": {
@@ -53,7 +53,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.97,
+        "price": 3.904,
         "open": true
       },
       "Talkasha": {
@@ -61,15 +61,15 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.807,
+        "price": 5.801,
         "open": true
       },
       "Mikhal": {
-        "price": 6.695,
+        "price": 6.713,
         "open": true
       },
       "Salar": {
-        "price": 3.693,
+        "price": 3.689,
         "open": true
       },
       "Blair": {
@@ -93,23 +93,23 @@
         "open": true
       },
       "Allisteria": {
-        "price": 9.366,
+        "price": 9.385,
         "open": true
       },
       "Fallanster": {
-        "price": 3.905,
+        "price": 3.916,
         "open": true
       },
       "Pandora": {
-        "price": 18.991,
+        "price": 18.993,
         "open": true
       },
       "Ogrest": {
-        "price": 44.737,
+        "price": 44.771,
         "open": true
       },
       "Rubilax": {
-        "price": 10.287,
+        "price": 10.295,
         "open": true
       }
     },
@@ -123,19 +123,19 @@
         "open": false
       },
       "Brial": {
-        "price": 4.246,
-        "open": false
+        "price": 3.696,
+        "open": true
       },
       "Kourial": {
         "price": 6.776,
-        "open": false
+        "open": true
       },
       "Orukam": {
         "price": 3.96,
         "open": true
       },
       "Tylezia": {
-        "price": 3.883,
+        "price": 4.18,
         "open": true
       },
       "Draconiros": {
@@ -147,7 +147,7 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.916,
+        "price": 3.85,
         "open": true
       },
       "Talkasha": {
@@ -303,31 +303,43 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.92,
-        "open": true
+        "price": 6.86,
+        "open": false
+      },
+      "Rafal": {
+        "price": 3.71,
+        "open": false
       },
       "Brial": {
         "price": 3.91,
         "open": true
       },
       "Kourial": {
-        "price": 6.85,
+        "price": 6.62,
         "open": true
       },
       "Orukam": {
         "price": 4.06,
         "open": true
       },
+      "Tylezia": {
+        "price": 3.84,
+        "open": true
+      },
       "Draconiros": {
         "price": 8.34,
-        "open": true
+        "open": false
       },
       "Hell Mina": {
-        "price": 5.8,
-        "open": true
+        "price": 5.56,
+        "open": false
       },
       "Imagiro": {
-        "price": 3.94,
+        "price": 3.85,
+        "open": true
+      },
+      "Talkasha": {
+        "price": 3.72,
         "open": true
       },
       "Ombre": {
@@ -336,7 +348,11 @@
       },
       "Mikhal": {
         "price": 6.53,
-        "open": true
+        "open": false
+      },
+      "Salar": {
+        "price": 3.59,
+        "open": false
       },
       "Boune": {
         "price": 26.44,
