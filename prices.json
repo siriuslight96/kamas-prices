@@ -1,5 +1,5 @@
 {
-  "updated_at": "13/10/2026 07:05 UTC",
+  "updated_at": "13/10/2026 07:31 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -195,11 +195,11 @@
         "open": true
       },
       "Pandora": {
-        "price": 20.9,
+        "price": 18.7,
         "open": true
       },
       "Ogrest": {
-        "price": 44.55,
+        "price": 44.0,
         "open": true
       },
       "Rubilax": {
@@ -343,7 +343,7 @@
         "open": false
       },
       "Ombre": {
-        "price": 5.81,
+        "price": 5.87,
         "open": true
       },
       "Mikhal": {
