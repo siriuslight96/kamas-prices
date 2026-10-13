@@ -1,5 +1,5 @@
 {
-  "updated_at": "13/10/2026 19:52 UTC",
+  "updated_at": "13/10/2026 20:18 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 7.15,
+        "price": 7.26,
         "open": true
       },
       "Rafal": {
@@ -123,7 +123,7 @@
         "open": true
       },
       "Brial": {
-        "price": 3.52,
+        "price": 3.85,
         "open": true
       },
       "Kourial": {
@@ -151,7 +151,7 @@
         "open": true
       },
       "Talkasha": {
-        "price": 3.806,
+        "price": 3.85,
         "open": true
       },
       "Ombre": {
@@ -171,11 +171,11 @@
         "open": true
       },
       "Kelerog": {
-        "price": 31.68,
+        "price": 31.9,
         "open": true
       },
       "Tiliwan": {
-        "price": 22.55,
+        "price": 22.88,
         "open": true
       },
       "Talok": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 7.11,
+        "price": 6.92,
         "open": false
       },
       "Rafal": {
@@ -311,7 +311,7 @@
         "open": false
       },
       "Brial": {
-        "price": 3.58,
+        "price": 3.75,
         "open": true
       },
       "Kourial": {
@@ -335,11 +335,11 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.88,
+        "price": 3.81,
         "open": false
       },
       "Talkasha": {
-        "price": 3.81,
+        "price": 3.85,
         "open": true
       },
       "Ombre": {
