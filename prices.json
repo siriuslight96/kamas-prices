@@ -1,5 +1,5 @@
 {
-  "updated_at": "14/10/2026 21:14 UTC",
+  "updated_at": "14/10/2026 21:50 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -131,7 +131,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.07,
+        "price": 3.85,
         "open": true
       },
       "Tylezia": {
@@ -163,7 +163,7 @@
         "open": true
       },
       "Salar": {
-        "price": 3.432,
+        "price": 3.443,
         "open": true
       },
       "Blair": {
@@ -175,12 +175,12 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 23.98,
+        "price": 24.2,
         "open": true
       },
       "Talok": {
-        "price": 22.0,
-        "open": true
+        "price": 21.78,
+        "open": false
       },
       "Boune": {
         "price": 25.85,
@@ -315,15 +315,15 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.75,
+        "price": 6.79,
         "open": true
       },
       "Orukam": {
-        "price": 3.97,
+        "price": 3.87,
         "open": true
       },
       "Tylezia": {
-        "price": 3.87,
+        "price": 3.97,
         "open": true
       },
       "Draconiros": {
@@ -335,11 +335,11 @@
         "open": true
       },
       "Imagiro": {
-        "price": 4.06,
+        "price": 3.85,
         "open": true
       },
       "Talkasha": {
-        "price": 3.67,
+        "price": 3.72,
         "open": false
       },
       "Ombre": {
@@ -351,7 +351,7 @@
         "open": false
       },
       "Salar": {
-        "price": 3.73,
+        "price": 3.41,
         "open": false
       },
       "Boune": {
@@ -359,8 +359,8 @@
         "open": true
       },
       "Allisteria": {
-        "price": 8.71,
-        "open": false
+        "price": 10.35,
+        "open": true
       },
       "Fallanster": {
         "price": 3.92,
