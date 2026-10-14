@@ -1,5 +1,5 @@
 {
-  "updated_at": "14/10/2026 23:38 UTC",
+  "updated_at": "14/10/2026 23:59 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.556,
+        "price": 6.82,
         "open": true
       },
       "Rafal": {
@@ -335,7 +335,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.85,
+        "price": 3.87,
         "open": true
       },
       "Talkasha": {
@@ -347,11 +347,11 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.84,
+        "price": 6.95,
         "open": false
       },
       "Salar": {
-        "price": 3.43,
+        "price": 3.67,
         "open": false
       },
       "Boune": {
