@@ -1,5 +1,5 @@
 {
-  "updated_at": "14/10/2026 02:16 UTC",
+  "updated_at": "14/10/2026 02:52 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -135,11 +135,11 @@
         "open": true
       },
       "Tylezia": {
-        "price": 4.015,
+        "price": 4.07,
         "open": true
       },
       "Draconiros": {
-        "price": 6.941,
+        "price": 6.963,
         "open": true
       },
       "Hell Mina": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.6,
+        "price": 6.63,
         "open": false
       },
       "Rafal": {
@@ -323,7 +323,7 @@
         "open": true
       },
       "Tylezia": {
-        "price": 3.88,
+        "price": 3.85,
         "open": true
       },
       "Draconiros": {
