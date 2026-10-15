@@ -1,5 +1,5 @@
 {
-  "updated_at": "15/10/2026 00:39 UTC",
+  "updated_at": "15/10/2026 01:16 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -179,8 +179,8 @@
         "open": true
       },
       "Talok": {
-        "price": 15.818,
-        "open": true
+        "price": 22.066,
+        "open": false
       },
       "Boune": {
         "price": 23.1,
@@ -191,7 +191,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 3.96,
+        "price": 3.85,
         "open": true
       },
       "Pandora": {
@@ -331,7 +331,7 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 6.11,
+        "price": 5.71,
         "open": false
       },
       "Imagiro": {
@@ -363,7 +363,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 3.92,
+        "price": 3.83,
         "open": true
       }
     }
