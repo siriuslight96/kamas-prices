@@ -1,5 +1,5 @@
 {
-  "updated_at": "15/10/2026 23:07 UTC",
+  "updated_at": "15/10/2026 23:33 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -195,7 +195,7 @@
         "open": true
       },
       "Pandora": {
-        "price": 25.07,
+        "price": 19.62,
         "open": true
       },
       "Ogrest": {
@@ -303,8 +303,8 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.73,
-        "open": false
+        "price": 6.78,
+        "open": true
       },
       "Rafal": {
         "price": 3.43,
@@ -335,7 +335,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.98,
+        "price": 3.88,
         "open": true
       },
       "Talkasha": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.58,
+        "price": 6.67,
         "open": false
       },
       "Salar": {
@@ -355,7 +355,7 @@
         "open": false
       },
       "Boune": {
-        "price": 25.49,
+        "price": 25.87,
         "open": false
       },
       "Allisteria": {
