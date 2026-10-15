@@ -1,5 +1,5 @@
 {
-  "updated_at": "14/10/2026 23:59 UTC",
+  "updated_at": "15/10/2026 00:39 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -331,8 +331,8 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 5.83,
-        "open": true
+        "price": 6.11,
+        "open": false
       },
       "Imagiro": {
         "price": 3.87,
