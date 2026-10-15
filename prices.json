@@ -1,5 +1,5 @@
 {
-  "updated_at": "15/10/2026 09:11 UTC",
+  "updated_at": "15/10/2026 09:47 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.237,
+        "price": 6.71,
         "open": true
       },
       "Rafal": {
@@ -131,7 +131,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.905,
+        "price": 3.96,
         "open": true
       },
       "Tylezia": {
@@ -147,7 +147,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 4.015,
+        "price": 4.07,
         "open": true
       },
       "Talkasha": {
@@ -167,7 +167,7 @@
         "open": false
       },
       "Blair": {
-        "price": 17.05,
+        "price": 17.27,
         "open": true
       },
       "Kelerog": {
@@ -175,11 +175,11 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 23.43,
+        "price": 23.65,
         "open": true
       },
       "Talok": {
-        "price": 20.35,
+        "price": 20.9,
         "open": true
       },
       "Boune": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.17,
+        "price": 6.45,
         "open": false
       },
       "Rafal": {
@@ -319,7 +319,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.87,
+        "price": 3.89,
         "open": false
       },
       "Tylezia": {
@@ -327,7 +327,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 7.07,
+        "price": 7.28,
         "open": true
       },
       "Hell Mina": {
@@ -335,11 +335,11 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.9,
+        "price": 4.11,
         "open": true
       },
       "Talkasha": {
-        "price": 3.85,
+        "price": 3.76,
         "open": false
       },
       "Ombre": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.64,
+        "price": 7.09,
         "open": false
       },
       "Salar": {
