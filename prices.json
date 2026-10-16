@@ -1,5 +1,5 @@
 {
-  "updated_at": "16/10/2026 02:40 UTC",
+  "updated_at": "16/10/2026 03:10 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,8 +127,8 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.54,
-        "open": true
+        "price": 7.597,
+        "open": false
       },
       "Orukam": {
         "price": 4.088,
@@ -315,7 +315,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.71,
+        "price": 7.01,
         "open": false
       },
       "Orukam": {
@@ -347,8 +347,8 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.49,
-        "open": true
+        "price": 6.5,
+        "open": false
       },
       "Salar": {
         "price": 3.56,
