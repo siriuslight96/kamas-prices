@@ -1,5 +1,5 @@
 {
-  "updated_at": "16/10/2026 05:51 UTC",
+  "updated_at": "16/10/2026 06:18 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -175,7 +175,7 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 23.435,
+        "price": 24.307,
         "open": true
       },
       "Talok": {
@@ -347,8 +347,8 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.5,
-        "open": false
+        "price": 6.49,
+        "open": true
       },
       "Salar": {
         "price": 3.56,
