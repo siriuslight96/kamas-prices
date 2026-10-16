@@ -1,5 +1,5 @@
 {
-  "updated_at": "16/10/2026 08:54 UTC",
+  "updated_at": "16/10/2026 09:24 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.693,
+        "price": 6.758,
         "open": true
       },
       "Rafal": {
@@ -135,15 +135,15 @@
         "open": true
       },
       "Tylezia": {
-        "price": 3.924,
+        "price": 3.979,
         "open": true
       },
       "Draconiros": {
-        "price": 6.867,
+        "price": 6.976,
         "open": true
       },
       "Hell Mina": {
-        "price": 5.995,
+        "price": 6.104,
         "open": true
       },
       "Imagiro": {
@@ -183,15 +183,15 @@
         "open": true
       },
       "Boune": {
-        "price": 28.732,
-        "open": false
+        "price": 24.525,
+        "open": true
       },
       "Allisteria": {
-        "price": 9.81,
+        "price": 10.028,
         "open": true
       },
       "Fallanster": {
-        "price": 3.924,
+        "price": 4.033,
         "open": true
       },
       "Pandora": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.73,
+        "price": 6.69,
         "open": false
       },
       "Rafal": {
@@ -323,19 +323,19 @@
         "open": true
       },
       "Tylezia": {
-        "price": 3.8,
+        "price": 3.81,
         "open": true
       },
       "Draconiros": {
-        "price": 6.94,
+        "price": 7.05,
         "open": true
       },
       "Hell Mina": {
-        "price": 5.71,
+        "price": 5.92,
         "open": true
       },
       "Imagiro": {
-        "price": 3.78,
+        "price": 3.91,
         "open": true
       },
       "Talkasha": {
@@ -347,23 +347,23 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.5,
-        "open": false
+        "price": 6.49,
+        "open": true
       },
       "Salar": {
         "price": 3.5,
         "open": false
       },
       "Boune": {
-        "price": 27.14,
-        "open": true
+        "price": 24.51,
+        "open": false
       },
       "Allisteria": {
-        "price": 10.23,
+        "price": 10.27,
         "open": true
       },
       "Fallanster": {
-        "price": 3.89,
+        "price": 3.99,
         "open": true
       }
     }
