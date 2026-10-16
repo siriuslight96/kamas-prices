@@ -1,5 +1,5 @@
 {
-  "updated_at": "16/10/2026 18:16 UTC",
+  "updated_at": "16/10/2026 18:57 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -147,7 +147,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.793,
+        "price": 3.935,
         "open": true
       },
       "Talkasha": {
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.714,
-        "open": true
+        "price": 7.717,
+        "open": false
       },
       "Salar": {
         "price": 3.466,
@@ -179,7 +179,7 @@
         "open": true
       },
       "Talok": {
-        "price": 16.982,
+        "price": 17.048,
         "open": true
       },
       "Boune": {
@@ -195,7 +195,7 @@
         "open": true
       },
       "Pandora": {
-        "price": 22.345,
+        "price": 23.98,
         "open": true
       },
       "Ogrest": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.45,
+        "price": 6.37,
         "open": false
       },
       "Rafal": {
@@ -315,11 +315,11 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.78,
+        "price": 6.88,
         "open": true
       },
       "Orukam": {
-        "price": 3.94,
+        "price": 3.87,
         "open": true
       },
       "Tylezia": {
@@ -331,11 +331,11 @@
         "open": false
       },
       "Hell Mina": {
-        "price": 5.71,
-        "open": false
+        "price": 5.78,
+        "open": true
       },
       "Imagiro": {
-        "price": 3.91,
+        "price": 3.97,
         "open": true
       },
       "Talkasha": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.78,
+        "price": 6.45,
         "open": false
       },
       "Salar": {
@@ -355,11 +355,11 @@
         "open": false
       },
       "Boune": {
-        "price": 24.12,
+        "price": 25.86,
         "open": true
       },
       "Allisteria": {
-        "price": 10.32,
+        "price": 10.35,
         "open": true
       },
       "Fallanster": {
