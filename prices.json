@@ -1,5 +1,5 @@
 {
-  "updated_at": "16/10/2026 22:18 UTC",
+  "updated_at": "16/10/2026 22:51 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -119,7 +119,7 @@
         "open": true
       },
       "Rafal": {
-        "price": 3.444,
+        "price": 3.455,
         "open": true
       },
       "Brial": {
@@ -131,11 +131,11 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.469,
-        "open": false
+        "price": 3.771,
+        "open": true
       },
       "Tylezia": {
-        "price": 3.815,
+        "price": 3.924,
         "open": true
       },
       "Draconiros": {
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.693,
-        "open": true
+        "price": 7.674,
+        "open": false
       },
       "Salar": {
         "price": 3.346,
@@ -171,7 +171,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 35.97,
+        "price": 34.88,
         "open": true
       },
       "Tiliwan": {
@@ -307,7 +307,7 @@
         "open": false
       },
       "Rafal": {
-        "price": 3.41,
+        "price": 3.42,
         "open": false
       },
       "Brial": {
@@ -315,23 +315,23 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.72,
+        "price": 6.73,
         "open": true
       },
       "Orukam": {
-        "price": 3.72,
+        "price": 3.67,
         "open": false
       },
       "Tylezia": {
         "price": 3.74,
-        "open": false
+        "open": true
       },
       "Draconiros": {
         "price": 6.85,
         "open": true
       },
       "Hell Mina": {
-        "price": 6.19,
+        "price": 6.1,
         "open": true
       },
       "Imagiro": {
@@ -347,12 +347,12 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.64,
+        "price": 6.45,
         "open": false
       },
       "Salar": {
-        "price": 3.31,
-        "open": false
+        "price": 3.41,
+        "open": true
       },
       "Boune": {
         "price": 26.2,
