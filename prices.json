@@ -1,5 +1,5 @@
 {
-  "updated_at": "16/10/2026 09:24 UTC",
+  "updated_at": "16/10/2026 09:59 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 7.739,
-        "open": false
+        "price": 6.627,
+        "open": true
       },
       "Salar": {
         "price": 3.597,
@@ -179,12 +179,12 @@
         "open": true
       },
       "Talok": {
-        "price": 15.26,
-        "open": true
+        "price": 22.149,
+        "open": false
       },
       "Boune": {
-        "price": 24.525,
-        "open": true
+        "price": 28.732,
+        "open": false
       },
       "Allisteria": {
         "price": 10.028,
@@ -331,7 +331,7 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 5.92,
+        "price": 5.91,
         "open": true
       },
       "Imagiro": {
@@ -355,7 +355,7 @@
         "open": false
       },
       "Boune": {
-        "price": 24.51,
+        "price": 24.45,
         "open": false
       },
       "Allisteria": {
