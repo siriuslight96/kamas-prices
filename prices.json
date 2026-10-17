@@ -1,5 +1,5 @@
 {
-  "updated_at": "17/10/2026 06:06 UTC",
+  "updated_at": "17/10/2026 06:42 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -323,11 +323,11 @@
         "open": false
       },
       "Tylezia": {
-        "price": 3.78,
+        "price": 3.79,
         "open": true
       },
       "Draconiros": {
-        "price": 7.51,
+        "price": 7.88,
         "open": true
       },
       "Hell Mina": {
@@ -363,7 +363,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 4.04,
+        "price": 4.03,
         "open": true
       }
     }
