@@ -1,5 +1,5 @@
 {
-  "updated_at": "17/10/2026 09:36 UTC",
+  "updated_at": "17/10/2026 10:03 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,7 +127,7 @@
         "open": false
       },
       "Kourial": {
-        "price": 7.641,
+        "price": 6.595,
         "open": false
       },
       "Orukam": {
@@ -135,8 +135,8 @@
         "open": false
       },
       "Tylezia": {
-        "price": 3.793,
-        "open": true
+        "price": 4.513,
+        "open": false
       },
       "Draconiros": {
         "price": 7.804,
@@ -159,19 +159,19 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.714,
+        "price": 6.54,
         "open": true
       },
       "Salar": {
-        "price": 3.913,
-        "open": false
+        "price": 3.292,
+        "open": true
       },
       "Blair": {
         "price": 16.35,
         "open": true
       },
       "Kelerog": {
-        "price": 33.79,
+        "price": 34.335,
         "open": true
       },
       "Tiliwan": {
@@ -179,11 +179,11 @@
         "open": true
       },
       "Talok": {
-        "price": 15.903,
+        "price": 17.168,
         "open": true
       },
       "Boune": {
-        "price": 24.525,
+        "price": 25.615,
         "open": true
       },
       "Allisteria": {
@@ -315,7 +315,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.64,
+        "price": 6.53,
         "open": false
       },
       "Orukam": {
@@ -323,23 +323,23 @@
         "open": false
       },
       "Tylezia": {
-        "price": 3.83,
+        "price": 4.02,
         "open": true
       },
       "Draconiros": {
         "price": 7.88,
-        "open": true
+        "open": false
       },
       "Hell Mina": {
         "price": 5.71,
         "open": false
       },
       "Imagiro": {
-        "price": 3.95,
+        "price": 4.01,
         "open": false
       },
       "Talkasha": {
-        "price": 3.65,
+        "price": 3.76,
         "open": false
       },
       "Ombre": {
@@ -351,11 +351,11 @@
         "open": false
       },
       "Salar": {
-        "price": 3.62,
+        "price": 3.44,
         "open": true
       },
       "Boune": {
-        "price": 25.86,
+        "price": 25.87,
         "open": true
       },
       "Allisteria": {
