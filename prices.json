@@ -1,5 +1,5 @@
 {
-  "updated_at": "17/10/2026 05:12 UTC",
+  "updated_at": "17/10/2026 05:41 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -139,7 +139,7 @@
         "open": false
       },
       "Draconiros": {
-        "price": 6.922,
+        "price": 7.085,
         "open": true
       },
       "Hell Mina": {
@@ -151,7 +151,7 @@
         "open": true
       },
       "Talkasha": {
-        "price": 3.488,
+        "price": 3.706,
         "open": true
       },
       "Ombre": {
@@ -179,7 +179,7 @@
         "open": true
       },
       "Talok": {
-        "price": 17.582,
+        "price": 15.598,
         "open": true
       },
       "Boune": {
@@ -323,11 +323,11 @@
         "open": false
       },
       "Tylezia": {
-        "price": 3.78,
+        "price": 3.79,
         "open": true
       },
       "Draconiros": {
-        "price": 7.05,
+        "price": 7.16,
         "open": true
       },
       "Hell Mina": {
@@ -339,7 +339,7 @@
         "open": false
       },
       "Talkasha": {
-        "price": 3.66,
+        "price": 3.67,
         "open": false
       },
       "Ombre": {
@@ -363,16 +363,12 @@
         "open": true
       },
       "Fallanster": {
-        "price": 4.04,
+        "price": 4.03,
         "open": true
       }
     }
   },
-  "errors": {
-    "leskamas": "HTTPSConnectionPool(host='www.leskamas.com', port=443): Read timed out. (read timeout=20)"
-  },
-  "stale_sites": [
-    "leskamas"
-  ],
+  "errors": {},
+  "stale_sites": [],
   "link_only_sites": []
 }
