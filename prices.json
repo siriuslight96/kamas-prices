@@ -1,5 +1,5 @@
 {
-  "updated_at": "18/10/2026 09:07 UTC",
+  "updated_at": "18/10/2026 09:37 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -307,7 +307,7 @@
         "open": false
       },
       "Rafal": {
-        "price": 3.26,
+        "price": 3.22,
         "open": false
       },
       "Brial": {
@@ -324,7 +324,7 @@
       },
       "Tylezia": {
         "price": 3.73,
-        "open": false
+        "open": true
       },
       "Draconiros": {
         "price": 6.85,
@@ -339,7 +339,7 @@
         "open": false
       },
       "Talkasha": {
-        "price": 3.51,
+        "price": 3.47,
         "open": true
       },
       "Ombre": {
@@ -351,12 +351,12 @@
         "open": true
       },
       "Salar": {
-        "price": 3.33,
-        "open": false
+        "price": 3.29,
+        "open": true
       },
       "Boune": {
         "price": 25.86,
-        "open": false
+        "open": true
       },
       "Allisteria": {
         "price": 9.76,
@@ -368,7 +368,11 @@
       }
     }
   },
-  "errors": {},
-  "stale_sites": [],
+  "errors": {
+    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html?_ts=1792316234"
+  },
+  "stale_sites": [
+    "leskamas"
+  ],
   "link_only_sites": []
 }
