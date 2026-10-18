@@ -1,5 +1,5 @@
 {
-  "updated_at": "18/10/2026 09:37 UTC",
+  "updated_at": "18/10/2026 10:04 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -119,16 +119,16 @@
         "open": false
       },
       "Rafal": {
-        "price": 3.255,
-        "open": true
+        "price": 3.917,
+        "open": false
       },
       "Brial": {
         "price": 3.472,
         "open": true
       },
       "Kourial": {
-        "price": 6.619,
-        "open": true
+        "price": 7.562,
+        "open": false
       },
       "Orukam": {
         "price": 3.852,
@@ -151,16 +151,16 @@
         "open": true
       },
       "Talkasha": {
-        "price": 3.255,
-        "open": true
+        "price": 4.297,
+        "open": false
       },
       "Ombre": {
         "price": 5.642,
         "open": true
       },
       "Mikhal": {
-        "price": 6.597,
-        "open": true
+        "price": 7.497,
+        "open": false
       },
       "Salar": {
         "price": 3.266,
@@ -171,19 +171,19 @@
         "open": true
       },
       "Kelerog": {
-        "price": 34.937,
-        "open": true
+        "price": 38.257,
+        "open": false
       },
       "Tiliwan": {
         "price": 24.087,
         "open": true
       },
       "Talok": {
-        "price": 20.398,
+        "price": 21.158,
         "open": true
       },
       "Boune": {
-        "price": 25.498,
+        "price": 25.823,
         "open": true
       },
       "Allisteria": {
@@ -307,7 +307,7 @@
         "open": false
       },
       "Rafal": {
-        "price": 3.22,
+        "price": 3.38,
         "open": false
       },
       "Brial": {
@@ -368,11 +368,7 @@
       }
     }
   },
-  "errors": {
-    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html?_ts=1792316234"
-  },
-  "stale_sites": [
-    "leskamas"
-  ],
+  "errors": {},
+  "stale_sites": [],
   "link_only_sites": []
 }
