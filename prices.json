@@ -1,5 +1,5 @@
 {
-  "updated_at": "18/10/2026 18:30 UTC",
+  "updated_at": "18/10/2026 19:00 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.402,
+        "price": 6.51,
         "open": true
       },
       "Rafal": {
@@ -131,12 +131,12 @@
         "open": false
       },
       "Orukam": {
-        "price": 3.581,
-        "open": true
+        "price": 4.329,
+        "open": false
       },
       "Tylezia": {
-        "price": 4.394,
-        "open": false
+        "price": 3.255,
+        "open": true
       },
       "Draconiros": {
         "price": 6.51,
@@ -147,11 +147,11 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.581,
-        "open": true
+        "price": 4.34,
+        "open": false
       },
       "Talkasha": {
-        "price": 3.581,
+        "price": 3.591,
         "open": true
       },
       "Ombre": {
@@ -159,7 +159,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.402,
+        "price": 6.51,
         "open": true
       },
       "Salar": {
@@ -175,7 +175,7 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 21.917,
+        "price": 22.026,
         "open": true
       },
       "Talok": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 24.955,
+        "price": 23.87,
         "open": true
       },
       "Allisteria": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.39,
+        "price": 6.48,
         "open": false
       },
       "Rafal": {
@@ -319,15 +319,15 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.55,
+        "price": 3.89,
         "open": false
       },
       "Tylezia": {
-        "price": 4.44,
-        "open": false
+        "price": 4.01,
+        "open": true
       },
       "Draconiros": {
-        "price": 6.59,
+        "price": 6.66,
         "open": true
       },
       "Hell Mina": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.28,
+        "price": 6.44,
         "open": false
       },
       "Salar": {
