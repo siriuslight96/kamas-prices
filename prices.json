@@ -1,5 +1,5 @@
 {
-  "updated_at": "18/10/2026 00:40 UTC",
+  "updated_at": "18/10/2026 01:16 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -151,7 +151,7 @@
         "open": true
       },
       "Talkasha": {
-        "price": 3.906,
+        "price": 3.743,
         "open": true
       },
       "Ombre": {
@@ -159,7 +159,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.738,
+        "price": 6.51,
         "open": true
       },
       "Salar": {
@@ -171,11 +171,11 @@
         "open": true
       },
       "Kelerog": {
-        "price": 32.008,
+        "price": 32.55,
         "open": true
       },
       "Tiliwan": {
-        "price": 22.036,
+        "price": 23.87,
         "open": true
       },
       "Talok": {
@@ -183,8 +183,8 @@
         "open": true
       },
       "Boune": {
-        "price": 28.047,
-        "open": false
+        "price": 25.4,
+        "open": true
       },
       "Allisteria": {
         "price": 9.982,
@@ -311,7 +311,7 @@
         "open": false
       },
       "Brial": {
-        "price": 3.47,
+        "price": 3.44,
         "open": true
       },
       "Kourial": {
@@ -319,15 +319,15 @@
         "open": false
       },
       "Orukam": {
-        "price": 3.68,
+        "price": 3.67,
         "open": false
       },
       "Tylezia": {
-        "price": 4.08,
-        "open": true
+        "price": 4.05,
+        "open": false
       },
       "Draconiros": {
-        "price": 7.7,
+        "price": 7.39,
         "open": true
       },
       "Hell Mina": {
@@ -339,7 +339,7 @@
         "open": false
       },
       "Talkasha": {
-        "price": 3.73,
+        "price": 3.78,
         "open": true
       },
       "Ombre": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.37,
+        "price": 6.51,
         "open": true
       },
       "Salar": {
@@ -355,7 +355,7 @@
         "open": false
       },
       "Boune": {
-        "price": 28.33,
+        "price": 25.86,
         "open": false
       },
       "Allisteria": {
