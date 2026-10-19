@@ -1,5 +1,5 @@
 {
-  "updated_at": "19/10/2026 00:06 UTC",
+  "updated_at": "19/10/2026 00:49 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -123,7 +123,7 @@
         "open": false
       },
       "Brial": {
-        "price": 3.949,
+        "price": 3.939,
         "open": false
       },
       "Kourial": {
@@ -167,19 +167,19 @@
         "open": true
       },
       "Blair": {
-        "price": 16.492,
-        "open": true
+        "price": 18.988,
+        "open": false
       },
       "Kelerog": {
         "price": 33.093,
         "open": true
       },
       "Tiliwan": {
-        "price": 22.308,
+        "price": 22.785,
         "open": true
       },
       "Talok": {
-        "price": 19.53,
+        "price": 18.988,
         "open": true
       },
       "Boune": {
@@ -324,7 +324,7 @@
       },
       "Tylezia": {
         "price": 3.37,
-        "open": false
+        "open": true
       },
       "Draconiros": {
         "price": 6.71,
@@ -356,7 +356,7 @@
       },
       "Boune": {
         "price": 26.3,
-        "open": true
+        "open": false
       },
       "Allisteria": {
         "price": 9.67,
