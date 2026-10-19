@@ -1,5 +1,5 @@
 {
-  "updated_at": "19/10/2026 18:10 UTC",
+  "updated_at": "19/10/2026 18:52 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.499,
+        "price": 6.51,
         "open": true
       },
       "Rafal": {
@@ -123,7 +123,7 @@
         "open": false
       },
       "Brial": {
-        "price": 3.407,
+        "price": 3.255,
         "open": true
       },
       "Kourial": {
@@ -131,7 +131,7 @@
         "open": false
       },
       "Orukam": {
-        "price": 3.754,
+        "price": 3.798,
         "open": true
       },
       "Tylezia": {
@@ -147,8 +147,8 @@
         "open": false
       },
       "Imagiro": {
-        "price": 4.275,
-        "open": false
+        "price": 3.7,
+        "open": true
       },
       "Talkasha": {
         "price": 3.581,
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.619,
-        "open": true
+        "price": 7.4,
+        "open": false
       },
       "Salar": {
         "price": 3.255,
@@ -175,7 +175,7 @@
         "open": true
       },
       "Tiliwan": {
-        "price": 24.521,
+        "price": 23.87,
         "open": true
       },
       "Talok": {
@@ -307,19 +307,19 @@
         "open": false
       },
       "Rafal": {
-        "price": 3.04,
+        "price": 2.98,
         "open": false
       },
       "Brial": {
-        "price": 3.28,
+        "price": 3.21,
         "open": true
       },
       "Kourial": {
-        "price": 7.5,
-        "open": true
+        "price": 6.78,
+        "open": false
       },
       "Orukam": {
-        "price": 3.59,
+        "price": 3.6,
         "open": false
       },
       "Tylezia": {
@@ -327,7 +327,7 @@
         "open": false
       },
       "Draconiros": {
-        "price": 6.18,
+        "price": 6.22,
         "open": false
       },
       "Hell Mina": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.48,
+        "price": 6.78,
         "open": true
       },
       "Salar": {
