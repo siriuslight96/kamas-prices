@@ -1,5 +1,5 @@
 {
-  "updated_at": "19/10/2026 06:47 UTC",
+  "updated_at": "19/10/2026 07:35 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -147,8 +147,8 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.765,
-        "open": true
+        "price": 4.286,
+        "open": false
       },
       "Talkasha": {
         "price": 4.242,
@@ -183,11 +183,11 @@
         "open": true
       },
       "Boune": {
-        "price": 23.87,
+        "price": 24.413,
         "open": true
       },
       "Allisteria": {
-        "price": 8.181,
+        "price": 8.68,
         "open": true
       },
       "Fallanster": {
@@ -319,12 +319,12 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.59,
+        "price": 3.5,
         "open": false
       },
       "Tylezia": {
-        "price": 3.76,
-        "open": false
+        "price": 3.62,
+        "open": true
       },
       "Draconiros": {
         "price": 6.41,
@@ -355,11 +355,11 @@
         "open": true
       },
       "Boune": {
-        "price": 24.11,
+        "price": 24.66,
         "open": false
       },
       "Allisteria": {
-        "price": 8.51,
+        "price": 8.69,
         "open": true
       },
       "Fallanster": {
