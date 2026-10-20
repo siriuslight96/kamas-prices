@@ -1,5 +1,5 @@
 {
-  "updated_at": "20/10/2026 04:43 UTC",
+  "updated_at": "20/10/2026 05:14 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -131,11 +131,11 @@
         "open": false
       },
       "Orukam": {
-        "price": 3.439,
+        "price": 3.613,
         "open": true
       },
       "Tylezia": {
-        "price": 3.602,
+        "price": 3.711,
         "open": true
       },
       "Draconiros": {
@@ -147,7 +147,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 4.025,
+        "price": 4.199,
         "open": false
       },
       "Talkasha": {
@@ -315,7 +315,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.86,
+        "price": 6.85,
         "open": false
       },
       "Orukam": {
@@ -323,11 +323,11 @@
         "open": false
       },
       "Tylezia": {
-        "price": 3.59,
+        "price": 3.6,
         "open": false
       },
       "Draconiros": {
-        "price": 6.54,
+        "price": 6.51,
         "open": true
       },
       "Hell Mina": {
