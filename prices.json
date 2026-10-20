@@ -1,5 +1,5 @@
 {
-  "updated_at": "20/10/2026 20:45 UTC",
+  "updated_at": "20/10/2026 21:15 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -135,12 +135,12 @@
         "open": true
       },
       "Tylezia": {
-        "price": 3.581,
+        "price": 3.689,
         "open": true
       },
       "Draconiros": {
-        "price": 7.432,
-        "open": false
+        "price": 6.673,
+        "open": true
       },
       "Hell Mina": {
         "price": 5.751,
@@ -163,15 +163,15 @@
         "open": false
       },
       "Salar": {
-        "price": 3.038,
-        "open": true
+        "price": 3.624,
+        "open": false
       },
       "Blair": {
-        "price": 14.593,
+        "price": 14.865,
         "open": true
       },
       "Kelerog": {
-        "price": 34.069,
+        "price": 31.465,
         "open": true
       },
       "Tiliwan": {
@@ -195,7 +195,7 @@
         "open": true
       },
       "Pandora": {
-        "price": 28.427,
+        "price": 29.295,
         "open": true
       },
       "Ogrest": {
@@ -307,7 +307,7 @@
         "open": true
       },
       "Rafal": {
-        "price": 2.99,
+        "price": 3.04,
         "open": true
       },
       "Brial": {
@@ -315,7 +315,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.48,
+        "price": 6.64,
         "open": true
       },
       "Orukam": {
@@ -323,11 +323,11 @@
         "open": true
       },
       "Tylezia": {
-        "price": 3.69,
+        "price": 3.73,
         "open": true
       },
       "Draconiros": {
-        "price": 6.46,
+        "price": 6.26,
         "open": true
       },
       "Hell Mina": {
@@ -335,12 +335,12 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.68,
+        "price": 3.8,
         "open": true
       },
       "Talkasha": {
         "price": 3.65,
-        "open": true
+        "open": false
       },
       "Ombre": {
         "price": 5.48,
@@ -351,7 +351,7 @@
         "open": false
       },
       "Salar": {
-        "price": 3.2,
+        "price": 3.35,
         "open": true
       },
       "Boune": {
