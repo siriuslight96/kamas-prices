@@ -1,5 +1,5 @@
 {
-  "updated_at": "21/10/2026 02:35 UTC",
+  "updated_at": "21/10/2026 03:09 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.402,
-        "open": true
+        "price": 7.204,
+        "open": false
       },
       "Salar": {
         "price": 3.602,
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.37,
+        "price": 6.57,
         "open": true
       },
       "Salar": {
