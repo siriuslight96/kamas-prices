@@ -1,5 +1,5 @@
 {
-  "updated_at": "22/10/2026 08:14 UTC",
+  "updated_at": "22/10/2026 08:57 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -123,27 +123,27 @@
         "open": false
       },
       "Brial": {
-        "price": 3.841,
-        "open": false
+        "price": 3.364,
+        "open": true
       },
       "Kourial": {
         "price": 7.085,
         "open": false
       },
       "Orukam": {
-        "price": 3.689,
+        "price": 3.743,
         "open": true
       },
       "Tylezia": {
-        "price": 3.581,
+        "price": 3.635,
         "open": true
       },
       "Draconiros": {
-        "price": 6.402,
-        "open": true
+        "price": 7.356,
+        "open": false
       },
       "Hell Mina": {
-        "price": 5.696,
+        "price": 5.751,
         "open": true
       },
       "Imagiro": {
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 7.107,
-        "open": false
+        "price": 6.282,
+        "open": true
       },
       "Salar": {
         "price": 3.147,
@@ -171,7 +171,7 @@
         "open": false
       },
       "Kelerog": {
-        "price": 26.04,
+        "price": 27.668,
         "open": true
       },
       "Tiliwan": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.73,
+        "price": 6.25,
         "open": true
       },
       "Rafal": {
@@ -311,15 +311,15 @@
         "open": false
       },
       "Brial": {
-        "price": 3.57,
+        "price": 3.4,
         "open": true
       },
       "Kourial": {
-        "price": 6.94,
+        "price": 7.16,
         "open": false
       },
       "Orukam": {
-        "price": 3.66,
+        "price": 3.71,
         "open": false
       },
       "Tylezia": {
@@ -327,7 +327,7 @@
         "open": false
       },
       "Draconiros": {
-        "price": 6.2,
+        "price": 6.25,
         "open": true
       },
       "Hell Mina": {
@@ -363,7 +363,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 3.28,
+        "price": 3.29,
         "open": true
       }
     }
