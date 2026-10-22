@@ -1,5 +1,5 @@
 {
-  "updated_at": "22/10/2026 03:48 UTC",
+  "updated_at": "22/10/2026 04:19 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -119,28 +119,28 @@
         "open": false
       },
       "Rafal": {
-        "price": 3.581,
-        "open": true
+        "price": 3.863,
+        "open": false
       },
       "Brial": {
         "price": 3.841,
         "open": false
       },
       "Kourial": {
-        "price": 6.456,
-        "open": true
+        "price": 7.107,
+        "open": false
       },
       "Orukam": {
         "price": 3.798,
         "open": true
       },
       "Tylezia": {
-        "price": 3.635,
+        "price": 3.581,
         "open": true
       },
       "Draconiros": {
-        "price": 6.402,
-        "open": true
+        "price": 7.356,
+        "open": false
       },
       "Hell Mina": {
         "price": 5.696,
@@ -159,8 +159,8 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.402,
-        "open": true
+        "price": 7.107,
+        "open": false
       },
       "Salar": {
         "price": 3.147,
@@ -179,15 +179,15 @@
         "open": true
       },
       "Talok": {
-        "price": 18.988,
-        "open": true
+        "price": 21.233,
+        "open": false
       },
       "Boune": {
         "price": 26.583,
         "open": true
       },
       "Allisteria": {
-        "price": 9.765,
+        "price": 9.874,
         "open": true
       },
       "Fallanster": {
@@ -315,11 +315,11 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.61,
+        "price": 7.18,
         "open": false
       },
       "Orukam": {
-        "price": 3.75,
+        "price": 3.76,
         "open": false
       },
       "Tylezia": {
@@ -327,7 +327,7 @@
         "open": false
       },
       "Draconiros": {
-        "price": 6.2,
+        "price": 6.26,
         "open": true
       },
       "Hell Mina": {
@@ -359,11 +359,11 @@
         "open": true
       },
       "Allisteria": {
-        "price": 9.86,
+        "price": 9.97,
         "open": true
       },
       "Fallanster": {
-        "price": 3.28,
+        "price": 3.29,
         "open": true
       }
     }
