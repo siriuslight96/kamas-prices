@@ -1,5 +1,5 @@
 {
-  "updated_at": "22/10/2026 23:05 UTC",
+  "updated_at": "22/10/2026 23:35 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -123,31 +123,31 @@
         "open": true
       },
       "Brial": {
-        "price": 3.472,
+        "price": 3.255,
         "open": true
       },
       "Kourial": {
-        "price": 6.076,
+        "price": 6.022,
         "open": true
       },
       "Orukam": {
-        "price": 3.472,
-        "open": true
+        "price": 4.134,
+        "open": false
       },
       "Tylezia": {
         "price": 3.472,
         "open": true
       },
       "Draconiros": {
-        "price": 6.076,
-        "open": true
+        "price": 7.313,
+        "open": false
       },
       "Hell Mina": {
         "price": 5.729,
         "open": true
       },
       "Imagiro": {
-        "price": 3.743,
+        "price": 3.472,
         "open": true
       },
       "Talkasha": {
@@ -159,15 +159,15 @@
         "open": true
       },
       "Mikhal": {
-        "price": 5.642,
-        "open": true
+        "price": 7.031,
+        "open": false
       },
       "Salar": {
         "price": 3.147,
         "open": true
       },
       "Blair": {
-        "price": 15.038,
+        "price": 15.168,
         "open": true
       },
       "Kelerog": {
@@ -315,19 +315,19 @@
         "open": true
       },
       "Kourial": {
-        "price": 5.92,
-        "open": true
+        "price": 6.35,
+        "open": false
       },
       "Orukam": {
-        "price": 3.49,
+        "price": 3.5,
         "open": true
       },
       "Tylezia": {
-        "price": 3.84,
+        "price": 3.79,
         "open": false
       },
       "Draconiros": {
-        "price": 6.22,
+        "price": 6.8,
         "open": true
       },
       "Hell Mina": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 5.81,
+        "price": 6.25,
         "open": true
       },
       "Salar": {
@@ -355,7 +355,7 @@
         "open": false
       },
       "Boune": {
-        "price": 24.19,
+        "price": 23.4,
         "open": false
       },
       "Allisteria": {
