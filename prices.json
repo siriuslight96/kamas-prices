@@ -1,5 +1,5 @@
 {
-  "updated_at": "23/10/2026 19:02 UTC",
+  "updated_at": "23/10/2026 19:36 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -21,31 +21,31 @@
   "data": {
     "ibendouma": {
       "Dakal": {
-        "price": 6.217,
+        "price": 6.211,
         "open": true
       },
       "Rafal": {
-        "price": 3.089,
+        "price": 3.082,
         "open": true
       },
       "Brial": {
-        "price": 3.307,
+        "price": 3.305,
         "open": true
       },
       "Kourial": {
-        "price": 6.181,
+        "price": 6.159,
         "open": true
       },
       "Orukam": {
-        "price": 3.529,
+        "price": 3.53,
         "open": true
       },
       "Tylezia": {
-        "price": 3.518,
+        "price": 3.522,
         "open": true
       },
       "Draconiros": {
-        "price": 6.392,
+        "price": 6.391,
         "open": true
       },
       "Hell Mina": {
@@ -69,7 +69,7 @@
         "open": true
       },
       "Salar": {
-        "price": 3.303,
+        "price": 3.304,
         "open": true
       },
       "Blair": {
@@ -89,11 +89,11 @@
         "open": true
       },
       "Boune": {
-        "price": 25.5,
+        "price": 24.27,
         "open": true
       },
       "Allisteria": {
-        "price": 10.0,
+        "price": 9.82,
         "open": true
       },
       "Fallanster": {
@@ -101,21 +101,21 @@
         "open": true
       },
       "Pandora": {
-        "price": 36.836,
+        "price": 36.664,
         "open": true
       },
       "Ogrest": {
-        "price": 52.31,
+        "price": 52.272,
         "open": true
       },
       "Rubilax": {
-        "price": 14.348,
+        "price": 14.328,
         "open": true
       }
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.13,
+        "price": 6.185,
         "open": true
       },
       "Rafal": {
@@ -127,7 +127,7 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.076,
+        "price": 6.185,
         "open": true
       },
       "Orukam": {
@@ -135,7 +135,7 @@
         "open": true
       },
       "Tylezia": {
-        "price": 3.472,
+        "price": 3.635,
         "open": true
       },
       "Draconiros": {
@@ -143,23 +143,23 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 6.521,
-        "open": false
+        "price": 5.696,
+        "open": true
       },
       "Imagiro": {
-        "price": 3.559,
+        "price": 3.678,
         "open": true
       },
       "Talkasha": {
-        "price": 4.058,
-        "open": false
+        "price": 3.526,
+        "open": true
       },
       "Ombre": {
         "price": 5.642,
         "open": true
       },
       "Mikhal": {
-        "price": 5.968,
+        "price": 6.185,
         "open": true
       },
       "Salar": {
@@ -171,7 +171,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 30.923,
+        "price": 27.277,
         "open": true
       },
       "Tiliwan": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 25.281,
+        "price": 25.498,
         "open": true
       },
       "Allisteria": {
@@ -303,8 +303,8 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.03,
-        "open": false
+        "price": 6.08,
+        "open": true
       },
       "Rafal": {
         "price": 3.01,
@@ -315,7 +315,7 @@
         "open": false
       },
       "Kourial": {
-        "price": 6.0,
+        "price": 6.08,
         "open": true
       },
       "Orukam": {
@@ -323,7 +323,7 @@
         "open": true
       },
       "Tylezia": {
-        "price": 3.79,
+        "price": 3.78,
         "open": true
       },
       "Draconiros": {
@@ -335,7 +335,7 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.84,
+        "price": 3.75,
         "open": false
       },
       "Talkasha": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 5.93,
+        "price": 6.2,
         "open": true
       },
       "Salar": {
