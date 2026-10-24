@@ -1,5 +1,5 @@
 {
-  "updated_at": "24/10/2026 03:08 UTC",
+  "updated_at": "24/10/2026 03:40 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -131,8 +131,8 @@
         "open": false
       },
       "Orukam": {
-        "price": 3.581,
-        "open": true
+        "price": 4.134,
+        "open": false
       },
       "Tylezia": {
         "price": 3.548,
@@ -147,20 +147,20 @@
         "open": true
       },
       "Imagiro": {
-        "price": 4.09,
-        "open": false
+        "price": 3.537,
+        "open": true
       },
       "Talkasha": {
         "price": 3.255,
         "open": true
       },
       "Ombre": {
-        "price": 5.642,
+        "price": 5.696,
         "open": true
       },
       "Mikhal": {
-        "price": 6.803,
-        "open": false
+        "price": 6.011,
+        "open": true
       },
       "Salar": {
         "price": 3.092,
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.02,
+        "price": 6.03,
         "open": false
       },
       "Rafal": {
@@ -335,7 +335,7 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.7,
+        "price": 3.64,
         "open": false
       },
       "Talkasha": {
@@ -343,11 +343,11 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.59,
+        "price": 5.64,
         "open": false
       },
       "Mikhal": {
-        "price": 5.91,
+        "price": 5.9,
         "open": true
       },
       "Salar": {
