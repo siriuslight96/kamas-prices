@@ -1,5 +1,5 @@
 {
-  "updated_at": "24/10/2026 04:13 UTC",
+  "updated_at": "24/10/2026 04:47 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -127,12 +127,12 @@
         "open": true
       },
       "Kourial": {
-        "price": 6.89,
-        "open": false
+        "price": 6.271,
+        "open": true
       },
       "Orukam": {
-        "price": 4.134,
-        "open": false
+        "price": 3.581,
+        "open": true
       },
       "Tylezia": {
         "price": 3.548,
@@ -315,12 +315,12 @@
         "open": false
       },
       "Kourial": {
-        "price": 6.96,
+        "price": 6.62,
         "open": true
       },
       "Orukam": {
-        "price": 4.18,
-        "open": false
+        "price": 3.67,
+        "open": true
       },
       "Tylezia": {
         "price": 3.66,
