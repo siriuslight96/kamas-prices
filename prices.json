@@ -1,5 +1,5 @@
 {
-  "updated_at": "24/10/2026 02:36 UTC",
+  "updated_at": "24/10/2026 03:08 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -183,8 +183,8 @@
         "open": true
       },
       "Boune": {
-        "price": 23.87,
-        "open": true
+        "price": 28.59,
+        "open": false
       },
       "Allisteria": {
         "price": 9.874,
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 5.93,
+        "price": 6.02,
         "open": false
       },
       "Rafal": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 5.9,
+        "price": 5.91,
         "open": true
       },
       "Salar": {
@@ -355,7 +355,7 @@
         "open": false
       },
       "Boune": {
-        "price": 23.63,
+        "price": 24.19,
         "open": false
       },
       "Allisteria": {
