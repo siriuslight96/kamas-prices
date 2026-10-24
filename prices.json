@@ -1,5 +1,5 @@
 {
-  "updated_at": "24/10/2026 07:35 UTC",
+  "updated_at": "24/10/2026 08:05 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,8 +115,8 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.836,
-        "open": false
+        "price": 6.043,
+        "open": true
       },
       "Rafal": {
         "price": 3.038,
@@ -131,7 +131,7 @@
         "open": false
       },
       "Orukam": {
-        "price": 3.581,
+        "price": 3.602,
         "open": true
       },
       "Tylezia": {
@@ -183,8 +183,8 @@
         "open": true
       },
       "Boune": {
-        "price": 24.196,
-        "open": true
+        "price": 23.87,
+        "open": false
       },
       "Allisteria": {
         "price": 9.548,
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.03,
+        "price": 5.98,
         "open": false
       },
       "Rafal": {
@@ -327,11 +327,11 @@
         "open": false
       },
       "Draconiros": {
-        "price": 6.89,
+        "price": 7.25,
         "open": true
       },
       "Hell Mina": {
-        "price": 5.39,
+        "price": 5.3,
         "open": false
       },
       "Imagiro": {
@@ -355,7 +355,7 @@
         "open": false
       },
       "Boune": {
-        "price": 23.95,
+        "price": 23.63,
         "open": false
       },
       "Allisteria": {
