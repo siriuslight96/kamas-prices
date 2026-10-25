@@ -1,5 +1,5 @@
 {
-  "updated_at": "25/10/2026 05:05 UTC",
+  "updated_at": "25/10/2026 05:35 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -139,8 +139,8 @@
         "open": true
       },
       "Draconiros": {
-        "price": 6.239,
-        "open": true
+        "price": 7.02,
+        "open": false
       },
       "Hell Mina": {
         "price": 6.412,
@@ -327,11 +327,11 @@
         "open": true
       },
       "Draconiros": {
-        "price": 5.92,
+        "price": 5.93,
         "open": false
       },
       "Hell Mina": {
-        "price": 5.17,
+        "price": 5.21,
         "open": false
       },
       "Imagiro": {
