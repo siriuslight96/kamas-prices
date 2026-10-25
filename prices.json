@@ -1,5 +1,5 @@
 {
-  "updated_at": "25/10/2026 05:35 UTC",
+  "updated_at": "25/10/2026 06:06 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -167,20 +167,20 @@
         "open": true
       },
       "Blair": {
-        "price": 16.275,
-        "open": true
+        "price": 17.338,
+        "open": false
       },
       "Kelerog": {
         "price": 29.838,
         "open": true
       },
       "Tiliwan": {
-        "price": 23.87,
+        "price": 23.23,
         "open": true
       },
       "Talok": {
         "price": 18.445,
-        "open": false
+        "open": true
       },
       "Boune": {
         "price": 24.955,
