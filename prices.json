@@ -1,5 +1,5 @@
 {
-  "updated_at": "25/10/2026 03:59 UTC",
+  "updated_at": "25/10/2026 04:30 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -139,8 +139,8 @@
         "open": true
       },
       "Draconiros": {
-        "price": 6.206,
-        "open": true
+        "price": 7.02,
+        "open": false
       },
       "Hell Mina": {
         "price": 6.412,
@@ -151,7 +151,7 @@
         "open": false
       },
       "Talkasha": {
-        "price": 3.472,
+        "price": 3.483,
         "open": true
       },
       "Ombre": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 5.83,
+        "price": 5.66,
         "open": false
       },
       "Rafal": {
@@ -311,7 +311,7 @@
         "open": false
       },
       "Brial": {
-        "price": 3.37,
+        "price": 3.42,
         "open": true
       },
       "Kourial": {
@@ -327,11 +327,11 @@
         "open": true
       },
       "Draconiros": {
-        "price": 5.75,
+        "price": 5.66,
         "open": false
       },
       "Hell Mina": {
-        "price": 5.05,
+        "price": 5.21,
         "open": false
       },
       "Imagiro": {
@@ -339,7 +339,7 @@
         "open": false
       },
       "Talkasha": {
-        "price": 3.45,
+        "price": 3.46,
         "open": false
       },
       "Ombre": {
@@ -347,7 +347,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 5.66,
+        "price": 5.57,
         "open": false
       },
       "Salar": {
