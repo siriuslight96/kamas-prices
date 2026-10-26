@@ -1,5 +1,5 @@
 {
-  "updated_at": "26/10/2026 05:55 UTC",
+  "updated_at": "26/10/2026 06:33 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -119,8 +119,8 @@
         "open": false
       },
       "Rafal": {
-        "price": 3.201,
-        "open": true
+        "price": 3.537,
+        "open": false
       },
       "Brial": {
         "price": 3.808,
@@ -147,11 +147,11 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.515,
-        "open": true
+        "price": 4.036,
+        "open": false
       },
       "Talkasha": {
-        "price": 3.939,
+        "price": 3.928,
         "open": false
       },
       "Ombre": {
@@ -191,7 +191,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 3.255,
+        "price": 3.472,
         "open": true
       },
       "Pandora": {
@@ -303,19 +303,19 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 5.54,
-        "open": false
+        "price": 5.37,
+        "open": true
       },
       "Rafal": {
         "price": 3.1,
         "open": false
       },
       "Brial": {
-        "price": 3.16,
+        "price": 3.17,
         "open": true
       },
       "Kourial": {
-        "price": 5.75,
+        "price": 5.78,
         "open": true
       },
       "Orukam": {
@@ -327,19 +327,19 @@
         "open": false
       },
       "Draconiros": {
-        "price": 5.67,
+        "price": 5.57,
         "open": false
       },
       "Hell Mina": {
-        "price": 5.73,
+        "price": 5.76,
         "open": true
       },
       "Imagiro": {
-        "price": 3.54,
+        "price": 3.6,
         "open": true
       },
       "Talkasha": {
-        "price": 3.32,
+        "price": 3.56,
         "open": false
       },
       "Ombre": {
@@ -347,7 +347,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 5.4,
+        "price": 5.49,
         "open": false
       },
       "Salar": {
@@ -363,7 +363,7 @@
         "open": false
       },
       "Fallanster": {
-        "price": 3.65,
+        "price": 3.51,
         "open": true
       }
     }
