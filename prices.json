@@ -1,5 +1,5 @@
 {
-  "updated_at": "27/10/2026 12:09 UTC",
+  "updated_at": "27/10/2026 12:54 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -37,15 +37,15 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.12,
+        "price": 3.229,
         "open": true
       },
       "Tylezia": {
-        "price": 3.22,
+        "price": 3.183,
         "open": true
       },
       "Draconiros": {
-        "price": 4.5,
+        "price": 4.902,
         "open": true
       },
       "Hell Mina": {
@@ -57,7 +57,7 @@
         "open": true
       },
       "Talkasha": {
-        "price": 3.308,
+        "price": 3.477,
         "open": true
       },
       "Ombre": {
@@ -69,7 +69,7 @@
         "open": true
       },
       "Salar": {
-        "price": 3.307,
+        "price": 2.938,
         "open": true
       },
       "Blair": {
@@ -101,7 +101,7 @@
         "open": true
       },
       "Pandora": {
-        "price": 30.874,
+        "price": 30.789,
         "open": true
       },
       "Ogrest": {
@@ -109,13 +109,13 @@
         "open": true
       },
       "Rubilax": {
-        "price": 11.037,
+        "price": 11.02,
         "open": true
       }
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.488,
+        "price": 6.477,
         "open": false
       },
       "Rafal": {
@@ -123,23 +123,23 @@
         "open": false
       },
       "Brial": {
-        "price": 3.255,
+        "price": 3.32,
         "open": true
       },
       "Kourial": {
-        "price": 6.477,
+        "price": 6.467,
         "open": false
       },
       "Orukam": {
-        "price": 3.96,
-        "open": false
+        "price": 3.581,
+        "open": true
       },
       "Tylezia": {
         "price": 4.025,
         "open": false
       },
       "Draconiros": {
-        "price": 6.64,
+        "price": 6.629,
         "open": false
       },
       "Hell Mina": {
@@ -147,11 +147,11 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.364,
+        "price": 3.472,
         "open": true
       },
       "Talkasha": {
-        "price": 3.364,
+        "price": 3.418,
         "open": true
       },
       "Ombre": {
@@ -171,15 +171,15 @@
         "open": false
       },
       "Kelerog": {
-        "price": 31.682,
+        "price": 31.791,
         "open": true
       },
       "Tiliwan": {
-        "price": 19.53,
+        "price": 20.941,
         "open": true
       },
       "Talok": {
-        "price": 18.445,
+        "price": 18.988,
         "open": true
       },
       "Boune": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 5.57,
+        "price": 5.66,
         "open": false
       },
       "Rafal": {
@@ -315,11 +315,11 @@
         "open": true
       },
       "Kourial": {
-        "price": 5.78,
-        "open": true
+        "price": 5.85,
+        "open": false
       },
       "Orukam": {
-        "price": 3.32,
+        "price": 3.25,
         "open": true
       },
       "Tylezia": {
@@ -327,19 +327,19 @@
         "open": false
       },
       "Draconiros": {
-        "price": 5.62,
+        "price": 5.9,
         "open": true
       },
       "Hell Mina": {
-        "price": 5.21,
-        "open": false
+        "price": 5.06,
+        "open": true
       },
       "Imagiro": {
-        "price": 3.36,
+        "price": 3.46,
         "open": false
       },
       "Talkasha": {
-        "price": 3.38,
+        "price": 3.28,
         "open": false
       },
       "Ombre": {
@@ -351,16 +351,16 @@
         "open": false
       },
       "Salar": {
-        "price": 3.23,
+        "price": 3.25,
         "open": true
       },
       "Boune": {
-        "price": 24.19,
+        "price": 23.63,
         "open": false
       },
       "Allisteria": {
         "price": 9.55,
-        "open": true
+        "open": false
       },
       "Fallanster": {
         "price": 2.96,
@@ -368,11 +368,7 @@
       }
     }
   },
-  "errors": {
-    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html?_ts=1793102990"
-  },
-  "stale_sites": [
-    "leskamas"
-  ],
+  "errors": {},
+  "stale_sites": [],
   "link_only_sites": []
 }
