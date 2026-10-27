@@ -1,5 +1,5 @@
 {
-  "updated_at": "27/10/2026 11:29 UTC",
+  "updated_at": "27/10/2026 12:09 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -21,7 +21,7 @@
   "data": {
     "ibendouma": {
       "Dakal": {
-        "price": 5.606,
+        "price": 4.92,
         "open": true
       },
       "Rafal": {
@@ -29,31 +29,31 @@
         "open": true
       },
       "Brial": {
-        "price": 3.125,
+        "price": 2.9,
         "open": true
       },
       "Kourial": {
-        "price": 5.829,
+        "price": 4.88,
         "open": true
       },
       "Orukam": {
-        "price": 3.421,
+        "price": 3.12,
         "open": true
       },
       "Tylezia": {
-        "price": 3.623,
+        "price": 3.22,
         "open": true
       },
       "Draconiros": {
-        "price": 4.995,
+        "price": 4.5,
         "open": true
       },
       "Hell Mina": {
-        "price": 5.0,
+        "price": 5.01,
         "open": true
       },
       "Imagiro": {
-        "price": 3.421,
+        "price": 3.1,
         "open": true
       },
       "Talkasha": {
@@ -61,15 +61,15 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.208,
+        "price": 4.88,
         "open": true
       },
       "Mikhal": {
-        "price": 5.125,
+        "price": 4.78,
         "open": true
       },
       "Salar": {
-        "price": 3.192,
+        "price": 3.307,
         "open": true
       },
       "Blair": {
@@ -89,15 +89,15 @@
         "open": false
       },
       "Boune": {
-        "price": 26.453,
+        "price": 27.001,
         "open": true
       },
       "Allisteria": {
-        "price": 8.823,
+        "price": 9.5,
         "open": true
       },
       "Fallanster": {
-        "price": 2.98,
+        "price": 3.2,
         "open": true
       },
       "Pandora": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 5.67,
+        "price": 5.57,
         "open": false
       },
       "Rafal": {
@@ -323,11 +323,11 @@
         "open": true
       },
       "Tylezia": {
-        "price": 3.66,
+        "price": 3.71,
         "open": false
       },
       "Draconiros": {
-        "price": 5.58,
+        "price": 5.62,
         "open": true
       },
       "Hell Mina": {
@@ -335,19 +335,19 @@
         "open": false
       },
       "Imagiro": {
-        "price": 3.5,
-        "open": true
+        "price": 3.36,
+        "open": false
       },
       "Talkasha": {
-        "price": 3.24,
+        "price": 3.38,
         "open": false
       },
       "Ombre": {
-        "price": 5.44,
+        "price": 5.53,
         "open": true
       },
       "Mikhal": {
-        "price": 5.49,
+        "price": 5.39,
         "open": false
       },
       "Salar": {
@@ -356,7 +356,7 @@
       },
       "Boune": {
         "price": 24.19,
-        "open": true
+        "open": false
       },
       "Allisteria": {
         "price": 9.55,
@@ -368,7 +368,11 @@
       }
     }
   },
-  "errors": {},
-  "stale_sites": [],
+  "errors": {
+    "leskamas": "403 Client Error: Forbidden for url: https://www.leskamas.com/en-gb/sell-kamas.html?_ts=1793102990"
+  },
+  "stale_sites": [
+    "leskamas"
+  ],
   "link_only_sites": []
 }
