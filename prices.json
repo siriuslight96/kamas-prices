@@ -1,5 +1,5 @@
 {
-  "updated_at": "29/10/2026 08:17 UTC",
+  "updated_at": "29/10/2026 09:12 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -167,8 +167,8 @@
         "open": false
       },
       "Blair": {
-        "price": 16.774,
-        "open": false
+        "price": 14.55,
+        "open": true
       },
       "Kelerog": {
         "price": 30.38,
@@ -319,7 +319,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.64,
+        "price": 3.65,
         "open": true
       },
       "Tylezia": {
