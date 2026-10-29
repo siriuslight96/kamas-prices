@@ -1,5 +1,5 @@
 {
-  "updated_at": "28/10/2026 23:54 UTC",
+  "updated_at": "29/10/2026 00:32 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,27 +115,27 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 5.425,
+        "price": 5.414,
         "open": true
       },
       "Rafal": {
-        "price": 2.93,
-        "open": true
+        "price": 3.429,
+        "open": false
       },
       "Brial": {
-        "price": 3.591,
-        "open": false
+        "price": 3.277,
+        "open": true
       },
       "Kourial": {
         "price": 5.588,
         "open": true
       },
       "Orukam": {
-        "price": 3.581,
+        "price": 3.255,
         "open": true
       },
       "Tylezia": {
-        "price": 3.418,
+        "price": 3.439,
         "open": true
       },
       "Draconiros": {
@@ -143,7 +143,7 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 5.165,
+        "price": 5.208,
         "open": true
       },
       "Imagiro": {
@@ -303,15 +303,15 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 5.55,
+        "price": 5.42,
         "open": true
       },
       "Rafal": {
-        "price": 2.9,
+        "price": 2.99,
         "open": false
       },
       "Brial": {
-        "price": 3.11,
+        "price": 3.19,
         "open": true
       },
       "Kourial": {
@@ -319,11 +319,11 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.49,
+        "price": 3.34,
         "open": true
       },
       "Tylezia": {
-        "price": 3.38,
+        "price": 3.4,
         "open": true
       },
       "Draconiros": {
@@ -331,7 +331,7 @@
         "open": true
       },
       "Hell Mina": {
-        "price": 5.11,
+        "price": 5.16,
         "open": false
       },
       "Imagiro": {
