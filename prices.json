@@ -1,5 +1,5 @@
 {
-  "updated_at": "31/10/2026 22:51 UTC",
+  "updated_at": "31/10/2026 23:21 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -155,15 +155,15 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.968,
+        "price": 6.51,
         "open": true
       },
       "Mikhal": {
-        "price": 6.705,
+        "price": 6.836,
         "open": false
       },
       "Salar": {
-        "price": 3.114,
+        "price": 3.222,
         "open": true
       },
       "Blair": {
@@ -191,11 +191,11 @@
         "open": true
       },
       "Fallanster": {
-        "price": 3.364,
+        "price": 3.038,
         "open": true
       },
       "Pandora": {
-        "price": 20.734,
+        "price": 20.799,
         "open": true
       },
       "Ogrest": {
@@ -335,7 +335,7 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.7,
+        "price": 3.74,
         "open": true
       },
       "Talkasha": {
@@ -343,15 +343,15 @@
         "open": true
       },
       "Ombre": {
-        "price": 5.58,
+        "price": 5.59,
         "open": true
       },
       "Mikhal": {
-        "price": 6.51,
+        "price": 5.6,
         "open": false
       },
       "Salar": {
-        "price": 3.12,
+        "price": 3.21,
         "open": true
       },
       "Boune": {
