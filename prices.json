@@ -1,5 +1,5 @@
 {
-  "updated_at": "01/11/2026 19:27 UTC",
+  "updated_at": "01/11/2026 20:02 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -119,11 +119,11 @@
         "open": true
       },
       "Rafal": {
-        "price": 3.364,
+        "price": 3.472,
         "open": true
       },
       "Brial": {
-        "price": 3.581,
+        "price": 3.798,
         "open": true
       },
       "Kourial": {
@@ -163,7 +163,7 @@
         "open": true
       },
       "Salar": {
-        "price": 3.255,
+        "price": 3.472,
         "open": true
       },
       "Blair": {
@@ -171,7 +171,7 @@
         "open": true
       },
       "Kelerog": {
-        "price": 29.295,
+        "price": 27.125,
         "open": true
       },
       "Tiliwan": {
@@ -179,11 +179,11 @@
         "open": true
       },
       "Talok": {
-        "price": 17.36,
+        "price": 18.445,
         "open": true
       },
       "Boune": {
-        "price": 26.474,
+        "price": 26.04,
         "open": true
       },
       "Allisteria": {
@@ -311,7 +311,7 @@
         "open": true
       },
       "Brial": {
-        "price": 3.55,
+        "price": 3.58,
         "open": true
       },
       "Kourial": {
@@ -323,7 +323,7 @@
         "open": true
       },
       "Tylezia": {
-        "price": 3.65,
+        "price": 3.67,
         "open": true
       },
       "Draconiros": {
@@ -348,14 +348,14 @@
       },
       "Mikhal": {
         "price": 4.71,
-        "open": false
+        "open": true
       },
       "Salar": {
         "price": 3.24,
         "open": true
       },
       "Boune": {
-        "price": 26.74,
+        "price": 26.3,
         "open": true
       },
       "Allisteria": {
