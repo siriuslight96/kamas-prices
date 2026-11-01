@@ -1,5 +1,5 @@
 {
-  "updated_at": "01/11/2026 07:37 UTC",
+  "updated_at": "01/11/2026 08:24 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -163,7 +163,7 @@
         "open": true
       },
       "Salar": {
-        "price": 3.526,
+        "price": 3.418,
         "open": true
       },
       "Blair": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 24.271,
+        "price": 25.172,
         "open": true
       },
       "Allisteria": {
@@ -355,7 +355,7 @@
         "open": false
       },
       "Boune": {
-        "price": 25.01,
+        "price": 24.63,
         "open": false
       },
       "Allisteria": {
