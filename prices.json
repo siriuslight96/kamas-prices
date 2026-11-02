@@ -1,5 +1,5 @@
 {
-  "updated_at": "02/11/2026 13:35 UTC",
+  "updated_at": "02/11/2026 14:36 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -21,31 +21,31 @@
   "data": {
     "ibendouma": {
       "Dakal": {
-        "price": 5.945,
+        "price": 5.949,
         "open": true
       },
       "Rafal": {
-        "price": 3.308,
+        "price": 3.312,
         "open": true
       },
       "Brial": {
-        "price": 3.308,
+        "price": 3.304,
         "open": true
       },
       "Kourial": {
-        "price": 5.951,
+        "price": 5.936,
         "open": true
       },
       "Orukam": {
-        "price": 3.849,
+        "price": 3.863,
         "open": true
       },
       "Tylezia": {
-        "price": 3.912,
+        "price": 3.644,
         "open": true
       },
       "Draconiros": {
-        "price": 6.622,
+        "price": 6.623,
         "open": true
       },
       "Hell Mina": {
@@ -53,23 +53,23 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.856,
+        "price": 3.857,
         "open": true
       },
       "Talkasha": {
-        "price": 3.31,
+        "price": 3.779,
         "open": true
       },
       "Ombre": {
-        "price": 5.844,
+        "price": 5.832,
         "open": true
       },
       "Mikhal": {
-        "price": 5.957,
+        "price": 5.942,
         "open": true
       },
       "Salar": {
-        "price": 3.311,
+        "price": 3.31,
         "open": true
       },
       "Blair": {
@@ -89,7 +89,7 @@
         "open": true
       },
       "Boune": {
-        "price": 24.738,
+        "price": 21.769,
         "open": true
       },
       "Allisteria": {
@@ -97,19 +97,19 @@
         "open": true
       },
       "Fallanster": {
-        "price": 3.313,
+        "price": 2.531,
         "open": true
       },
       "Pandora": {
-        "price": 16.537,
+        "price": 16.557,
         "open": true
       },
       "Ogrest": {
-        "price": 33.045,
+        "price": 32.986,
         "open": true
       },
       "Rubilax": {
-        "price": 11.033,
+        "price": 11.0,
         "open": true
       }
     },
@@ -151,8 +151,8 @@
         "open": true
       },
       "Talkasha": {
-        "price": 3.255,
-        "open": true
+        "price": 4.199,
+        "open": false
       },
       "Ombre": {
         "price": 5.751,
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 27.125,
+        "price": 23.87,
         "open": true
       },
       "Allisteria": {
@@ -191,7 +191,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 3.255,
+        "price": 2.496,
         "open": true
       },
       "Pandora": {
@@ -307,11 +307,11 @@
         "open": true
       },
       "Rafal": {
-        "price": 3.37,
+        "price": 3.34,
         "open": true
       },
       "Brial": {
-        "price": 3.6,
+        "price": 3.22,
         "open": false
       },
       "Kourial": {
@@ -319,43 +319,43 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.75,
+        "price": 3.73,
         "open": false
       },
       "Tylezia": {
-        "price": 4.1,
-        "open": false
+        "price": 3.55,
+        "open": true
       },
       "Draconiros": {
         "price": 6.58,
-        "open": true
+        "open": false
       },
       "Hell Mina": {
-        "price": 5.67,
+        "price": 5.4,
         "open": true
       },
       "Imagiro": {
-        "price": 3.86,
+        "price": 3.76,
         "open": true
       },
       "Talkasha": {
-        "price": 3.85,
-        "open": true
+        "price": 3.91,
+        "open": false
       },
       "Ombre": {
         "price": 5.71,
         "open": true
       },
       "Mikhal": {
-        "price": 6.29,
+        "price": 6.17,
         "open": true
       },
       "Salar": {
-        "price": 3.32,
+        "price": 3.22,
         "open": false
       },
       "Boune": {
-        "price": 27.12,
+        "price": 27.43,
         "open": true
       },
       "Allisteria": {
