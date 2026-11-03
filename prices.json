@@ -1,5 +1,5 @@
 {
-  "updated_at": "03/11/2026 07:55 UTC",
+  "updated_at": "03/11/2026 08:51 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -139,7 +139,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 6.38,
+        "price": 6.6,
         "open": true
       },
       "Hell Mina": {
@@ -151,7 +151,7 @@
         "open": true
       },
       "Talkasha": {
-        "price": 3.795,
+        "price": 3.85,
         "open": true
       },
       "Ombre": {
@@ -159,7 +159,7 @@
         "open": true
       },
       "Mikhal": {
-        "price": 6.127,
+        "price": 6.27,
         "open": true
       },
       "Salar": {
@@ -183,7 +183,7 @@
         "open": true
       },
       "Boune": {
-        "price": 24.717,
+        "price": 24.75,
         "open": true
       },
       "Allisteria": {
@@ -327,7 +327,7 @@
         "open": false
       },
       "Draconiros": {
-        "price": 6.38,
+        "price": 6.52,
         "open": true
       },
       "Hell Mina": {
@@ -339,7 +339,7 @@
         "open": true
       },
       "Talkasha": {
-        "price": 3.87,
+        "price": 3.9,
         "open": true
       },
       "Ombre": {
@@ -347,7 +347,7 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.11,
+        "price": 6.23,
         "open": true
       },
       "Salar": {
