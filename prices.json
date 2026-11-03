@@ -1,5 +1,5 @@
 {
-  "updated_at": "03/11/2026 13:38 UTC",
+  "updated_at": "03/11/2026 14:34 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -21,15 +21,15 @@
   "data": {
     "ibendouma": {
       "Dakal": {
-        "price": 6.591,
+        "price": 6.594,
         "open": true
       },
       "Rafal": {
-        "price": 3.569,
+        "price": 3.58,
         "open": true
       },
       "Brial": {
-        "price": 3.569,
+        "price": 3.575,
         "open": true
       },
       "Kourial": {
@@ -37,7 +37,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 4.024,
+        "price": 4.027,
         "open": true
       },
       "Tylezia": {
@@ -53,23 +53,23 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.792,
+        "price": 3.807,
         "open": true
       },
       "Talkasha": {
-        "price": 3.902,
+        "price": 3.908,
         "open": true
       },
       "Ombre": {
-        "price": 6.029,
+        "price": 6.031,
         "open": true
       },
       "Mikhal": {
-        "price": 6.382,
+        "price": 6.379,
         "open": true
       },
       "Salar": {
-        "price": 3.857,
+        "price": 3.85,
         "open": true
       },
       "Blair": {
@@ -89,27 +89,27 @@
         "open": true
       },
       "Boune": {
-        "price": 26.555,
+        "price": 24.379,
         "open": true
       },
       "Allisteria": {
-        "price": 9.403,
+        "price": 9.38,
         "open": true
       },
       "Fallanster": {
-        "price": 3.345,
+        "price": 3.357,
         "open": true
       },
       "Pandora": {
-        "price": 16.738,
+        "price": 21.236,
         "open": true
       },
       "Ogrest": {
-        "price": 33.512,
+        "price": 33.461,
         "open": true
       },
       "Rubilax": {
-        "price": 11.155,
+        "price": 11.177,
         "open": true
       }
     },
@@ -171,7 +171,7 @@
         "open": false
       },
       "Kelerog": {
-        "price": 31.68,
+        "price": 32.12,
         "open": true
       },
       "Tiliwan": {
@@ -195,7 +195,7 @@
         "open": true
       },
       "Pandora": {
-        "price": 16.5,
+        "price": 20.9,
         "open": true
       },
       "Ogrest": {
@@ -356,7 +356,7 @@
       },
       "Boune": {
         "price": 27.43,
-        "open": false
+        "open": true
       },
       "Allisteria": {
         "price": 9.51,
