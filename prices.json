@@ -1,5 +1,5 @@
 {
-  "updated_at": "03/11/2026 05:44 UTC",
+  "updated_at": "03/11/2026 06:40 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -115,7 +115,7 @@
     },
     "leskamas": {
       "Dakal": {
-        "price": 6.076,
+        "price": 6.185,
         "open": true
       },
       "Rafal": {
@@ -171,7 +171,7 @@
         "open": false
       },
       "Kelerog": {
-        "price": 31.791,
+        "price": 30.923,
         "open": true
       },
       "Tiliwan": {
@@ -183,8 +183,8 @@
         "open": true
       },
       "Boune": {
-        "price": 28.883,
-        "open": false
+        "price": 24.13,
+        "open": true
       },
       "Allisteria": {
         "price": 9.006,
@@ -319,7 +319,7 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.74,
+        "price": 3.83,
         "open": true
       },
       "Tylezia": {
@@ -355,7 +355,7 @@
         "open": false
       },
       "Boune": {
-        "price": 29.17,
+        "price": 27.43,
         "open": true
       },
       "Allisteria": {
