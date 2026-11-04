@@ -1,5 +1,5 @@
 {
-  "updated_at": "04/11/2026 22:46 UTC",
+  "updated_at": "04/11/2026 23:32 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -25,47 +25,47 @@
         "open": true
       },
       "Rafal": {
-        "price": 3.352,
+        "price": 3.344,
         "open": true
       },
       "Brial": {
-        "price": 3.794,
+        "price": 3.674,
         "open": true
       },
       "Kourial": {
-        "price": 6.181,
+        "price": 6.165,
         "open": true
       },
       "Orukam": {
-        "price": 3.894,
+        "price": 3.883,
         "open": true
       },
       "Tylezia": {
-        "price": 3.914,
+        "price": 3.912,
         "open": true
       },
       "Draconiros": {
-        "price": 6.595,
+        "price": 6.587,
         "open": true
       },
       "Hell Mina": {
-        "price": 5.492,
+        "price": 5.539,
         "open": true
       },
       "Imagiro": {
-        "price": 4.025,
+        "price": 4.029,
         "open": true
       },
       "Talkasha": {
-        "price": 3.806,
+        "price": 3.796,
         "open": true
       },
       "Ombre": {
-        "price": 5.886,
+        "price": 5.879,
         "open": true
       },
       "Mikhal": {
-        "price": 6.488,
+        "price": 6.469,
         "open": true
       },
       "Salar": {
@@ -101,25 +101,25 @@
         "open": true
       },
       "Pandora": {
-        "price": 20.098,
+        "price": 20.084,
         "open": true
       },
       "Ogrest": {
-        "price": 33.48,
+        "price": 33.57,
         "open": true
       },
       "Rubilax": {
-        "price": 12.273,
+        "price": 12.258,
         "open": true
       }
     },
     "leskamas": {
       "Brial": {
-        "price": 4.136,
+        "price": 4.114,
         "open": false
       },
       "Tylezia": {
-        "price": 5.797,
+        "price": 5.61,
         "open": false
       },
       "Draconiros": {
@@ -127,43 +127,35 @@
         "open": false
       },
       "Hell Mina": {
-        "price": 6.193,
+        "price": 6.182,
         "open": false
       },
       "Imagiro": {
-        "price": 4.345,
+        "price": 4.279,
         "open": false
       },
       "Talkasha": {
-        "price": 5.797,
+        "price": 5.61,
         "open": false
       },
       "Ombre": {
-        "price": 5.797,
+        "price": 5.61,
         "open": false
       },
       "Salar": {
-        "price": 17.336,
+        "price": 17.05,
         "open": false
       },
       "Blair": {
-        "price": 17.336,
-        "open": false
-      },
-      "Boune": {
-        "price": 26.4,
-        "open": false
-      },
-      "Allisteria": {
-        "price": 26.4,
+        "price": 17.05,
         "open": false
       },
       "Fallanster": {
-        "price": 3.839,
+        "price": 22.99,
         "open": false
       },
       "Pandora": {
-        "price": 23.012,
+        "price": 22.99,
         "open": false
       },
       "Rubilax": {
@@ -267,19 +259,19 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.63,
-        "open": true
+        "price": 6.43,
+        "open": false
       },
       "Rafal": {
         "price": 3.27,
         "open": false
       },
       "Brial": {
-        "price": 3.7,
-        "open": true
+        "price": 3.75,
+        "open": false
       },
       "Kourial": {
-        "price": 6.44,
+        "price": 6.61,
         "open": true
       },
       "Orukam": {
@@ -303,12 +295,12 @@
         "open": false
       },
       "Talkasha": {
-        "price": 3.71,
+        "price": 3.68,
         "open": true
       },
       "Ombre": {
-        "price": 5.75,
-        "open": false
+        "price": 5.58,
+        "open": true
       },
       "Mikhal": {
         "price": 6.3,
@@ -319,11 +311,11 @@
         "open": false
       },
       "Boune": {
-        "price": 27.43,
-        "open": false
+        "price": 28.11,
+        "open": true
       },
       "Allisteria": {
-        "price": 8.93,
+        "price": 8.8,
         "open": false
       },
       "Fallanster": {
