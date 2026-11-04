@@ -1,5 +1,5 @@
 {
-  "updated_at": "04/11/2026 02:02 UTC",
+  "updated_at": "04/11/2026 02:51 UTC",
   "sites": {
     "ibendouma": {
       "name": "iBendouma",
@@ -139,7 +139,7 @@
         "open": true
       },
       "Draconiros": {
-        "price": 6.424,
+        "price": 6.413,
         "open": true
       },
       "Hell Mina": {
@@ -147,19 +147,19 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.63,
-        "open": true
+        "price": 4.345,
+        "open": false
       },
       "Talkasha": {
-        "price": 3.63,
-        "open": true
+        "price": 4.323,
+        "open": false
       },
       "Ombre": {
         "price": 5.94,
         "open": true
       },
       "Mikhal": {
-        "price": 6.71,
+        "price": 6.6,
         "open": true
       },
       "Salar": {
@@ -303,7 +303,7 @@
     },
     "tryandjudge": {
       "Dakal": {
-        "price": 6.31,
+        "price": 6.38,
         "open": true
       },
       "Rafal": {
@@ -319,15 +319,15 @@
         "open": true
       },
       "Orukam": {
-        "price": 3.72,
+        "price": 3.38,
         "open": true
       },
       "Tylezia": {
-        "price": 3.35,
+        "price": 3.27,
         "open": true
       },
       "Draconiros": {
-        "price": 6.35,
+        "price": 6.33,
         "open": false
       },
       "Hell Mina": {
@@ -335,11 +335,11 @@
         "open": true
       },
       "Imagiro": {
-        "price": 3.48,
+        "price": 3.57,
         "open": true
       },
       "Talkasha": {
-        "price": 3.87,
+        "price": 3.93,
         "open": true
       },
       "Ombre": {
@@ -347,11 +347,11 @@
         "open": false
       },
       "Mikhal": {
-        "price": 6.24,
+        "price": 6.3,
         "open": false
       },
       "Salar": {
-        "price": 3.78,
+        "price": 3.7,
         "open": false
       },
       "Boune": {
@@ -363,7 +363,7 @@
         "open": true
       },
       "Fallanster": {
-        "price": 3.65,
+        "price": 3.66,
         "open": true
       }
     }
